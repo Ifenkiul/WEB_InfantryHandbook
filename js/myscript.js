@@ -1,4 +1,4 @@
-
+'use strict'
 let menuHidden = 0;
 let localOpen = 0;
 let previousOpen = 0;
