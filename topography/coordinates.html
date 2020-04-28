@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Infantry Handbook</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="../js/myscript.js"></script>
+	</head>
+	<body>
+	<!--HEADER-->
+		<header class="header">
+			<div class="logo">
+				<img src="../img/google2.png" height="8%" width="8%">
+		
+				<h1 class="logo-label">ДОВІДНИК ПІХОТИНЦЯ</h1>
+				
+			</div>
+		
+			<!--NAV-->
+			<nav class="menu__hor">
+				
+					<ul class="menu__hor__list">
+						<li class="menu__hor__list-item"><a class="menu__hor__list-link
+							" href="../index.html">ГОЛОВНА</a></li>
+						<li class="menu__hor__list-item" ><a class="menu__hor__list-link
+							" href="../handbook.html" style="
+								background-color: #5b6750; /*MILITARY 2*/
+								color: white;
+								">ДОВІДНИК</a></li>
+						<li class="menu__hor__list-item"><a class="menu__hor__list-link
+							" href="../library.html">БІБЛІОТЕКА</a></li>
+						<li class="menu__hor__list-item"><a class="menu__hor__list-link
+							" href="../links.html">ПОСИЛАННЯ</a></li>
+						
+					</ul>	
+					
+				
+			</nav>
+			<!--NAV-->
+	</header>
+	<!--HEADER-->
+
+<!--MAIN-->
+<main class="main">
+	
+	<div class="content">
+		<!--CONTENT-->
+		<h1>Визначення координат цілі за допомогою даних зі спостережного посту.</h1>
+		<hr>
+	<h3>За азимутом і відстанню до об’єкта.</h3>
+	<div class="paragraph">
+		<p>Використовуємо цей метод при умові, що ми знаємо місце стояння спостережного поста на карті.</p>
+		<p>&nbsp;</p>
+		<ul>
+		<li>Визначається азимут на ціль</li>
+		<li>Визначається відстань до цілі одним із доступних методів (описані в попередніх темах)</li>
+		<li>Азимут переводимо в дирекційний кут для нашої карти</li>
+		<li>На карті з точки спостережного поста проводимо напрям до нашої цілі відповідно до дирекційного кута</li>
+		<li>За допомогою лінійки відмічаємо на цій прямій відрізок, що відповідає відстані на місцевості від спостережного поста до цілі</li>
+		<li>Отримана точка і буде місцем знаходження цілі на карті. Тоді вже можна знаходити його координати.</li>
+		</ul>
+	</div>
+	<h3>Спряженим спостереженням.</h3>
+	<div class="paragraph">
+		<img src="img/coordinates_sp/01.jpg">
+		<p>Використовуємо цей метод при умові, що ми знаємо лиш місце стояння спостережних постів на карті. Маємо бачити ціль з обох спостережних постів.</p>
+		<ul>
+		<li>Визначається азимут до цілі з одного спостережного посту Ам1</li>
+		<li>Визначаємо азимут до цілі з другого спостережного посту Ам2</li>
+		<li>Переводим обидва азимути в дирекційні кути для нашої карти</li>
+		<li>Проводимо напрямки до цілі з обох спостережних постів на карті відповідно до дирекційних кутів</li>
+		<li>Місце в якому перетнуться два ці напрямки і буде місцем стояння цілі на карті.</li>
+		</ul>
+	</div>
+	<h3>За допомогою програм по типу Google Maps, армії SOS, Armor</h3>
+	<div class="paragraph">
+		<p>При умові, що є можливість точно співвіднести місце стояння цілі на місцевості (за орієнтирами, особливостями рел'єфу, сусідніми об'єктами з картою цих програм</p>
+	</div>
+		<!--CONTENT-->
+		
+	</div>
+	
+</main>
+<!--MAIN-->
+
+<!--MINI MENU-->
+<footer id="mini" >
+	<div >
+		<button id="show-hide-pidmenu" onclick="hideHide()" 
+		><img class="eye" src="img/closed.png" width="50%" height="50%" ></button>
+	
+		<ul id="menu-mini">
+		<li><a href="../handbook.html">НАЗАД</a></li>
+		
+		
+	</ul>
+	</div>	
+</footer>
+<!--MINI MENU-->
+
+		
+</body>
+</html>

@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444c38; /*OLIVE*/
+  margin: 0;
+  list-style-position: inside;
+}
+
+body h1 {
+  color: #a1a188; /*MILITARY LIGHT*/
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Neucha', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body h2 {
+  color: #a1a188; /*MILITARY LIGHT*/
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Neucha', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Neucha', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+td {
+  padding: 0 5px 0;
+}
+.header {
+  background-color: #444c38; /*OLIVE*/
+
+  width: 100%;
+  text-align: center;
+
+  color: #cc9a45; /* LETTERS*/
+
+  padding-top: 10px;
+
+  margin-top: 0px;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.logo {
+  margin: 20px 0 0px;
+  padding-bottom: 20px;
+}
+
+.logo-label {
+  padding-top: 30px;
+  font-size: 30px;
+  color: #a1a188; /*MILITARY LIGHT*/
+  font-family: 'Neucha', sans-serif;
+}
+
+/*MENU HORIZONTAL*/
+.menu__hor {
+  border-top: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border-bottom: 2px solid #a1a188; /*MILITARY LIGHT*/
+}
+.menu__hor__list {
+  display: flex;
+  justify-content: center;
+}
+.menu__hor__list-item {
+  width: 200px;
+}
+.menu__hor__list-link {
+  font-size: 30px;
+  line-height: 30px;
+  color: #a1a188; /*MILITARY LIGHT*/
+  text-decoration: none;
+  font-family: 'Neucha', sans-serif;
+  display: block;
+  max-width: 300px;
+  padding: 10px 10px 10px;
+  border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
+  border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
+  transition: all .3s;
+}
+
+.menu__hor__list-link--active,
+.menu__hor__list-link:hover {
+  background-color: #5b6750; /*MILITARY 2*/
+  color: white;
+}
+/*MENU HORIZONTAL*/
+
+/*MAIN - MENU*/
+.main {
+  width: 100%;  
+ }
+
+.main__menu{
+  width: 100%;
+}
+
+.main__menu__list{
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap; 
+}
+
+.main__menu__list-item{
+
+  border-bottom: 2px solid #a1a188; /*MILITARY LIGHT*/
+}
+.main__menu__list-item:first-child {
+  border-left: 1px solid #c4c4c4;
+}
+
+.main__menu__list-item:last-child {
+  border-right: 1px solid #c4c4c4;
+}
+.main__menu__list-link{
+  display: block;
+font-size: 30px;
+  line-height: 30px;
+  color: #a1a188; /*MILITARY LIGHT*/
+  text-decoration: none;
+  font-family: 'Neucha', sans-serif;
+  
+  max-width: 300px;
+  padding: 10px 10px 10px;
+  border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
+  border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
+  transition: all .3s; 
+}
+
+
+.main__menu__list-link:hover{
+ 
+  background-color: #5b6750; /*MILITARY 2*/
+  color: white;
+}
+/*MAIN - MENU*/
+
+/*MAIN - CONTENT*/
+.content {
+  padding: 5px 5px 5px;
+  width: 100%;
+}
+.menu__content {
+ 
+  padding: 5px 5px 5px;
+  width: 100%;
+}
+.menu__table{
+  width: 100%;
+}
+.menu__table td{
+  background-color: #5b6750; /*MILITARY 2*/
+}
+.content__menu-item {
+  text-align: center;
+  margin: 15px 0 20px;
+  list-style-type: circle;
+  list-style-type: none;
+}
+
+.content__menu-link {
+  text-decoration: none;
+  color: #a1a188; /*MILITARY LIGHT*/
+  font-family: 'Neucha', sans-serif;
+  font-size: 24px;
+  padding: 5px 10px 5px;
+  border: 2px solid #5b6750; /*MILITARY 2*/
+}
+
+.content__menu-link:hover {
+  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border-radius: 5px;
+  color: white;
+  background-color: #444c38; /*OLIVE*/
+}
+
+/*MAIN - CONTENT*/
+
+.paragraph {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  background-color: #a1a188; /*MILITARY LIGHT*/
+  border: 1px dotted;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 10px 10px 10px;
+
+  font-family: 'Neucha', sans-serif;
+}
+.paragraph img {
+  border: 1px solid;
+}
+.paragraph a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.paragraph a:hover {
+  color: white;
+}
+.paragraph li {
+  list-style-position: inside;
+}
+
+#menu-mini li a {
+  text-decoration: none;
+  color: #444c38; /*OLIVE*/
+  font-weight: bold;
+  font-family: 'Neucha', sans-serif;
+}
+
+#menu-mini li a:hover {
+  text-decoration: none;
+  background-color: #444c38;
+  color: #cc9a45;
+  border-radius: 5px;
+  border: 1px dotted #cc9a45; /* LETTERS*/
+  font-weight: bold;
+}
+#mini {
+  border: 1px dotted #444c38; /*OLIVE*/
+  border-radius: 5px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #cc9a45;
+  margin: 0;
+}
+
+#mini ul {
+  font-size: 2em;
+  padding-left: 5px;
+  margin: 0;
+}
+#mini li {
+  list-style-type: none;
+}
+#mini li a {
+}
+
+.my {
+  color: green;
+  font-weight: bold;
+}
+#show-hide-pidmenu {
+  font-weight: bold;
+  background-color: #5b6750; /*MILITARY 2*/
+  color: #cc9a45; /* LETTERS*/
+}
+
+.linko {
+  list-style-type: none;
+  margin-left: 20px;
+}
