@@ -261,13 +261,13 @@ td {
   margin-left: 20px;
 }
 
-.content__video {
+/* .content__video {
   margin: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 .video__block {
   margin: 10px 5px 10px;
   width: 20%;
@@ -296,5 +296,22 @@ td {
 
 /* SLIDER */
 .slider__item {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-arrow {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  top: 40%;
+  z-index: 3;
+  position: absolute;
+}
+.slick-next {
+  right: 20px;
+}
+.slick-prev {
+  left: 20px;
 }
 /* SLIDER */
