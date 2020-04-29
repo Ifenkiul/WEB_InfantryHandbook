@@ -86,7 +86,7 @@ td {
   padding: 10px 10px 10px;
   border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
   border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .menu__hor__list-link--active,
@@ -98,21 +98,20 @@ td {
 
 /*MAIN - MENU*/
 .main {
-  width: 100%;  
- }
-
-.main__menu{
   width: 100%;
 }
 
-.main__menu__list{
-  display: flex;
-  justify-content:center;
-  flex-wrap: wrap; 
+.main__menu {
+  width: 100%;
 }
 
-.main__menu__list-item{
+.main__menu__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.main__menu__list-item {
   border-bottom: 2px solid #a1a188; /*MILITARY LIGHT*/
 }
 .main__menu__list-item:first-child {
@@ -122,24 +121,22 @@ td {
 .main__menu__list-item:last-child {
   border-right: 1px solid #c4c4c4;
 }
-.main__menu__list-link{
+.main__menu__list-link {
   display: block;
-font-size: 30px;
+  font-size: 30px;
   line-height: 30px;
   color: #a1a188; /*MILITARY LIGHT*/
   text-decoration: none;
   font-family: 'Neucha', sans-serif;
-  
+
   max-width: 300px;
   padding: 10px 10px 10px;
   border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
   border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
-  transition: all .3s; 
+  transition: all 0.3s;
 }
 
-
-.main__menu__list-link:hover{
- 
+.main__menu__list-link:hover {
   background-color: #5b6750; /*MILITARY 2*/
   color: white;
 }
@@ -151,14 +148,13 @@ font-size: 30px;
   width: 100%;
 }
 .menu__content {
- 
   padding: 5px 5px 5px;
   width: 100%;
 }
-.menu__table{
+.menu__table {
   width: 100%;
 }
-.menu__table td{
+.menu__table td {
   background-color: #5b6750; /*MILITARY 2*/
 }
 .content__menu-item {
@@ -264,3 +260,41 @@ font-size: 30px;
   list-style-type: none;
   margin-left: 20px;
 }
+
+.content__video {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video__block {
+  margin: 10px 5px 10px;
+  width: 20%;
+  background-color: #5b6750; /*MILITARY 2*/
+  height: 250px;
+  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border-radius: 10px;
+}
+
+.video__block-frame {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.video__block hr {
+  margin: 0;
+}
+
+.video__block-descript {
+  color: #a1a188; /*MILITARY LIGHT*/
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Neucha', sans-serif;
+}
+
+/* SLIDER */
+.slider__item {
+}
+/* SLIDER */
