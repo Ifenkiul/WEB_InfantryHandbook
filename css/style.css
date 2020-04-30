@@ -52,7 +52,7 @@ td {
 }
 
 .logo {
-  margin: 20px 0 0px;
+  margin: 0;
   padding-bottom: 20px;
 }
 
@@ -212,7 +212,7 @@ td {
 
 #menu-mini li a {
   text-decoration: none;
-  color: #444c38; /*OLIVE*/
+  color: #a1a188; /*MILITARY LIGHT*/
   font-weight: bold;
   font-family: 'Neucha', sans-serif;
 }
@@ -220,18 +220,19 @@ td {
 #menu-mini li a:hover {
   text-decoration: none;
   background-color: #444c38;
-  color: #cc9a45;
+  color: white;
   border-radius: 5px;
   border: 1px dotted #cc9a45; /* LETTERS*/
   font-weight: bold;
 }
 #mini {
-  border: 1px dotted #444c38; /*OLIVE*/
+  text-align: center;
+  border: 1px dotted #a1a188; /*MILITARY LIGHT*/
   border-radius: 5px;
   position: fixed;
   top: 0px;
   right: 0px;
-  background-color: #cc9a45;
+  background-color: #5b6750; /*MILITARY 2*/
   margin: 0;
 }
 
@@ -251,8 +252,10 @@ td {
   font-weight: bold;
 }
 #show-hide-pidmenu {
+  border: none;
+  outline: none;
+  background-color: transparent;
   font-weight: bold;
-  background-color: #5b6750; /*MILITARY 2*/
   color: #cc9a45; /* LETTERS*/
 }
 
@@ -261,13 +264,7 @@ td {
   margin-left: 20px;
 }
 
-/* .content__video {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
+/* VIDEO ELEMENT*/
 .video__block {
   margin: 10px 5px 10px;
   width: 20%;
@@ -293,6 +290,7 @@ td {
   text-align: center;
   font-family: 'Neucha', sans-serif;
 }
+/* VIDEO ELEMENT*/
 
 /* SLIDER */
 .slider__item {
@@ -315,3 +313,23 @@ td {
   left: 20px;
 }
 /* SLIDER */
+
+/* FOOTER LOGO */
+.footer__logo {
+  width: 100%;
+  min-height: 40px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__logo-bottom {
+  background-color: #5b6750; /*MILITARY 2*/
+  margin-top: 20px;
+}
+
+.footer__logo-link {
+  display: block;
+  padding: 5px 5px 5px;
+}
+/* FOOTER LOGO */
