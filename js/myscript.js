@@ -1,12 +1,13 @@
 'use strict';
 $(function () {
   $('.slider').slick({
-    nextArrow:
-      '<button class="slick-arrow slick-next"><img src="img/next.png"></button>',
-    prevArrow:
-      '<button class="slick-arrow slick-prev"><img src="img/prev.png"></button>',
+    arrows: true,
+    dots: true,
+    adaptiveHeight: true,
     slidesToShow: 3,
     slidesToScroll: 3,
+    speed: 600,
+    infinite: false,
   });
 });
 
