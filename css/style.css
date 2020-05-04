@@ -551,7 +551,7 @@ td {
 .mini__menu {
   position: fixed;
   background-color: #5b6750; /*MILITARY 2*/
-  bottom: 70px;
+  bottom: 130px;
   right: -100%;
   border: 2px solid black;
   border-top-left-radius: 10px;
@@ -566,7 +566,7 @@ td {
 }
 .mini__menu__list-link {
   display: block;
-  padding: 5px 5px 5px;
+  padding: 5px 5px 10px;
   color: black;
   text-decoration: none;
   font-size: 24px;
