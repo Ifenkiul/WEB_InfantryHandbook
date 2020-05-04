@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<title>Infantry Handbook</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -11,6 +12,49 @@
 </head>
 
 <body>
+
+	<!-- MOBILE HEADER -->
+	<header class="mobile__header">
+		<div class="mobile__menu">
+			<ul class="mobile__menu__hor__list">
+				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link 
+										" href="../index.html">ГОЛОВНА</a></li>
+				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
+										" href="../handbook.html">ДОВІДНИК</a></li>
+				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
+										" href="../library.html">БІБЛІОТЕКА</a></li>
+				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
+																	" href="video.html">ВІДЕОТЕКА</a></li>
+				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
+										" href="../links.html">ПОСИЛАННЯ</a></li>
+
+			</ul>
+		</div>
+
+		<div class="mobile__mini">
+			<ul class="mobile__mini__menu__list">
+				<li><a class="mobile__mini__menu-link" href="../handbook.html">МЕНЮ</a></li>
+				<li><a class="mobile__mini__menu-link" href="#1">ТТХ. Призначення і загальні відомості.</a></li>
+				<li><a class="mobile__mini__menu-link" href="#2">Загальна будова. Неповне розбирання</a></li>
+				<li><a class="mobile__mini__menu-link" href="#3">Приведення до нормального бою.</a></li>
+				<li><a class="mobile__mini__menu-link" href="#4">Експлуатація та обслуговування</a></li>
+				<li><a class="mobile__mini__menu-link" href="#5">Правила стрільби</a></li>
+				<li><a class="mobile__mini__menu-link" href="#6">Призначення основних частин і механізмів</a></li>
+				<li><a class="mobile__mini__menu-link" href="#7">Балістична таблиця</a></li>
+			</ul>
+		</div>
+
+		<div class="mobile__mini-logo">
+			<img class="mobile__mini-logo-image" src="img/eye.png">
+		</div>
+		<div class="mobile__header-title">ДОВІДНИК ПІХОТИНЦЯ</div>
+		<div class="mobile__logo">
+			<img class="mobile__logo-image" src="../img/google2.png">
+		</div>
+
+	</header>
+	<!-- MOBILE HEADER -->
+
 	<!--HEADER-->
 	<header class="header">
 		<div class="logo">
@@ -1410,30 +1454,40 @@
 
 
 	</main>
+
 	<!--MINI MENU-->
-	<footer id="mini">
-		<div>
-			<button id="show-hide-pidmenu" onclick="hideHide()"><img class="eye" src="img/closed.png" width="50%"
-					height="50%"></button>
+	<footer class="mini">
+		<img class="mini__btn" src="img/compass.png" alt="mini button image" width="100%">
+		<nav class="mini__menu">
 
-			<ul id="menu-mini">
-				<li><a href="../handbook.html">МЕНЮ</a></li>
-				<li><a href="#1">ТТХ. Призначення і загальні відомості.</a></li>
-				<li><a href="#2">Загальна будова. Неповне розбирання</a></li>
-				<li><a href="#3">Приведення до нормального бою.</a></li>
-				<li><a href="#4">Експлуатація та обслуговування</a></li>
-				<li><a href="#5">Правила стрільби</a></li>
-				<li><a href="#6">Призначення основних частин і механізмів</a></li>
-				<li><a href="#7">Балістична таблиця</a></li>
-
+			<ul class="mini__menu__list">
+				<li><a class="mini__menu__list-link" href="../handbook.html">НАЗАД</a></li>
+				<li><a class="mini__menu__list-link" href="#1">ТТХ. Призначення і загальні відомості.</a></li>
+				<li><a class="mini__menu__list-link" href="#2">Загальна будова. Неповне розбирання</a></li>
+				<li><a class="mini__menu__list-link" href="#3">Приведення до нормального бою.</a></li>
+				<li><a class="mini__menu__list-link" href="#4">Експлуатація та обслуговування</a></li>
+				<li><a class="mini__menu__list-link" href="#5">Правила стрільби</a></li>
+				<li><a class="mini__menu__list-link" href="#6">Призначення основних частин і механізмів</a></li>
+				<li><a class="mini__menu__list-link" href="#7">Балістична таблиця</a></li>
 
 
 			</ul>
-		</div>
-
+		</nav>
 
 	</footer>
 	<!--MINI MENU-->
+
+	<!-- FOOTER LOGO -->
+	<footer class="footer__logo footer__logo-bottom">
+		<a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
+			class="footer__logo-link"><img src="../img/youtube_logo.png" title="visit our youtube channel"
+				alt="youtube logo"></a>
+		<a href="https://www.facebook.com/groups/634939450672724/" target="_blank" class="footer__logo-link"><img
+				src="../img/facebook_logo.png" title="visit our facebook group" alt="facebook logo"></a>
+		<a href="https://play.google.com/store/apps/details?id=com.usingbymyself.militaryhandbook" target="_blank"
+			class="footer__logo-link"><img src="../img/g_play_logo.png" title="Android app" alt="Google Play logo"></a>
+	</footer>
+	<!-- FOOTER LOGO -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../js/myscript.js"></script>
 </body>

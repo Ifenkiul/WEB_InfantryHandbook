@@ -5,6 +5,8 @@ $(function () {
       '<button class="slick-arrow slick-next"><img src="img/next.png"></button>',
     prevArrow:
       '<button class="slick-arrow slick-prev"><img src="img/prev.png"></button>',
+    slidesToShow: 3,
+    slidesToScroll: 3,
   });
 });
 
@@ -67,14 +69,22 @@ function showSlideItem(number) {
   }
 }
 
-function hideHide(argument) {
-  if (menuHidden === 0) {
-    $('#menu-mini').hide();
-    $('.eye').attr('src', 'img/eye.png');
-    menuHidden = 1;
+/*  MOBILE LOGO CLICK */
+$('.mobile__logo').click(function (event) {
+  $('.mobile__logo, .mobile__menu').toggleClass('active');
+});
+/*  MOBILE LOGO CLICK */
+
+/* MINI MENU BTN CLICK*/
+let miniLogoClicked = true;
+$('.mini__btn').click(function (event) {
+  $('.mini__btn,.mini__menu').toggleClass('active');
+  if (miniLogoClicked == false) {
+    $('.mini__btn').attr('src', 'img/compass.png');
+    miniLogoClicked = true;
   } else {
-    $('#menu-mini').show();
-    $('.eye').attr('src', 'img/closed.png');
-    menuHidden = 0;
+    $('.mini__btn').attr('src', 'img/compass_closed.png');
+    miniLogoClicked = false;
   }
-}
+});
+/* MINI MENU BTN CLICK*/
