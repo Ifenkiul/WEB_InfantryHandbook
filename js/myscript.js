@@ -11,28 +11,27 @@ $(function () {
   });
 });
 
-let menuHidden = 0;
-let localOpen = 0;
 let previousOpen = 0;
 
 //ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
-$('.menu__content__vogneva').hide();
-$('.menu__content__individual').hide();
-$('.menu__content__topography').hide();
+$('.main__menu-content.vogneva').hide();
+$('.main__menu-content.individual').hide();
+$('.main__menu-content.topography').hide();
 
 //функція приховує попередньо відкритий блок підменюшек
 function hideMenuItem(num) {
   switch (num) {
     case 1: //VOGNEVA
-      $('.menu__content__vogneva').hide();
+      $('.main__menu-content.vogneva').hide();
+      $('.main__menu-content.vogneva').toggleClass('active');
       break;
 
     case 2: //INDIVIDUAL
-      $('.menu__content__individual').hide();
+      $('.main__menu-content.individual').hide();
       break;
 
-    case 4: //TOPOGRAPHY
-      $('.menu__content__topography').hide();
+    case 3: //TOPOGRAPHY
+      $('.main__menu-content.topography').hide();
       break;
   }
 }
@@ -41,32 +40,30 @@ function hideMenuItem(num) {
 function showSlideItem(number) {
   switch (number) {
     case 1: //VOGNEVA
-      $('.menu__content__vogneva').show();
-      if (previousOpen != 0 && localOpen != 1) {
-        hideMenuItem(previousOpen);
-      }
-      localOpen = 1;
-      previousOpen = 1;
-
+      $('.main__menu-content.vogneva').show();
       break;
 
     case 2: //INDIVIDUAL
-      $('.menu__content__individual').show();
-      if (previousOpen != 0 && localOpen != 2) {
-        hideMenuItem(previousOpen);
-      }
-      localOpen = 2;
-      previousOpen = 2;
+      $('.main__menu-content.individual').show();
+
       break;
 
-    case 4: //TOPOGRAPHY
-      $('.menu__content__topography').show();
-      if (previousOpen != 0 && localOpen != 4) {
-        hideMenuItem(previousOpen);
-      }
-      localOpen = 4;
-      previousOpen = 4;
+    case 3: //TOPOGRAPHY
+      $('.main__menu-content.topography').show();
       break;
+  }
+}
+function menuItemClick(num) {
+  if (previousOpen == 0) {
+    previousOpen = num;
+    showSlideItem(num);
+  } else if (previousOpen != num) {
+    hideMenuItem(previousOpen);
+    previousOpen = num;
+    showSlideItem(num);
+  } else {
+    hideMenuItem(num);
+    previousOpen = 0;
   }
 }
 

@@ -117,7 +117,7 @@ td {
     top: 0;
     display: flex;
     justify-content: flex-end;
-    z-index: 2;
+    z-index: 5;
   }
   .mobile__header-title {
     font-size: 36px;
@@ -145,7 +145,7 @@ td {
 
     background-color: #5b6750; /*MILITARY 2*/
     top: -100%;
-    z-index: 0;
+    z-index: 6;
     transition: all 0.3s;
   }
   .mobile__menu.active {
@@ -213,46 +213,32 @@ td {
 .main {
   width: 100%;
 }
+.main__menu-item {
+  border: 2px solid #a1a188; /*MILITARY LIGHT*/
 
-.main__menu {
-  width: 100%;
+  border-radius: 5px;
+  margin: 15px 50px 15px;
 }
-
-.main__menu__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.main__menu-topic {
+  text-align: center;
+  border-bottom: 1px solid #a1a188; /*MILITARY LIGHT*/
+  cursor: pointer;
 }
-
-.main__menu__list-item {
-  border-bottom: 2px solid #a1a188; /*MILITARY LIGHT*/
-}
-.main__menu__list-item:first-child {
-  border-left: 1px solid #c4c4c4;
-}
-
-.main__menu__list-item:last-child {
-  border-right: 1px solid #c4c4c4;
-}
-.main__menu__list-link {
+.main__menu-item-link {
   display: block;
-  font-size: 30px;
-  line-height: 30px;
-  color: #a1a188; /*MILITARY LIGHT*/
+  padding: 5px 0 5px;
   text-decoration: none;
+  color: #a1a188; /*MILITARY LIGHT*/
   font-family: 'Neucha', sans-serif;
-
-  max-width: 300px;
-  padding: 10px 10px 10px;
-  border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
-  border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
-  transition: all 0.3s;
+  font-size: 30px;
+  outline: none;
+  transition: all 0.15s;
 }
-
-.main__menu__list-link:hover {
+.main__menu-item-link:hover {
   background-color: #5b6750; /*MILITARY 2*/
   color: white;
 }
+
 /*MAIN - MENU*/
 
 /*MAIN - CONTENT*/
@@ -482,7 +468,7 @@ td {
   font-size: 0;
   width: 50px;
   height: 50px;
-  z-index: 10;
+  z-index: 2;
   border-radius: 50%;
   outline: none;
   border: 1px solid #a1a188; /*MILITARY LIGHT*/
