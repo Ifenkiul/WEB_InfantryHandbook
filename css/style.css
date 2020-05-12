@@ -586,3 +586,32 @@ td {
   padding: 5px 5px 5px;
 }
 /* FOOTER LOGO */
+
+/* ------------------------- MESSAGE BOX -----------------------------*/
+.messageBox {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  font-size: 30px;
+  font-weight: 700;
+
+  background-color: #81613c;
+  text-align: center;
+  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border-radius: 5px;
+  padding: 10px 10px 10px;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.messageBox.invisible {
+  display: none;
+}
+
+.messageBox__btn {
+  font-size: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #5b6750; /*MILITARY 2*/
+}
+/* ------------------------- MESSAGE BOX -----------------------------*/
