@@ -32,6 +32,7 @@ h3 {
   margin-bottom: 10px;
   padding-left: 10px;
   color: #b7b6a0;
+  text-align: center;
 }
 
 td {
@@ -313,6 +314,15 @@ td {
   list-style-position: inside;
 }
 
+.topoProblems__div {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.handbook__video {
+  border-radius: 15px;
+}
+
 .my {
   color: green;
   font-weight: bold;
@@ -467,6 +477,7 @@ td {
   padding: 0 70px;
 }
 .slider .slick-arrow {
+  box-shadow: 0 0 10px #81613c;
   position: absolute;
   top: 50%;
   font-size: 0;
@@ -589,6 +600,8 @@ td {
 
 /* ------------------------- MESSAGE BOX -----------------------------*/
 .messageBox {
+  font-family: 'Neucha', sans-serif;
+  box-shadow: 0 0 10px red;
   position: fixed;
   top: 30%;
   left: 50%;
@@ -611,7 +624,9 @@ td {
 .messageBox__btn {
   font-size: 30px;
   margin-top: 10px;
-  border-radius: 5px;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 40%;
   background-color: #5b6750; /*MILITARY 2*/
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/
