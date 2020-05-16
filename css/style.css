@@ -72,8 +72,8 @@ td {
 
 /*MENU HORIZONTAL*/
 .menu__hor {
-  border-top: 2px solid #a1a188; /*MILITARY LIGHT*/
-  border-bottom: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border-top: 2px dashed #a1a188; /*MILITARY LIGHT*/
+  border-bottom: 2px dashed #a1a188; /*MILITARY LIGHT*/
 }
 .menu__hor__list {
   display: flex;
@@ -91,8 +91,8 @@ td {
   display: block;
   max-width: 300px;
   padding: 10px 10px 10px;
-  border-left: 1px solid #a1a188; /*MILITARY LIGHT*/
-  border-right: 1px solid #a1a188; /*MILITARY LIGHT*/
+  border-left: 1px dashed #a1a188; /*MILITARY LIGHT*/
+  border-right: 1px dashed #a1a188; /*MILITARY LIGHT*/
   transition: all 0.3s;
 }
 
@@ -216,14 +216,17 @@ td {
   width: 100%;
 }
 .main__menu-item {
-  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
   border-radius: 5px;
   margin: 15px 50px 15px;
 }
 .main__menu-topic {
   text-align: center;
-  border-bottom: 1px solid #a1a188; /*MILITARY LIGHT*/
+
   cursor: pointer;
+}
+.main__menu-content {
+  border-top: 1px dashed#a1a188; /*MILITARY LIGHT*/
 }
 .main__menu-item-link {
   display: block;
@@ -274,7 +277,7 @@ td {
 }
 
 .content__menu-link:hover {
-  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
   border-radius: 5px;
   color: white;
   background-color: #444c38; /*OLIVE*/
@@ -290,12 +293,12 @@ td {
   padding: 15px;
   text-indent: 20px;
   background-color: #898a6f; /*MILITARY LIGHT*/
-  border: 1px dotted;
+  border: 2px dashed #5b6750; /*MILITARY 2*/
   border-radius: 5px;
   line-height: 1.5;
   font-size: 20px;
   margin: 10px 10px 10px;
-
+  box-shadow: 5px 5px 10px #a1a188; /*MILITARY LIGHT*/
   font-family: 'Neucha', sans-serif;
 }
 
@@ -601,7 +604,7 @@ td {
 /* ------------------------- MESSAGE BOX -----------------------------*/
 .messageBox {
   font-family: 'Neucha', sans-serif;
-  box-shadow: 0 0 10px red;
+  box-shadow: 5px 5px 10px #a1a188; /*MILITARY LIGHT*/
   position: fixed;
   top: 30%;
   left: 50%;
@@ -610,7 +613,7 @@ td {
 
   background-color: #81613c;
   text-align: center;
-  border: 2px solid #a1a188; /*MILITARY LIGHT*/
+  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
   border-radius: 5px;
   padding: 10px 10px 10px;
   transform: translateX(-50%);
