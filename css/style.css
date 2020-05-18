@@ -610,10 +610,10 @@ td {
   left: 50%;
   font-size: 30px;
   font-weight: 700;
-
-  background-color: #81613c;
+  color: white;
+  background-color: rgba(129, 97, 60, 0.8);
   text-align: center;
-  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
+  border: 2px dashed white;
   border-radius: 5px;
   padding: 10px 10px 10px;
   transform: translateX(-50%);
@@ -627,9 +627,10 @@ td {
 .messageBox__btn {
   font-size: 30px;
   margin-top: 10px;
-  border: 2px solid black;
+  border: 2px solid #a1a188; /*MILITARY LIGHT*/
   outline: none;
   border-radius: 40%;
   background-color: #5b6750; /*MILITARY 2*/
+  color: white;
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/
