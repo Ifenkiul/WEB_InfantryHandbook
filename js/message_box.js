@@ -19,10 +19,15 @@ let messageBoxList = [
   'Щоб почати стріляти, ти як мінімум маєш знати відстань до цілі, щоб виставити відповідний приціл... Вивчай схему орієнтирів!',
   'Служба означає служіння. На благо іншим, іноді всупереч власним інтересам...',
 ];
-let number = Math.floor(Math.random() * messageBoxList.length);
-let par = document.getElementsByClassName('messageBox__text');
-let text = messageBoxList[number];
-par[0].innerText = `${text}`;
+let openOrNot = Math.floor(Math.random() * 4);
+
+if (openOrNot === 0) {
+  $('.messageBox').toggleClass('invisible');
+  let number = Math.floor(Math.random() * messageBoxList.length);
+  let par = document.getElementsByClassName('messageBox__text');
+  let text = messageBoxList[number];
+  par[0].innerText = `${text}`;
+}
 
 $('.messageBox__btn').click(function (event) {
   $('.messageBox').toggleClass('invisible');
