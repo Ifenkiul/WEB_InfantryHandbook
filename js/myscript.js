@@ -1,15 +1,35 @@
 'use strict';
-$(function () {
-  $('.slider').slick({
-    arrows: true,
-    dots: true,
-    adaptiveHeight: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    speed: 600,
-    infinite: false,
-  });
+
+/** +++++++++++++++++++++++++++MENU HORIZONTA:L FIXING  and HIGHLITING++++++++++++++++++*/
+let nav = $('.menu__hor');
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 400) {
+    nav.addClass('f-nav');
+  } else {
+    nav.removeClass('f-nav');
+  }
+  let handbookTop = $('.main__menu').offset().top;
+  let linksTop = $('.usefulLinks').offset().top;
+  let scrTop = $(this).scrollTop();
+  if (scrTop < handbookTop) {
+    $('.menu__hor__list-link.index').addClass('active');
+  } else {
+    $('.menu__hor__list-link.index').removeClass('active');
+  }
+  if (scrTop > handbookTop && scrTop < linksTop) {
+    $('.menu__hor__list-link.handbook').addClass('active');
+  } else {
+    $('.menu__hor__list-link.handbook').removeClass('active');
+  }
+
+  if (scrTop > linksTop) {
+    $('.menu__hor__list-link.links').addClass('active');
+  } else {
+    $('.menu__hor__list-link.links').removeClass('active');
+  }
 });
+/** +++++++++++++++++++++++++++MENU HORIZONTA:L FIXING  and HIGHLITING++++++++++++++++++*/
 
 let previousOpen = 0;
 
@@ -68,6 +88,9 @@ function menuItemClick(num) {
 }
 
 /*  MOBILE LOGO CLICK */
+$('.mobile__menu__hor__list-link').click(function (event) {
+  $('.mobile__logo, .mobile__menu').toggleClass('active');
+});
 $('.mobile__logo').click(function (event) {
   $('.mobile__logo, .mobile__menu').toggleClass('active');
 });

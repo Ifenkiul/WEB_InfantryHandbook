@@ -211,9 +211,13 @@ td {
 }
 /* *******************MOBILE HEADER******************** */
 
-/*MAIN - MENU*/
+/*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
 .main {
   width: 100%;
+}
+.main__menu {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .main__menu-item {
   border: 2px dashed #a1a188; /*MILITARY LIGHT*/
@@ -239,11 +243,14 @@ td {
   transition: all 0.2s;
 }
 .main__menu-item-link:hover {
-  background-color: #5b6750; /*MILITARY 2*/
   color: white;
+  text-shadow: 0 0 20px red;
+}
+.main__menu-item-link:active {
+  background-color: #a1a188; /*MILITARY LIGHT*/
 }
 
-/*MAIN - MENU*/
+/*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
 
 /*MAIN - CONTENT*/
 .content {
@@ -335,6 +342,9 @@ td {
   list-style-type: none;
   margin-left: 20px;
 }
+.usefulLinks {
+  margin-top: 100px;
+}
 
 /* VIDEO ELEMENT*/
 .video__block {
@@ -363,179 +373,6 @@ td {
   font-family: 'Neucha', sans-serif;
 }
 /* VIDEO ELEMENT*/
-
-/* SLIDER */
-
-/* Слайдер */
-.slick-slider {
-}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
-/* Ограничивающая оболочка */
-.slick-list {
-}
-/* Лента слайдов */
-.slick-track {
-}
-/* Слайд */
-.slick-slide {
-}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
-} /* Слайдер */
-.slick-slider {
-}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-  align-items: center;
-}
-/* Слайд */
-.slick-slide {
-}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
-}
-/* OUR SLIDER*/
-.slider {
-  position: relative;
-  padding: 0 70px;
-}
-.slider .slick-arrow {
-  box-shadow: 0 0 10px #81613c;
-  position: absolute;
-  top: 50%;
-  font-size: 0;
-  width: 50px;
-  height: 50px;
-  z-index: 2;
-  border-radius: 50%;
-  outline: none;
-  border: 1px solid #a1a188; /*MILITARY LIGHT*/
-  cursor: pointer;
-}
-.slider .slick-arrow:hover {
-  box-shadow: 0 0 10px white;
-}
-.slider .slick-arrow.slick-prev {
-  left: 10px;
-  background: url('../img/prev.png') 0 0 / 100% no-repeat;
-}
-.slider .slick-arrow.slick-next {
-  right: 10px;
-  background: url('../img/next.png') 0 0 / 100% no-repeat;
-}
-.slider__item {
-  max-width: 25%;
-}
-
-.slider .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider .slick-dots li {
-  list-style: none;
-  margin: 0 10px;
-}
-/* Активная точка */
-.slider .slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slider .slick-dots li button {
-  font-size: 0;
-  height: 10px;
-  width: 10px;
-  background-color: transparent;
-  border: 1px solid #a1a188; /*MILITARY LIGHT*/
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-}
-.slider .slick-dots li.slick-active button {
-  background-color: #a1a188; /*MILITARY LIGHT*/
-  outline: none;
-}
-
-/* SLIDER */
 
 /* ++++++++++++++++++++++++++++++++++ FOOTER MINI ++++++++++++++++++++++++++++++ */
 .mini {
@@ -645,3 +482,11 @@ td {
   color: #cc9a45; /* LETTERS*/
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/
+.f-nav {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #444c38; /*OLIVE*/
+}
