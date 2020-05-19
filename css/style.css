@@ -74,7 +74,18 @@ td {
 .menu__hor {
   border-top: 2px dashed #a1a188; /*MILITARY LIGHT*/
   border-bottom: 2px dashed #a1a188; /*MILITARY LIGHT*/
+  transition: all 2s;
 }
+/* клас коли скролиш і фіксує меню */
+.f-nav {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(68, 76, 56, 0.5); /*OLIVE*/
+}
+/* клас коли скролиш і фіксує меню */
 .menu__hor__list {
   display: flex;
   justify-content: center;
@@ -100,6 +111,7 @@ td {
 .menu__hor__list-link:hover {
   background-color: #5b6750; /*MILITARY 2*/
   color: white;
+  text-shadow: 0 0 15px white;
 }
 /*MENU HORIZONTAL*/
 /* *******************HEADER******************** */
@@ -482,11 +494,3 @@ td {
   color: #cc9a45; /* LETTERS*/
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/
-.f-nav {
-  z-index: 9999;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #444c38; /*OLIVE*/
-}
