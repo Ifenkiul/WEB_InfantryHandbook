@@ -256,7 +256,7 @@ td {
 }
 .main__menu-item-link:hover {
   color: white;
-  text-shadow: 0 0 20px red;
+  text-shadow: 0 0 20px white;
 }
 .main__menu-item-link:active {
   background-color: #a1a188; /*MILITARY LIGHT*/
@@ -357,34 +357,6 @@ td {
 .usefulLinks {
   margin-top: 100px;
 }
-
-/* VIDEO ELEMENT*/
-.video__block {
-  margin: 10px 5px 10px;
-  width: 20%;
-  background-color: #5b6750; /*MILITARY 2*/
-  height: 250px;
-  border: 1px solid #a1a188; /*MILITARY LIGHT*/
-  border-radius: 10px;
-}
-
-.video__block-frame {
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.video__block hr {
-  margin: 0;
-}
-
-.video__block-descript {
-  color: #a1a188; /*MILITARY LIGHT*/
-  font-size: 24px;
-  text-align: center;
-  font-family: 'Neucha', sans-serif;
-}
-/* VIDEO ELEMENT*/
 
 /* ++++++++++++++++++++++++++++++++++ FOOTER MINI ++++++++++++++++++++++++++++++ */
 .mini {
