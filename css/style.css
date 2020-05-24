@@ -38,6 +38,9 @@ h3 {
 td {
   padding: 0 5px 0;
 }
+.hr_line_modified {
+  border: 1.5px dashed #a1a188; /*MILITARY LIGHT*/
+}
 
 /* *******************HEADER******************** */
 .mobile__header {
@@ -223,88 +226,17 @@ td {
 }
 /* *******************MOBILE HEADER******************** */
 
-/*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++  MAIN +++++++++++++++++++++++++++*/
 .main {
   width: 100%;
 }
-.main__menu {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.main__menu-item {
-  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
-  border-radius: 5px;
-  margin: 15px 50px 15px;
-}
-.main__menu-topic {
-  text-align: center;
-
-  cursor: pointer;
-}
-.main__menu-content {
-  border-top: 1px dashed#a1a188; /*MILITARY LIGHT*/
-}
-.main__menu-item-link {
-  display: block;
-  padding: 5px 0 5px;
-  text-decoration: none;
-  color: #a1a188; /*MILITARY LIGHT*/
-  font-family: 'Neucha', sans-serif;
-  font-size: 30px;
-  outline: none;
-  transition: all 0.2s;
-}
-.main__menu-item-link:hover {
-  color: white;
-  text-shadow: 0 0 20px white;
-}
-.main__menu-item-link:active {
-  background-color: #a1a188; /*MILITARY LIGHT*/
-}
-
-/*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
 
 /*MAIN - CONTENT*/
 .content {
   min-width: 0;
   width: 100%;
 }
-.menu__content {
-  padding: 5px 5px 5px;
-  width: 100%;
-}
-.menu__table {
-  width: 100%;
-}
-.menu__table td {
-  background-color: #5b6750; /*MILITARY 2*/
-}
-.content__menu-item {
-  text-align: center;
-  margin: 15px 0 20px;
-  list-style-type: circle;
-  list-style-type: none;
-}
 
-.content__menu-link {
-  text-decoration: none;
-  color: #a1a188; /*MILITARY LIGHT*/
-  font-family: 'Neucha', sans-serif;
-  font-size: 24px;
-  padding: 5px 10px 5px;
-  border: 2px solid #5b6750; /*MILITARY 2*/
-}
-
-.content__menu-link:hover {
-  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
-  border-radius: 5px;
-  color: white;
-  background-color: #444c38; /*OLIVE*/
-}
-
-.list__notHero {
-  list-style-type: none;
-}
 /*MAIN - CONTENT*/
 
 .paragraph {

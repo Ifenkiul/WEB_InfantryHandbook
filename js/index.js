@@ -60,15 +60,8 @@ function menuItemClick(num) {
   }
 }
 
-/** +++++++++++++++++++++++++++MENU HORIZONTA:L FIXING  and HIGHLITING++++++++++++++++++*/
-let nav = $('.menu__hor');
-
+/** +++++++++++++++++++++++++++MENU HORIZONTAl HIGHLITING++++++++++++++++++*/
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 400) {
-    nav.addClass('f-nav');
-  } else {
-    nav.removeClass('f-nav');
-  }
   let handbookTop = $('.main__menu').offset().top;
   let scrTop = $(this).scrollTop();
   if (scrTop < handbookTop) {

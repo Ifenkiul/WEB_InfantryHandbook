@@ -9,6 +9,7 @@
 	<title>Infantry Handbook</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
 </head>
@@ -180,104 +181,85 @@
 
 		<!-- NAV -->
 		<nav class="main__menu">
-			<hr>
-			<h1>ДОВІДНИК</h1>
+
+			<h2>ДОВІДНИК</h2>
 			<div class="main__menu-item">
 
 				<div class="main__menu-topic vogneva" onclick="menuItemClick(1);">
 					<a href="#vogneva" class="main__menu-item-link">ВОГНЕВА ПІДГОТОВКА</a>
 				</div>
-				<!-- VOGNEVA MENU CONTENT-->
 
+				<!-- VOGNEVA MENU CONTENT-->
 				<div class="main__menu-content vogneva">
-					<table class="menu__table">
-						<tr>
-							<td class="menu__table-item">
-								<ul class="content__menu">
-									<li class="content__menu-item"><a class="content__menu-link" href="#">Явище
-											пострілу</a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/scouting_01.html">Розвідка цілей</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/angles.html">Кутові
-											величини</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/how_to_shoot_gun.html">Правила стрільби: стрілецька зброя</a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/ak47.html">АК-47М</a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/ak74.html">АК-74</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/rpk74.html">РПК</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/pk.html">ПК
-											(ПКМ)</a></li>
-								</ul>
-							</td>
-							<td>
-								<ul class="content__menu">
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="how_to_shoot_gren.html">Правила
-											стрільби: гранатомети</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/rpg.html">РПГ-7В</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/grenades.html">Ручні
-											уламкові гранати</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/gp25.html">ГП-25</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/dashka.html">ДШКМ</a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/utes.html">НСВ
-											"Утес"</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/ags17.html">АГС-17
-											"Пламя"</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="vogneva/spg9.html">СПГ-9
-											"Копье"</a></li>
-								</ul>
-							</td>
-						</tr>
-					</table>
+
+					<ul class="main__menu__content-list">
+						<li class="content__menu-item"><a class="content__menu-link" href="#">Явище
+								пострілу</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="vogneva/scouting_01.html">Розвідка цілей</a></li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/angles.html">Кутові
+								величини</a></li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="vogneva/how_to_shoot_gun.html">Правила стрільби:
+								стрілецька зброя</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ak47.html">АК-47М</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ak74.html">АК-74</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/rpk74.html">РПК</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/pk.html">ПК
+								(ПКМ)</a></li>
+					</ul>
+
+
+					<ul class="main__menu__content-list">
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="how_to_shoot_gren.html">Правила
+								стрільби: гранатомети</a></li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/rpg.html">РПГ-7В</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/grenades.html">Ручні
+								уламкові гранати</a></li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/gp25.html">ГП-25</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/dashka.html">ДШКМ</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/utes.html">НСВ
+								"Утес"</a></li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ags17.html">АГС-17
+								"Пламя"</a></li>
+						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/spg9.html">СПГ-9
+								"Копье"</a></li>
+					</ul>
+
+
 				</div>
 				<!-- VOGNEVA MENU CONTENT-->
 			</div>
+
 			<div class="main__menu-item">
 
 				<div class="main__menu-topic individual" onclick="menuItemClick(2);">
 					<a href="#individual" class="main__menu-item-link">ІНДИВІДУАЛЬНА ПІДГОТОВКА</a>
 				</div>
 				<!-- INDIVIDUAL MENU CONTENT-->
-
 				<div class="main__menu-content individual">
-					<table class="menu__table">
-						<tr>
-							<td class="menu__table-item">
-								<ul class="content__menu">
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="individual/basic.html">БАЗА</a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="individual/berkut.html">Ігор Беркут. Посібник з індивідуальної
-											підготовки.</a>
-									</li>
 
-
-							</td>
-
-						</tr>
-					</table>
-
+					<ul class="main__menu__content-list">
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="individual/basic.html">БАЗА</a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link" href="individual/berkut.html">Ігор
+								Беркут. Посібник з індивідуальної
+								підготовки.</a>
+						</li>
+					</ul>
 
 				</div>
 				<!-- INDIVIDUAL MENU CONTENT-->
-
 			</div>
 
 			<div class="main__menu-item">
@@ -288,39 +270,37 @@
 				<!-- TOPOGRAPHY MENU CONTENT-->
 
 				<div class="main__menu-content topography">
-					<table class="menu__table">
-						<tr>
-							<td class="menu__table-item">
-								<ul class="content__menu">
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/01orientation.html">Орієнтування на місцевості.
-											Цілевказання. </a>
-									</li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/02vectors.html">Визначення напряму на сторони горизонту
-										</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/03azimut.html">Магнітний азимут </a></li>
-									<li class="content__menu-item"><a href="topography/problems.html"
-											class="content__menu-link">Вирішення задач</a></li>
 
+					<ul class="main__menu__content-list">
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/01orientation.html">Орієнтування на
+								місцевості.
+								Цілевказання. </a>
+						</li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/02vectors.html">Визначення напряму на
+								сторони горизонту
+							</a></li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/03azimut.html">Магнітний азимут </a>
+						</li>
+						<li class="content__menu-item"><a href="topography/problems.html"
+								class="content__menu-link">Вирішення задач</a>
+						</li>
+					</ul>
 
-							</td>
-							<td>
-								<ul class="content__menu">
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/04angles_distances.html">Визначення кутів та відстаней на
-											місцевості </a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/coordinates.html">Координати цілі за даними з СП</a></li>
-									<li class="content__menu-item"><a class="content__menu-link"
-											href="topography/maps.html">Топографічні карти </a></li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-
-
+					<ul class="main__menu__content-list">
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/04angles_distances.html">Визначення
+								кутів та відстаней на
+								місцевості </a></li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/coordinates.html">Координати цілі за
+								даними з СП</a></li>
+						<li class="content__menu-item"><a class="content__menu-link"
+								href="topography/maps.html">Топографічні карти </a>
+						</li>
+					</ul>
 				</div>
 				<!-- TOPOGRAPHY MENU CONTENT-->
 			</div>
@@ -332,60 +312,66 @@
 				<!-- LINKS MENU CONTENT-->
 
 				<div class="main__menu-content links">
-					<h3>ЮРИДИЧНА ДОПОМОГА</h3>
-					<div class="paragraph">
-						<ul>
-							<li>Юридична сотня - дуже корисний ресурс, думю знають майже всі військові. Надають юридичну
-								допомогу та роз'яснення багатьох спірних питань, що виникають під час та після служби.
-								<ul class="linko">
-									<li><a href="https://legal100.org.ua/pro-nas/">Сайт</a></li>
-									<li><a href="https://www.facebook.com/yursotnya/">Сторінка Facebook</a></li>
-								</ul>
-							</li>
-							<li>Медійна ініціатива за права людей
-								<ul class="linko">
-									<li><a href="https://mipl.org.ua/contacts/">Сайт</a></li>
-									<li><a href="https://www.facebook.com/MediaInitiativeForHumanRights/">Сторінка
-											Facebook</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+					<div>
+						<h3>ЮРИДИЧНА ДОПОМОГА</h3>
+						<div class="paragraph">
+							<ul>
+								<li>Юридична сотня - дуже корисний ресурс, думю знають майже всі військові. Надають
+									юридичну
+									допомогу та роз'яснення багатьох спірних питань, що виникають під час та після
+									служби.
+									<ul class="linko">
+										<li><a href="https://legal100.org.ua/pro-nas/">Сайт</a></li>
+										<li><a href="https://www.facebook.com/yursotnya/">Сторінка Facebook</a></li>
+									</ul>
+								</li>
+								<li>Медійна ініціатива за права людей
+									<ul class="linko">
+										<li><a href="https://mipl.org.ua/contacts/">Сайт</a></li>
+										<li><a href="https://www.facebook.com/MediaInitiativeForHumanRights/">Сторінка
+												Facebook</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+						</div>
+						<h3>ВОЛОНТЕРСЬКІ ОРГАНІЗАЦІЇ</h3>
+						<div class="paragraph">
+							<ul>
+								<li>Повернись живим
+									<ul class="linko">
+										<li><a href="https://savelife.in.ua/ru/">Сайт</a></li>
+										<li><a href="https://www.facebook.com/backandalive/">Сторінка Facebook</a></li>
+									</ul>
+								</li>
+								<li>Армія СОС
+									<ul class="linko">
+										<li><a href="https://armysos.com.ua/?lang=uk">Сайт</a></li>
+										<li><a href="">Сторінка Facebook</a></li>
+									</ul>
+								</li>
+								<li>Армор</li>
+								<li>Народний тил
+									<ul class="linko">
+										<li><a href="https://www.facebook.com/nt.org.ua/">Сторінка Facebook</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<h3>ІНФОРМАЦІЙНІ РЕСУРСИ</h3>
+						<div class="paragraph">
+							<ul>
+								<li>Український мілітарний портал
+									<ul class="linko">
+										<li><a href="https://mil.in.ua/uk/">Сайт</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 
 					</div>
-					<h3>ВОЛОНТЕРСЬКІ ОРГАНІЗАЦІЇ</h3>
-					<div class="paragraph">
-						<ul>
-							<li>Повернись живим
-								<ul class="linko">
-									<li><a href="https://savelife.in.ua/ru/">Сайт</a></li>
-									<li><a href="https://www.facebook.com/backandalive/">Сторінка Facebook</a></li>
-								</ul>
-							</li>
-							<li>Армія СОС
-								<ul class="linko">
-									<li><a href="https://armysos.com.ua/?lang=uk">Сайт</a></li>
-									<li><a href="">Сторінка Facebook</a></li>
-								</ul>
-							</li>
-							<li>Армор</li>
-							<li>Народний тил
-								<ul class="linko">
-									<li><a href="https://www.facebook.com/nt.org.ua/">Сторінка Facebook</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<h3>ІНФОРМАЦІЙНІ РЕСУРСИ</h3>
-					<div class="paragraph">
-						<ul>
-							<li>Український мілітарний портал
-								<ul class="linko">
-									<li><a href="https://mil.in.ua/uk/">Сайт</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+
 				</div>
 				<!-- LINKS MENU CONTENT-->
 			</div>

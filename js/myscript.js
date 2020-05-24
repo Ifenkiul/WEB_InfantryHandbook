@@ -22,3 +22,13 @@ $('.mini__btn').click(function (event) {
   }
 });
 /* MINI MENU BTN CLICK*/
+
+let nav = $('.menu__hor');
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 400) {
+    nav.addClass('f-nav');
+  } else {
+    nav.removeClass('f-nav');
+  }
+});
