@@ -116,6 +116,9 @@ td {
   color: white;
   text-shadow: 0 0 15px white;
 }
+.menu__hor__list-link:active {
+  text-shadow: 0 0 15px red;
+}
 /*MENU HORIZONTAL*/
 /* *******************HEADER******************** */
 
@@ -304,6 +307,12 @@ td {
   outline: none;
   background-color: #5b6750; /*MILITARY 2*/
 }
+.mini__btn:hover {
+  box-shadow: 0 0 10px white;
+}
+.mini__btn:active {
+  box-shadow: 0 0 10px red;
+}
 .mini__btn.active {
   src: url(../img/eye.png);
 }
@@ -334,7 +343,12 @@ td {
 }
 .mini__menu__list-link:hover {
   color: white;
+  text-shadow: 0 0 15px white;
 }
+.mini__menu__list-link:active {
+  text-shadow: 0 0 15px red;
+}
+
 /* +++++++++++++++++++++++++++ FOOTER MINI++++++++++++++++++++++++++++++++++  */
 
 /* FOOTER LOGO */
@@ -355,6 +369,7 @@ td {
   display: block;
   padding: 5px 5px 5px;
 }
+
 /* FOOTER LOGO */
 
 /* ------------------------- MESSAGE BOX -----------------------------*/
@@ -396,5 +411,6 @@ td {
 }
 .messageBox__btn:active {
   color: #cc9a45; /* LETTERS*/
+  box-shadow: 0 0 10px red;
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/

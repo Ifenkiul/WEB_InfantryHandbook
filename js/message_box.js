@@ -19,7 +19,7 @@ let messageBoxList = [
   'Щоб почати стріляти, ти як мінімум маєш знати відстань до цілі, щоб виставити відповідний приціл... Вивчай схему орієнтирів!',
   'Служба означає служіння. На благо іншим, іноді всупереч власним інтересам...',
 ];
-let openOrNot = Math.floor(Math.random() * 3);
+let openOrNot = Math.floor(Math.random() * 5);
 
 if (openOrNot === 0) {
   $('.messageBox').toggleClass('invisible');

@@ -43,7 +43,7 @@
   text-shadow: 0 0 20px white;
 }
 .main__menu-item-link:active {
-  background-color: #a1a188; /*MILITARY LIGHT*/
+  text-shadow: 0 0 20px red;
 }
 main__menu__content-list {
   display: block;
@@ -70,7 +70,7 @@ main__menu__content-list {
   text-shadow: 0 0 20px white;
 }
 .content__menu-link:active {
-  color: red;
+  text-shadow: 0 0 15px red;
 }
 
 /*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
