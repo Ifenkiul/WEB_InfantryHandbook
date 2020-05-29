@@ -98,19 +98,69 @@ header h3 {
 .content h2,
 h3 {
   text-align: center;
+  padding-bottom: 20px;
 }
 .paragraph {
+  line-height: 30px;
+  color: white;
   background-color: var(--color--bej);
   padding: 25px;
   overflow: hidden;
-  border: 1.5px dashed white;
+  border: 2px dashed white;
   border-radius: 10px;
+  box-shadow: 0 0 15px black;
 }
 .paragraph p {
   padding-bottom: 15px;
-  line-height: 30px;
 }
 /* ------------------------------ HANDBOOK CONTENT ----------------------------*/
+
+/*----------------------------MAIL FORM-------------------------------------*/
+.main__recruit {
+  margin: 20px auto;
+  width: 70%;
+  background-color: #a3a380;
+  border: 2px dashed white;
+  box-shadow: 0 0 20px black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.main__recruit h3,
+h4 {
+  text-align: center;
+}
+.recruit__form-image {
+  padding: 30px;
+}
+.main__recruit__input {
+  border-radius: 5px;
+  background-color: #d6ce93;
+  padding: 20px;
+  border: 1px dashed white;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 0 0 15px black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  caret-color: red;
+}
+.main__recruit__input.btn:hover {
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 15px lightgray;
+}
+.main__recruit__input.btn.submit:active {
+  color: green;
+  box-shadow: 0 0 15px green;
+}
+.main__recruit__input.btn.reset:active {
+  color: red;
+  box-shadow: 0 0 15px red;
+}
+/*----------------------------MAIL FORM-------------------------------------*/
 
 /*-------------------------- MINI MENU ---------------------------------------*/
 .mini {
@@ -118,6 +168,7 @@ h3 {
   border: none;
 }
 .mini__btn {
+  outline: none;
   display: block;
   position: fixed;
   bottom: 10px;
@@ -131,19 +182,19 @@ h3 {
   cursor: pointer;
 }
 .mini__btn:hover {
-  box-shadow: 0 0 10px 10px black;
+  box-shadow: 0 0 15px 10px white;
 }
 .mini__btn:active {
-  box-shadow: 0 0 10px 10px white;
+  box-shadow: 0 0 15px 10px black;
 }
 .mini__menu {
   display: none;
 }
 .mini__menu:hover {
-  box-shadow: 0 0 10px 10px black;
+  box-shadow: 0 0 15px 10px white;
 }
 .mini__menu:active {
-  box-shadow: 0 0 10px 10px white;
+  box-shadow: 0 0 15px 10px black;
 }
 .mini__menu.active {
   text-align: justify;
