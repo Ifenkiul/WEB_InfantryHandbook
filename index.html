@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Довідкова інформація військової тематики для піхотних підрозділів">
 	<meta name="google-site-verification" content="QzKAJWOZ3CQn5j3knRfZZCwL3Fhir5BDNx7GSqcCMmU" />
 	<title>Infantry Handbook</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
@@ -15,380 +16,254 @@
 </head>
 
 <body>
-
-	<!-- MOBILE HEADER -->
-	<header class="mobile__header">
-
-		<div class="mobile__menu">
-			<ul class="mobile__menu__hor__list">
-				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link 
-												" href="index.html">ГОЛОВНА</a></li>
-				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
-												" href="index.html#handbook">ДОВІДНИК</a></li>
-				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
-																	" href="#">РОЗРАХУНКИ</a></li>
-				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
-												" href="library.html">БІБЛІОТЕКА</a></li>
-				<li class="mobile__menu__hor__list-item"><a class="mobile__menu__hor__list-link
-																			" href="video.html">ВІДЕОТЕКА</a></li>
-
+	<header>
+		<nav class="header__menu-main">
+			<ul class="header__menu-main-list">
+				<li class="header__menu-main-list-item"> <a href="#" class="header__menu-main-list-link">ГОЛОВНА</a>
+				</li>
+				<li class="header__menu-main-list-item"> <a href="handbook.html"
+						class="header__menu-main-list-link">ДОВІДНИК</a>
+				</li>
+				<li class="header__menu-main-list-item"><a href="#" class="header__menu-main-list-link">РОЗРАХУНКИ</a>
+				</li>
 			</ul>
-			<!-- FOOTER LOGO - TOP -->
-			<footer class="footer__logo ">
-				<a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
-					class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
-						alt="youtube logo"></a>
-				<a href="https://www.facebook.com/groups/634939450672724/" target="_blank"
-					class="footer__logo-link"><img src="img/facebook_logo.png" title="visit our facebook group"
-						alt="facebook logo"></a>
-				<a href="https://play.google.com/store/apps/details?id=com.usingbymyself.militaryhandbook"
-					target="_blank" class="footer__logo-link"><img src="img/g_play_logo.png" title="Android app"
-						alt="Google Play logo"></a>
-			</footer>
-			<!-- FOOTER LOGO - TOP-->
-		</div>
-
-		<div class="mobile__header-title">ДОВІДНИК ПІХОТИНЦЯ</div>
-		<div class="mobile__logo">
-			<img class="mobile__logo-image" src="img/google2.png">
-		</div>
-
-	</header>
-	<!-- MOBILE HEADER -->
-
-	<!--HEADER-->
-	<header class="header">
-
-		<!-- FOOTER LOGO - TOP -->
-		<footer class="footer__logo ">
-			<a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
-				class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
-					alt="youtube logo"></a>
-			<a href="https://www.facebook.com/groups/634939450672724/" target="_blank" class="footer__logo-link"><img
-					src="img/facebook_logo.png" title="visit our facebook group" alt="facebook logo"></a>
-			<a href="https://play.google.com/store/apps/details?id=com.usingbymyself.militaryhandbook" target="_blank"
-				class="footer__logo-link"><img src="img/g_play_logo.png" title="Android app" alt="Google Play logo"></a>
-		</footer>
-		<!-- FOOTER LOGO - TOP-->
-
-		<div class="logo">
-			<img src="img/google2.png" height="8%" width="8%">
-
-			<h1 class="logo-label">ДОВІДНИК ПІХОТИНЦЯ</h1>
-
-		</div>
-
-		<!--NAV-->
-		<nav class="menu__hor">
-
-			<ul class="menu__hor__list">
-				<li class="menu__hor__list-item"><a class="menu__hor__list-link index active
-							" href="index.html">ГОЛОВНА</a></li>
-				<li class="menu__hor__list-item"><a class="menu__hor__list-link handbook 
-							" href="index.html#handbook">ДОВІДНИК</a></li>
-				<li class=" menu__hor__list-item"><a class="menu__hor__list-link
-														" href="#">РОЗРАХУНКИ</a></li>
-				<li class="menu__hor__list-item"><a class="menu__hor__list-link
-							" href="library.html">БІБЛІОТЕКА</a></li>
-				<li class="menu__hor__list-item"><a class="menu__hor__list-link
-														" href="video.html">ВІДЕОТЕКА</a></li>
-
-			</ul>
-
-
 		</nav>
-		<!--NAV-->
+		<img class="header__logo" src="img/google2.png" alt="Logo image">
+		<h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
+		<h3>освітній ресурс</h3>
+		<nav class="header__menu-local">
+			<ul class="header__menu-local-list">
+				<li class="header__menu-local-item"><a href="#brother" class="header__menu-local-link">БРАТЕ</a>
+				</li>
+				<li class="header__menu-local-item"><a href="#about" class="header__menu-local-link">ПРО РЕСУРС</a>
+				</li>
+				<li class="header__menu-local-item"><a href="#mail" class="header__menu-local-link">ЗВОРОТНІЙ
+						ЗВ'ЯЗОК</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-	<!--HEADER-->
 
+	<main>
+		<!--CONTENT-->
 
-	<!--MAIN-->
-	<main class="main">
-
-		<div class="content">
-			<!--CONTENT-->
-			<div class="paragraph">
+		<div id="brother" class="main__intro">
+			<div class="main__intro-content">
 				<ul class="list__notHero">
 					<li>Якщо ти був на війні, це ще не означає, що ти герой...</li>
+					<li>Якщо ти кричиш голосніше за інших на всіх перестанках "Слава Україні", це ще не означає, що ти
+						герой
+						і
+						патріот...</li>
+					<li>Якщо у тебе купа нагород, це ще не значить, що ти герой...</li>
 					<li>Якщо у тебе купа класних фоток в крутому еквіпі з крутими стволами, це ще не значить що ти
 						герой...
 					</li>
-					<li>Якщо ти кричиш голосніше всіх на всіх перестанках "Слава Україні", це ще не означає, що ти герой
-						і
-						патріот...</li>
 					<li>Якщо про тебе знімають круті ролики Міністерство оборони, це ще не значить, що ти герой...</li>
-					<li>Якщо ти розсікаєш вдома на волонтерському позашляховику, це ще не значить, що ти герой</li>
-					<li>Якщо у тебе купа нагород, це ще не значить, що ти герой...</li>
+					<li>Якщо ти розсікаєш вдома на волонтерському позашляховику, це ще не значить, що на війні ти зробив
+						щось корисне, що ти герой</li>
 
 				</ul>
-
+				<img src="img/intro_logo.png" alt="">
 			</div>
-
-			<h1>Брати!!!</h1>
-			<div class="paragraph">
-				<p>Не бухайте, не паліть ганджубас, взагалі ніякої наркоти, якщо не хочете підставити інших, щоб із-за
-					вас хтось загинув чи став калікою. Ваш шанс приїхати до дому з руками і ногами значно
-					збільшиться. Не беріть чужого (доречі метал, антени, розбиті тачки це все теж чуже, навіть якщо
-					населеного
-					пункту вже фактично не існує...), не зачіпайте цивільних, не трахайтесь з місцевими дівчатами на
-					передовій
-					(хоча б з того погляду, що вас можуть тупо розводити заради інформації).
-					<br>Пацани, ви на службі, тобто ви СЛУЖИТЕ народу. Навіть якщо він потім скаже, "що він вас нікуди
-					не
-					посилав" - не втрачайте обличчя. Будьте воїнами, а не вояками... <br>
-					Ну і звичайно
-				<p style="text-align: center;">ВЧІТЬСЯ! ВЧІТЬСЯ! ВЧІТЬСЯ!</p>
-				<hr>
-				</p>
-				Сержанти!!! <br>Не забивайте на особовий склад, "дрючте" їх по бойовій, не жалійте їх аж надто, бо ж на
-				вас відповідальність за їх виживання, за те наскільки ефективно вони виконуватимуть задачі. Слідкуйте за
-				тим, щоб вони не аватарили ну і полюбе не бухайте самі, ваша поведінка - який не який приклад або
-				виправдання їхніх "подвигів".</h1>
-			</div>
-
-			<h2>Це принципи, яких ми старались дотримуватись під час служби в роті імені <br>
-				<a target="_blank" href="https://memorybook.org.ua/16/maysteruk.htm" style="color: #cc9a45;">Майстерюка
-					Романа Андрійовича</a></h2><br>
-			<div class="logo" style="text-align: center;"><img src="img/shevronMINI.png" alt="shevron roty"></div>
-
-
-			<div class="paragraph">
-				<p>Подяка моїм побратимам. За ідеї, критику, підтримку!
-					<hr>
-
-				<p>Вітаю на ресурсі "Довідник піхотинця". <br>
-					Тут я дублюю інформацію, що входить до одноіменного <a target="_blank"
-						href="https://play.google.com/store/apps/details?id=com.usingbymyself.militaryhandbook">ANDROID
-						додатку "Довідник піхотинця"</a> , а також планую розміщення додаткових матеріалів.
-				</p>
-				<p>На цьому ресурсі я практикуюсь в навчанні програмуванню, то ж він в процесі розробки. На даному
-					етапі робочими є розділи: ВОГНЕВА, ІНДИВІДУАЛКА, ТОПОГРАФІЯ, БІБЛІОТЕКА</p>
-				<p>Буду викладати не всю інформацію з настанов і інших джерел, а ту, яку вважаю самою необхідною. В
-					деяких місцях <font style="color: green;">зеленим кольором </font>відмічено те, що додано від
-					себе. Використані матеріали і інші в повному обсязі розміщені в розділі БІБЛІОТЕКА</p>
-				<p> Буду вдячний, за поради з приводу що додати, вказівки щодо помилок граматичних і по змісту тощо
-				</p>
-
-
-			</div>
-
-
-			<!--CONTENT-->
-
 		</div>
-		<a name="handbook"></a>
 
-
-		<!-- NAV -->
-		<nav class="main__menu">
-
-			<h2>ДОВІДНИК</h2>
-			<div class="main__menu-item">
-
-				<div class="main__menu-topic vogneva" onclick="menuItemClick(1);">
-					<a href="#vogneva" class="main__menu-item-link">ВОГНЕВА ПІДГОТОВКА</a>
+		<div class="main__speech">
+			<section class="main__speech-text first">
+				<div class="main__speech-text-container ">
+					<h3>БРАТИ</h3>
+					<p>Не бухайте, не вживайте наркоту, якщо не хочете
+						підставити інших, щоб із-за
+						вас хтось загинув чи став калікою, якщо не хочете потрапити в полон... Ваш шанс приїхати до дому
+						з
+						руками і ногами значно
+						збільшиться.</p>
 				</div>
-
-				<!-- VOGNEVA MENU CONTENT-->
-				<div class="main__menu-content vogneva">
-
-					<ul class="main__menu__content-list">
-						<li class="content__menu-item"><a class="content__menu-link" href="#">Явище
-								пострілу</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="vogneva/scouting_01.html">Розвідка цілей</a></li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/angles.html">Кутові
-								величини</a></li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="vogneva/how_to_shoot_gun.html">Правила стрільби:
-								стрілецька зброя</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ak47.html">АК-47М</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ak74.html">АК-74</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/rpk74.html">РПК</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/pk.html">ПК
-								(ПКМ)</a></li>
-					</ul>
-
-
-					<ul class="main__menu__content-list">
-						<li class="content__menu-item"><a class="content__menu-link" href="#">Правила
-								стрільби: гранатомети</a></li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/rpg.html">РПГ-7В</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/grenades.html">Ручні
-								уламкові гранати</a></li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/gp25.html">ГП-25</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/dashka.html">ДШКМ</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/utes.html">НСВ
-								"Утес"</a></li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/ags17.html">АГС-17
-								"Пламя"</a></li>
-						<li class="content__menu-item"><a class="content__menu-link" href="vogneva/spg9.html">СПГ-9
-								"Копье"</a></li>
-					</ul>
-
-
-				</div>
-				<!-- VOGNEVA MENU CONTENT-->
+			</section>
+			<div class="main__speech-image first">
+				<img src="img/main_alcoholic.JPG" alt="Soldier Alcoholic syndrom">
 			</div>
 
-			<div class="main__menu-item">
-
-				<div class="main__menu-topic individual" onclick="menuItemClick(2);">
-					<a href="#individual" class="main__menu-item-link">ІНДИВІДУАЛЬНА ПІДГОТОВКА</a>
+			<div class="main__speech-image second">
+				<img src="img/main_angry.jpg" alt="Soldier Alcoholic syndrom">
+			</div>
+			<section class="main__speech-text second">
+				<div class="main__speech-text-container">
+					<h3>МРАЗОТА</h3>
+					<p> Якщо ти згвалтував,
+						навіть сєпаршу - ти достоїн розстрілу на місці, ти заплямував честь нашу.
+						Бо і ворог чинить так само, чим ти тоді кращий... <br>
+						Воюй так, щоб не було, що приховувати від онуків
+					</p>
 				</div>
-				<!-- INDIVIDUAL MENU CONTENT-->
-				<div class="main__menu-content individual">
 
-					<ul class="main__menu__content-list">
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="individual/basic.html">БАЗА</a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link" href="individual/berkut.html">Ігор
-								Беркут. Посібник з індивідуальної
-								підготовки.</a>
-						</li>
-					</ul>
-
+			</section>
+			<section class="main__speech-text third">
+				<div class="main__speech-text-container">
+					<h3>ЗАХИСНИКИ</h3>
+					<p>
+						Не беріть чужого (метал, антени, розбиті тачки, ворота... це все теж чуже, навіть
+						якщо населеного пункту вже фактично не існує...). Не зачіпайте цивільних, не спіть з місцевими
+						дівчатами на передовій
+						(хоча б з того погляду, що вас можуть тупо розводити заради інформації або привести п'яного як
+						теля
+						до сєпарів, хто в курсі, той зрозуміє).
+					</p>
 				</div>
-				<!-- INDIVIDUAL MENU CONTENT-->
+			</section>
+			<div class="main__speech-image third">
+				<img src="img/main_looting.jpg" alt="Military looting">
 			</div>
 
-			<div class="main__menu-item">
-
-				<div class="main__menu-topic topography" onclick="menuItemClick(3);">
-					<a href="#topography" class="main__menu-item-link">ВІЙСЬКОВА ТОПОГРАФІЯ</a>
+			<div class="main__speech-image forth">
+				<img src="img/index_main_training.jpg" alt="Military looting">
+			</div>
+			<section class="main__speech-text forth">
+				<div class="main__speech-text-container">
+					<h3>КОМАНДИРИ</h3>
+					<p>
+						Не забивайте на особовий склад. Ваша задача не принижувати їх гідність, а "дрючити" по бойовій,
+						не
+						жалійте їх аж надто, не женіться за дешевим авторитетом, щоб вас всі любили. На
+						вас відповідальність за їх виживання, за ефективне виконання ними поставленої задачі.
+						Слідкуйте за
+						тим, щоб вони не аватарили, не бухайте самі, ваша поведінка - приклад або
+						виправдання їхніх "подвигів".
+					</p>
 				</div>
-				<!-- TOPOGRAPHY MENU CONTENT-->
+			</section>
 
-				<div class="main__menu-content topography">
-
-					<ul class="main__menu__content-list">
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/01orientation.html">Орієнтування на
-								місцевості.
-								Цілевказання. </a>
-						</li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/02vectors.html">Визначення напряму на
-								сторони горизонту
-							</a></li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/03azimut.html">Магнітний азимут </a>
-						</li>
-						<li class="content__menu-item"><a href="topography/problems.html"
-								class="content__menu-link">Вирішення задач</a>
-						</li>
-					</ul>
-
-					<ul class="main__menu__content-list">
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/04angles_distances.html">Визначення
-								кутів та відстаней на
-								місцевості </a></li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/coordinates.html">Координати цілі за
-								даними з СП</a></li>
-						<li class="content__menu-item"><a class="content__menu-link"
-								href="topography/maps.html">Топографічні карти </a>
-						</li>
-					</ul>
+			<section class="main__speech-text fifth">
+				<div class="main__speech-text-container">
+					<h3>ПАЦАНИ!</h3>
+					<p>Ви на службі, тобто ви СЛУЖИТЕ народу. Навіть якщо він потім скаже, "що він вас
+						нікуди
+						не
+						посилав" - не втрачайте обличчя. Ви - сильні, поставлені захищати слабих. Будьте воїнами, а не
+						вояками... Ну і звичайно
+					</p>
+					<p style="text-align: center;">ВЧІТЬСЯ! ВЧІТЬСЯ! ВЧІТЬСЯ!</p>
 				</div>
-				<!-- TOPOGRAPHY MENU CONTENT-->
+			</section>
+			<div class="main__speech-image fifth">
+				<img src="img/index_main_zsu.jpg" alt="Military looting">
 			</div>
 
-			<div id="links" class="main__menu-item">
-				<div class="main__menu-topic links" onclick="menuItemClick(4);">
-					<a href="#links" class="main__menu-item-link">КОРИСНІ ПОСИЛАННЯ</a>
-				</div>
-				<!-- LINKS MENU CONTENT-->
-
-				<div class="main__menu-content links">
-					<div>
-						<h3>ЮРИДИЧНА ДОПОМОГА</h3>
-						<div class="paragraph">
-							<ul>
-								<li>Юридична сотня - дуже корисний ресурс, думю знають майже всі військові. Надають
-									юридичну
-									допомогу та роз'яснення багатьох спірних питань, що виникають під час та після
-									служби.
-									<ul class="linko">
-										<li><a href="https://legal100.org.ua/pro-nas/">Сайт</a></li>
-										<li><a href="https://www.facebook.com/yursotnya/">Сторінка Facebook</a></li>
-									</ul>
-								</li>
-								<li>Медійна ініціатива за права людей
-									<ul class="linko">
-										<li><a href="https://mipl.org.ua/contacts/">Сайт</a></li>
-										<li><a href="https://www.facebook.com/MediaInitiativeForHumanRights/">Сторінка
-												Facebook</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-
-						</div>
-						<h3>ВОЛОНТЕРСЬКІ ОРГАНІЗАЦІЇ</h3>
-						<div class="paragraph">
-							<ul>
-								<li>Повернись живим
-									<ul class="linko">
-										<li><a href="https://savelife.in.ua/ru/">Сайт</a></li>
-										<li><a href="https://www.facebook.com/backandalive/">Сторінка Facebook</a></li>
-									</ul>
-								</li>
-								<li>Армія СОС
-									<ul class="linko">
-										<li><a href="https://armysos.com.ua/?lang=uk">Сайт</a></li>
-										<li><a href="">Сторінка Facebook</a></li>
-									</ul>
-								</li>
-								<li>Армор</li>
-								<li>Народний тил
-									<ul class="linko">
-										<li><a href="https://www.facebook.com/nt.org.ua/">Сторінка Facebook</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<h3>ІНФОРМАЦІЙНІ РЕСУРСИ</h3>
-						<div class="paragraph">
-							<ul>
-								<li>Український мілітарний портал
-									<ul class="linko">
-										<li><a href="https://mil.in.ua/uk/">Сайт</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- LINKS MENU CONTENT-->
+			<div class="main__speech__footer">
+				<p>Це принципи, яких ми намагались дотримуватись в мотопіхотній роті імені <br>
+					<a class="main__speech__footer-link" target="_blank"
+						href="https://memorybook.org.ua/16/maysteruk.htm">Майстерюка
+						Романа Андрійовича <br>
+						<img src="img/shevronMINI.png" alt="shevron roty">
+					</a>
+				</p>
 			</div>
+		</div>
 
-		</nav>
+		<!-------------------------------- ABOUT --------------------------------------->
+		<article id="about" class="about">
+			<p>Подяка моїм побратимам. За ідеї, критику, підтримку!
+				<hr>
 
+			<p>Вітаю на ресурсі "Довідник піхотинця".</p>
+			<p>Основна мета ресурсу в першу чергу вмістити інформацію, яка частіше стає в нагоді - ТТХ зброї, як
+				привести
+				її до нормального бою, таблиці з перевищеннями траекторіїї (балістичні таблиці), матеріали з топографії
+				і т.п.</p>
+			<p>Я вирішив не розміщати повні настанови з тої чи іншої тематики в повному варіанті. Вони будуть доступні
+				для скачування в розділі "БІБЛІОТЕКА". Для перегляду будуть доступні скорочені статті з основними
+				даними,
+				що я перелічив вище.</p>
+			<p>Також я планую реалізувати певні розрахунки (розділ "РОЗРАХУНКИ") з тих, до яких приходиться звертатись
+				на службі:
+			<ul>
+				<li>Знаходженння відстані (габариту, кута спостереження) за формулою тисячних "Дуй в тисячу";</li>
+				<li>Перведення кутів із одної розмірності в іншу( тисячні, градуси, mil, MOA)</li>
+				<li>Приведення до нормального бою армійських гвинтівок - визначення величини зміщення мушки в мм та
+					обертах в залежності від віддалення СТВ від КТ;</li>
+				<li>Приведення до нормального бою коліматора - визначення необхідної кількості кліків по вертикалі та
+					горизонталів залежності від віддалення СТВ від КТ; </li>
+				<li>Можливо щось інше.</li>
+
+			</ul>
+			</p>
+			<p>Іформація викладена на сайті буде по можливості максимально дублюватися в одноіменному <a
+					href="https://play.google.com/store/apps/details?id=com.usingbymyself.infantryhandbook"
+					target="_blank">мобільному додатку
+					на ANDROID</a>, щоб до неї був доступ без наявності інтернету.</p>
+			<p>Ресурс в процесі розробки. Я вивчаю програмування то ж це - моя практична робота. На даному
+				етапі робочими є розділи: ВОГНЕВА, ІНДИВІДУАЛКА, ТОПОГРАФІЯ, БІБЛІОТЕКА, ВІДЕОТЕКА.</p>
+			<p> В деяких місцях <font style="color: green;">зеленим кольором </font>відмічено те, що додано від
+				себе. Під кожною статтею буде розділ "ВЕТЕРАНИ ГОВОРЯТЬ", де ви зможете ділитись власним досвідом з
+				тематики статті.</p>
+			<p> Буду вдячний, за:
+			<ul>
+				<li>вказівки щодо помилок граматичних і по змісту матеріалів;</li>
+				<li>ваші доповнення з досвіду або інших навчальних матеріалів;</li>
+				<li>за якісні навчальні матеріали з військової тематики;</li>
+				<li>загальні поради на предмет що ще було б непогано реалізувати на ресурсі.</li>
+
+			</ul>
+			</p>
+
+		</article>
+		<!-------------------------------- ABOUT --------------------------------------->
+
+		<!--------------------------------MAIL US--------------------------------------->
+		<article id="mail" class="main__recruit">
+			<h3>ЗВОРОТНІЙ ЗВ'ЯЗОК</h3>
+			<p style="font-size: 20px;
+			line-height: 26px;
+		margin:20px 0;">Можливо маєте уточнення з приводу розміщених матеріалів? Маєте власні матеріали для доповнення
+				довідника? Хочете вказати на помилки або недоліки? Маєте інше запитання?<br> Напишіть</p>
+			<form class="main__recruit__form" action="https://formspree.io/xknqjyya" method="POST">
+				<label>*Введіть свій позивний або ім'я <br>
+					<input class="main__recruit__input" type="text" required name="name" placeholder="Позивний/ім'я">
+				</label>
+				<br>
+				<label>В якому підрозділі служили <br>
+					<input class="main__recruit__input" type="text" required name="surname" placeholder="Підрозділ">
+				</label>
+				<br>
+				<label>*Введіть адресу електронної пошти: <br>
+					<input class="main__recruit__input" type="email" name="input_email"
+						placeholder="youremail@example.com" required>
+				</label>
+				<br>
+				<label>
+					<input class="main__recruit__input" type="checkbox" id="ak47" name="useful" value="yes">
+					Чи знайшли для себе щось корисне в довіднику:
+				</label>
+				<br>
+				<label>
+					Введіть своє запитання або побажання :
+					<br>
+					<textarea class="main__recruit__input" name="question" cols="50" rows="10"
+						placeholder="Введіть своє замовлення або запитання тут"></textarea>
+				</label>
+				<br>
+
+				<button class="main__recruit__input btn submit" type="submit" name="recruit_form_sent"
+					value="recruiter">Надіслати
+				</button>
+				<button class="main__recruit__input btn reset" type="reset" name="recruit_form_sent"
+					value="recruiter">Очистити
+				</button>
+			</form>
+		</article>
+		<!--------------------------------MAIL US--------------------------------------->
+
+		<!--CONTENT-->
 	</main>
-	<!--MAIN-->
-
 
 	<!-- FOOTER LOGO -->
-	<footer class="footer__logo footer__logo-bottom">
+	<footer>
 		<a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
 			class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
 				alt="youtube logo"></a>
 		<a href="https://www.facebook.com/groups/634939450672724/" target="_blank" class="footer__logo-link"><img
 				src="img/facebook_logo.png" title="visit our facebook group" alt="facebook logo"></a>
-		<a href="https://play.google.com/store/apps/details?id=com.usingbymyself.militaryhandbook" target="_blank"
+		<a href="https://play.google.com/store/apps/details?id=com.usingbymyself.infantryhandbook" target="_blank"
 			class="footer__logo-link"><img src="img/g_play_logo.png" title="Android app" alt="Google Play logo"></a>
 	</footer>
 	<!-- FOOTER LOGO -->

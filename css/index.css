@@ -1,82 +1,186 @@
-/*----------------------MOBILE--------------------------*/
-@media (max-width: 767px) {
-  .main__menu-content {
-    display: flex;
-    flex-wrap: wrap;
-  }
+:root {
+  --color--bej: #a3a380;
+  --color--main: #d6ce93;
 }
-/*----------------------MOBILE--------------------------*/
 
-/*---------------------- DESKTOP -------------------------*/
-.main__menu {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  border-top: 2px dashed #a1a188; /*MILITARY LIGHT*/
+/*----------------------------------------------------------------------------*/
+.main__intro {
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1.5px dashed white;
 }
-.main__menu-item {
-  border: 2px dashed #a1a188; /*MILITARY LIGHT*/
-  border-radius: 5px;
-  margin: 15px 50px 15px;
+.main__intro-content {
+  width: 80%;
+  margin: auto;
 }
-.main__menu-topic {
+.main__intro-content ul {
+  list-style-type: none;
   text-align: center;
-  cursor: pointer;
 }
-.main__menu-content {
-  border-top: 1px dashed#a1a188; /*MILITARY LIGHT*/
+.main__intro-content ul li {
+  padding: 15px 0;
+}
+.main__intro img {
+  display: block;
+  width: 25%;
+  margin: auto;
+}
+/*----------------------------------------------------------------------------*/
+.main__speech {
+  background-color: #a3a380;
+  color: white;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1.5px dashed white;
 }
 
-.main__menu-item-link {
-  display: block;
-  padding: 5px 0 5px;
-  text-decoration: none;
-  color: #a1a188; /*MILITARY LIGHT*/
-  font-family: 'Neucha', sans-serif;
-  font-size: 30px;
-  outline: none;
-  transition: all 0.2s;
+.main__speech-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main__menu-item-link:hover {
-  color: white;
-  text-shadow: 0 0 20px white;
+.main__speech-text-container {
+  width: 100%;
 }
-.main__menu-item-link:active {
-  text-shadow: 0 0 20px red;
+.main__speech-text h3 {
+  text-align: center;
+  padding: 10px 0;
 }
-main__menu__content-list {
-  display: block;
+.main__speech-text-container p {
+  text-align: justify;
+  padding: 20px;
+  line-height: 30px;
+}
+
+.main__speech-image {
+  padding: 0;
   width: 50%;
 }
-.content__menu-item {
+.main__speech-image img {
+  width: 100%;
+  vertical-align: middle;
+}
+.main__speech__footer {
+  width: 100%;
   text-align: center;
-  margin: 15px 0 20px;
-  list-style-type: none;
+  line-height: 40px;
+  padding: 30px 0 30px;
+  border-top: 1px dashed white;
 }
-
-.content__menu-link {
+.main__speech__footer-link {
+  color: black;
   text-decoration: none;
-  color: #a1a188; /*MILITARY LIGHT*/
-  font-family: 'Neucha', sans-serif;
-  font-size: 24px;
-  padding: 5px 10px 5px;
+  outline: none;
+  text-shadow: 0 0 15px black;
 }
-
-.content__menu-link:hover {
-  border-radius: 5px;
+.main__speech__footer-link:hover {
   color: white;
-  background-color: #444c38; /*OLIVE*/
-  text-shadow: 0 0 20px white;
+  text-shadow: 0 0 10px white;
 }
-.content__menu-link:active {
-  text-shadow: 0 0 15px red;
+.main__speech__footer-link:active {
+  text-shadow: 0 0 10px red;
+}
+/*---------------------------- ABOUT -------------------------------------*/
+.about {
+  width: 90%;
+  margin: 50px auto;
+  text-align: justify;
+  line-height: 30px;
+}
+.about p {
+  margin-bottom: 20px;
 }
 
-/*+++++++++++++++++++++++++++ HANDBOOK MAIN - MENU +++++++++++++++++++++++++++*/
+/*---------------------------- ABOUT ------------------------------------*/
 
-.list__notHero {
-  list-style-type: none;
+/*----------------------------MAIL FORM-------------------------------------*/
+.main__recruit {
+  margin: 20px auto;
+  width: 70%;
+  background-color: #a3a380;
+  border: 2px dashed white;
+  box-shadow: 0 0 20px black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
+.main__recruit h3,
+h4 {
+  text-align: center;
+}
+.recruit__form-image {
+  padding: 30px;
+}
+.main__recruit__input {
+  border-radius: 5px;
+  background-color: #d6ce93;
+  padding: 20px;
+  border: 1px dashed white;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 0 0 15px black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  caret-color: red;
+}
+.main__recruit__input.btn:hover {
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 15px lightgray;
+}
+.main__recruit__input.btn.submit:active {
+  color: green;
+  box-shadow: 0 0 15px green;
+}
+.main__recruit__input.btn.reset:active {
+  color: red;
+  box-shadow: 0 0 15px red;
+}
+/*----------------------------MAIL FORM-------------------------------------*/
 
-/*---------------------- DESKTOP -------------------------*/
+/*---------------------------------MOBILE-------------------------------------------*/
+@media (max-width: 767px) {
+  .main__speech-text {
+    width: 100%;
+  }
+  .main__speech-image {
+    width: 100%;
+  }
+  .main__speech-image.first {
+    order: 0;
+  }
+  .main__speech-text.first {
+    order: 1;
+  }
+  .main__speech-image.second {
+    order: 2;
+  }
+  .main__speech-text.second {
+    order: 3;
+  }
+  .main__speech-image.third {
+    order: 4;
+  }
+  .main__speech-text.third {
+    order: 5;
+  }
+  .main__speech-image.forth {
+    order: 6;
+  }
+  .main__speech-text.forth {
+    order: 7;
+  }
+  .main__speech-image.fifth {
+    order: 8;
+  }
+  .main__speech-text.fifth {
+    order: 9;
+  }
+  .main__speech__footer {
+    order: 10;
+  }
+}

@@ -1,0 +1,66 @@
+:root {
+  --color--bej: #a3a380;
+  --color--main: #d6ce93;
+}
+body {
+  max-width: 1300;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+}
+.handbook__menu {
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+.handbook__menu h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+.handbook__menu-item {
+  background-color: var(--color--bej);
+  padding: 15px;
+  border-bottom: 1.5px dashed white;
+  border-left: 1.5px dashed white;
+  border-right: 1.5px dashed white;
+}
+.handbook__menu-item.first {
+  border-top: 1.5px dashed white;
+}
+.content__menu-item {
+  padding-bottom: 20px;
+}
+.main__menu-item-link,
+.content__menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.main__menu-item-link:hover,
+.content__menu-link:hover {
+  color: black;
+  text-shadow: 0 0 15px black;
+}
+.main__menu-item-link:active,
+.content__menu-link:active {
+  color: red;
+  text-shadow: 0 0 15px red;
+}
+.handbook__menu-content {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.handbook__menu__content-list {
+  display: block;
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .handbook__menu__content-list {
+    width: 100%;
+  }
+}
