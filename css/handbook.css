@@ -58,9 +58,15 @@ main {
   display: block;
   width: 50%;
 }
+.mini {
+  display: none;
+}
 
 @media (max-width: 600px) {
   .handbook__menu__content-list {
     width: 100%;
+  }
+  .mini {
+    display: block;
   }
 }

@@ -53,6 +53,12 @@ header h3 {
   color: white;
   font-weight: bold;
 }
+.header__mobile {
+  display: none;
+}
+.header__mobile-burger {
+  display: none;
+}
 .header__logo {
   width: 15%;
 }
@@ -314,3 +320,77 @@ footer {
   box-shadow: 0 0 10px red;
 }
 /* ------------------------- MESSAGE BOX -----------------------------*/
+
+/*---------------------- MOBILE --------------------------------*/
+
+@media (max-width: 767px) {
+  /*---------------------- HEADER -------------------------*/
+  header {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--color--bej);
+    border-bottom: 2px dashed white;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__menu-main {
+    width: 100%;
+    background-color: var(--color--bej);
+    position: fixed;
+    top: 81px;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .header__menu-main-active {
+    left: 0;
+  }
+
+  .header__menu-main-list {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header__menu-main-list-item {
+    margin: 15px 0 15px;
+  }
+  .header__menu-main-list-link {
+    width: 100%;
+  }
+  .header__logo__block.mobile {
+    display: block;
+  }
+  .header__menu-local,
+  header img,
+  header h3,
+  header h1 {
+    display: none;
+  }
+  /*---------------------- HEADER -------------------------*/
+
+  .header__mobile {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .header__mobile-burger {
+    display: block;
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .header__mobile-burger:active {
+    box-shadow: 0 0 10px 15px white;
+  }
+
+  /*--------------------FORM MOBILE-----------------------*/
+  .main__recruit__input {
+    width: 100%;
+  }
+}

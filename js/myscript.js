@@ -1,13 +1,10 @@
 'use strict';
 
-/*  MOBILE LOGO CLICK */
-$('.mobile__menu__hor__list-link').click(function (event) {
-  $('.mobile__logo, .mobile__menu').toggleClass('active');
+/*  BURGER CLICK */
+$('.header__mobile-burger').click(function (event) {
+  $('.header__menu-main').toggleClass('header__menu-main-active');
 });
-$('.mobile__logo').click(function (event) {
-  $('.mobile__logo, .mobile__menu').toggleClass('active');
-});
-/*  MOBILE LOGO CLICK */
+/* BURGER CLICK */
 
 /* MINI MENU BTN CLICK*/
 let miniLogoClicked = true;
