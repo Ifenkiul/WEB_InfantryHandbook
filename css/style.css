@@ -389,6 +389,11 @@ footer {
     box-shadow: 0 0 10px 15px white;
   }
 
+  /*-------------------------- CONTENT MOBILE -------------------*/
+  .content {
+    width: 100%;
+    padding: 3px;
+  }
   /*--------------------FORM MOBILE-----------------------*/
   .main__recruit__input {
     width: 100%;
