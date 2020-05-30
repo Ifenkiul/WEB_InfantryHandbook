@@ -388,6 +388,9 @@ footer {
   .header__mobile-burger:active {
     box-shadow: 0 0 10px 15px white;
   }
+  .header__logo {
+    width: 25%;
+  }
 
   /*-------------------------- CONTENT MOBILE -------------------*/
   .content {
