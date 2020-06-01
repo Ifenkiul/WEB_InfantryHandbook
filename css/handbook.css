@@ -62,7 +62,7 @@ main {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .handbook__menu__content-list {
     width: 100%;
   }

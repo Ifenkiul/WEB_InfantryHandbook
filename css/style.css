@@ -266,7 +266,7 @@ footer {
 }
 
 .footer__logo-bottom {
-  background-color: #5b6750; /*MILITARY 2*/
+  background-color: var(--color--bej);
   margin-top: 20px;
   border-top: 1px solid #a1a188; /*MILITARY LIGHT*/
 }
@@ -370,8 +370,6 @@ footer {
   header h1 {
     display: none;
   }
-  /*---------------------- HEADER -------------------------*/
-
   .header__mobile {
     display: block;
     margin-top: 100px;
@@ -385,20 +383,29 @@ footer {
     margin-right: 20px;
     border-radius: 50%;
   }
+  .header__mobile-burger.rotate {
+    transform: rotateZ(90deg);
+  }
   .header__mobile-burger:active {
     box-shadow: 0 0 10px 15px white;
   }
   .header__logo {
     width: 25%;
   }
+  /*---------------------- HEADER -------------------------*/
 
   /*-------------------------- CONTENT MOBILE -------------------*/
   .content {
     width: 100%;
     padding: 3px;
+    font-size: 20px;
   }
   /*--------------------FORM MOBILE-----------------------*/
   .main__recruit__input {
     width: 100%;
+  }
+  /*-------------------- MESSAGE BOX MOBILE-------------------------*/
+  .messageBox {
+    width: 90%;
   }
 }

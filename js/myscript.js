@@ -3,6 +3,7 @@
 /*  BURGER CLICK */
 $('.header__mobile-burger').click(function (event) {
   $('.header__menu-main').toggleClass('header__menu-main-active');
+  $('.header__mobile-burger').toggleClass('rotate');
 });
 /* BURGER CLICK */
 
