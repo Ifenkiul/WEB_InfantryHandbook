@@ -117,16 +117,10 @@ h3 {
   border: 2px dashed white;
   border-radius: 10px;
   box-shadow: 0 0 15px black;
-}
-.paragraph * {
   padding: 15px;
 }
-.paragraph ol,
-ul {
-  margin-left: 30px;
-}
-.paragraph li {
-  padding-left: 0;
+.paragraph ol {
+  margin-left: 25px;
 }
 .paragraph img {
   border: 1px solid white;
@@ -436,6 +430,9 @@ footer {
   /*---------------------- HEADER -------------------------*/
 
   /*-------------------------- CONTENT MOBILE -------------------*/
+  main {
+    margin-top: 70px;
+  }
   .content {
     width: 100%;
     padding: 3px;
