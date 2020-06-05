@@ -60,9 +60,13 @@ function addOperations(buttonPressed) {
 document.querySelector('.delete__btn').addEventListener('click', deleteElement);
 
 function deleteElement() {
-  if (secondOperand !== '') secondOperand = '';
-  else if (operator !== '') operator = '';
-  else firstOperand = '';
+  //   if (secondOperand !== '') secondOperand = '';
+  //   else if (operator !== '') operator = '';
+  //   else firstOperand = '';
+  //   outputOnDisplay(firstOperand, operator, secondOperand);
+  firstOperand = '';
+  operator = '';
+  secondOperand = '';
   outputOnDisplay(firstOperand, operator, secondOperand);
 }
 //ВИВЕДЕННЯ НА ЕКРАН
