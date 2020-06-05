@@ -137,6 +137,7 @@ function degreeTo(firstOperand, operator) {
 
 //FUNCTION THOUSANDS TO MIL, DEGREES, MOA
 function thousandsTo(firstOperand, operator) {
+  firstOperand = parseFloat(firstOperand);
   let resultText = '';
 
   if (firstOperand > 6000) {
@@ -161,6 +162,8 @@ function thousandsTo(firstOperand, operator) {
 
 //FUNCTION DUV
 function duiThousand(firstOperand, operator, secondOperand) {
+  firstOperand = parseFloat(firstOperand);
+  secondOperand = parseFloat(secondOperand);
   let resultText = '';
   switch (operator) {
     case 'ДУВ: Відстань':
@@ -191,7 +194,7 @@ function duiThousand(firstOperand, operator, secondOperand) {
       if (firstOperand > 0 && secondOperand > 0) {
         resultText = `Кут спостереження за об'єктом складає ${(
           (firstOperand * 1000) /
-          numberBot
+          secondOperand
         ).toFixed(0)} тисячних`;
       } else {
         resultText =
