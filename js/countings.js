@@ -109,7 +109,6 @@ function countResult() {
 //FUNCTION DEGREES TO MIL, THOUSANDS, MOA
 function degreeTo(firstOperand, operator) {
   firstOperand = parseFloat(firstOperand);
-  secondOperand = parseFloat(secondOperand);
   let resultText = '';
   if (firstOperand > 360) {
     resultText =
