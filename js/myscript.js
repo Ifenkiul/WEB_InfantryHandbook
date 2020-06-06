@@ -9,16 +9,18 @@ $('.header__mobile-burger').click(function (event) {
 
 /* MINI MENU BTN CLICK*/
 let miniLogoClicked = true;
-$('.mini__btn').click(function (event) {
-  $('.mini__btn,.mini__menu').toggleClass('active');
+
+document.querySelector('.mini__btn').addEventListener('click', function () {
+  document.querySelector('.mini__menu').classList.toggle('active');
   if (miniLogoClicked == false) {
-    $('.mini__btn').attr('src', 'img/compass.png');
+    document.querySelector('.mini__btn').src = 'img/compass.png';
     miniLogoClicked = true;
   } else {
-    $('.mini__btn').attr('src', 'img/compass_closed.png');
+    document.querySelector('.mini__btn').src = 'img/compass_closed.png';
     miniLogoClicked = false;
   }
 });
+
 /* MINI MENU BTN CLICK*/
 
 let nav = $('.menu__hor');
