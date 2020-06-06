@@ -140,10 +140,11 @@ h3 {
   padding: 10px 0;
 }
 .paragraph img {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 0;
   margin-left: 10px;
 }
+
 /* ------------------------------ HANDBOOK CONTENT ----------------------------*/
 
 /*----------------------------MAIL FORM-------------------------------------*/
@@ -394,7 +395,6 @@ footer {
     top: 70px;
     left: -100%;
     transition: all 0.5s;
-    transform: rotateZ(180deg);
   }
   .header__menu-main-active {
     left: 0;
@@ -454,6 +454,9 @@ footer {
     width: 100%;
     padding: 3px;
     font-size: 20px;
+  }
+  .content-image {
+    width: 100%;
   }
   /*--------------------FORM MOBILE-----------------------*/
   .main__recruit__input {
