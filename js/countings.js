@@ -117,7 +117,7 @@ function degreeTo(firstOperand, operator) {
     switch (operator) {
       case 'Градуси в тисячні':
         resultText = `${(firstOperand * 16.66666666666667).toFixed(
-          0,
+          2,
         )} тисячних`;
         break;
 
