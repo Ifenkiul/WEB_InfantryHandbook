@@ -8,11 +8,11 @@ let firstOperand = '';
 let operator = '';
 let secondOperand = '';
 
+//Додає числа в поля в залежності від того чи введено оператор чи ні
 document
   .querySelectorAll('.number__btn')
   .forEach(button => button.addEventListener('click', addNumbers));
 
-//Додає числа в поля в залежності від того чи введено оператор чи ні
 function addNumbers(buttonPressed) {
   const buttonText = buttonPressed.target.innerText;
   const displayString = operator === '' ? firstOperand : secondOperand;

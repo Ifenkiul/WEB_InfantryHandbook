@@ -22,6 +22,11 @@ body ul li {
 main {
   width: 100%;
 }
+h2,
+h3 {
+  text-align: center;
+  margin: 10px 0;
+}
 /*------------------------------ ШАПКА -------------------------------*/
 header {
   margin: 0 0 30px 0;
@@ -127,6 +132,12 @@ h3 {
 }
 .paragraph ol {
   margin-left: 25px;
+}
+.paragraph table {
+  margin: 5px 5px;
+}
+.paragraph h3 {
+  padding: 10px 0;
 }
 .paragraph img {
   border: 1px solid white;
