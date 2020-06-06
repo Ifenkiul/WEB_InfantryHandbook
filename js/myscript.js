@@ -9,14 +9,15 @@ $('.header__mobile-burger').click(function (event) {
 
 /* MINI MENU BTN CLICK*/
 let miniLogoClicked = true;
+const miniBtn = document.querySelector('.mini__btn');
 
-document.querySelector('.mini__btn').addEventListener('click', function () {
+miniBtn.addEventListener('click', function () {
   document.querySelector('.mini__menu').classList.toggle('active');
   if (miniLogoClicked == false) {
-    document.querySelector('.mini__btn').src = 'img/compass.png';
+    miniBtn.src = 'img/compass.png';
     miniLogoClicked = true;
   } else {
-    document.querySelector('.mini__btn').src = 'img/compass_closed.png';
+    miniBtn.src = 'img/compass_closed.png';
     miniLogoClicked = false;
   }
 });
