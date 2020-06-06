@@ -1,5 +1,4 @@
 let link = sessionStorage.getItem('page');
-alert(link);
 
 fetchHtml();
 

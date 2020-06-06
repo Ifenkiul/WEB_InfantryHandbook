@@ -76,6 +76,5 @@ document
   .forEach(link => link.addEventListener('click', pushInfo));
 function pushInfo(linkPressed) {
   const linkText = linkPressed.target.innerText;
-  alert(linkText);
   let info = sessionStorage.setItem('page', linksList[linkText]);
 }
