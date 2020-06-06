@@ -59,3 +59,10 @@ function menuItemClick(num) {
     previousOpen = 0;
   }
 }
+
+// document
+//   .querySelector('.content__menu-link.content')
+//   .addEventListener('click', pushInfo);
+// function pushInfo() {
+//   let info = sessionStorage.setItem('page', 'library');
+// }
