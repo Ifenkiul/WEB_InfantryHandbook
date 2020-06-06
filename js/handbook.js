@@ -1,4 +1,10 @@
 let previousOpen = 0;
+const linksList = {
+  'Явище пострілу': '',
+  'Розвідка цілей': 'vogneva/scouting_01.html',
+  'Кутові величини': 'vogneva/angles.html',
+  'Правила стрільби стрілецька зброя': 'vogneva/how_to_shoot_gun.html',
+};
 
 //ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
 $('.handbook__menu-content.vogneva').hide();
@@ -60,9 +66,12 @@ function menuItemClick(num) {
   }
 }
 
-// document
-//   .querySelector('.content__menu-link.content')
-//   .addEventListener('click', pushInfo);
-// function pushInfo() {
-//   let info = sessionStorage.setItem('page', 'library');
-// }
+// ЗАПИСУЮ В СХОВИЩЕ СЕССІЙНЕ ЯКУ САМЕ ТЕМУ ОБРАНО
+document
+  .querySelectorAll('.content__menu-link')
+  .forEach(link => link.addEventListener('click', pushInfo));
+function pushInfo(linkPressed) {
+  const linkText = linkPressed.target.innerText;
+  alert(linkText);
+  let info = sessionStorage.setItem('page', linksList[linkText]);
+}
