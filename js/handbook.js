@@ -4,6 +4,10 @@ const linksList = {
   'Розвідка цілей': 'vogneva/scouting_01.html',
   'Кутові величини': 'vogneva/angles.html',
   'Правила стрільби стрілецька зброя': 'vogneva/how_to_shoot_gun.html',
+  'АК-47М': 'vogneva/ak47.html',
+  'АК-74': 'vogneva/ak74.html',
+  'РПК-74': 'vogneva/rpk74.html',
+  'ПК (ПКМ)': 'vogneva/pk.html',
 };
 
 //ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
