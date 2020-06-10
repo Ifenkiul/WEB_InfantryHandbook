@@ -117,17 +117,17 @@ function degreeTo(firstOperand, operator) {
     switch (operator) {
       case 'Градуси в тисячні':
         resultText = `${(firstOperand * 16.66666666666667).toFixed(
-          2,
+          1,
         )} тисячних`;
         break;
 
       case 'Градуси в MOA':
-        resultText = `${(firstOperand * 60).toFixed(2)} MOA  (кутових хвилин)`;
+        resultText = `${(firstOperand * 60).toFixed(1)} MOA  (кутових хвилин)`;
         break;
 
       case 'Градуси в Mil':
         resultText = `${(firstOperand * 17.77777777778).toFixed(
-          2,
+          1,
         )} MIL (мілірадіан)`;
         break;
     }
@@ -145,14 +145,14 @@ function thousandsTo(firstOperand, operator) {
   } else {
     switch (operator) {
       case 'Тисячні в градуси':
-        resultText = `${(firstOperand * 0.06).toFixed(2)} градусів`;
+        resultText = `${(firstOperand * 0.06).toFixed(1)} градусів`;
         break;
       case 'Тисячні в MOA':
-        resultText = `${(firstOperand * 3.6).toFixed(2)} MOA  (кутових хвилин)`;
+        resultText = `${(firstOperand * 3.6).toFixed(1)} MOA  (кутових хвилин)`;
         break;
       case 'Тисячні в Mil':
         resultText = `${(firstOperand * 1.06666666666).toFixed(
-          2,
+          1,
         )} MIL (мілірадіан)`;
         break;
     }

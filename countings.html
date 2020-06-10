@@ -9,6 +9,7 @@
     <title>Infantry Handbook</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/countings.css">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 </head>
 
@@ -41,42 +42,50 @@
         <div class="content">
             <!--CONTENT-->
 
-            <h1 class="result">Мілітарна рахувалка</h1>
-            <button class="btn__count">ОБЧИСЛИТИ</button><br><br>
-            <label><input type="text" class="display" disabled></label>
 
-
-            <button class="delete__btn">Видалити елемент виразу</button>
             <section class="numbers">
                 <hr>
-                <button class="number__btn">-</button>
-                <button class="number__btn">1</button>
-                <button class="number__btn">2</button>
-                <button class="number__btn">3</button>
-                <button class="number__btn">4</button>
-                <button class="number__btn">5</button>
-                <button class="number__btn">6</button>
-                <button class="number__btn">7</button>
-                <button class="number__btn">8</button>
-                <button class="number__btn">9</button>
-                <button class="number__btn">0</button>
-                <button class="number__btn">.</button>
+                <div class="row">
+                    <button class="number__btn">-</button>
+                    <button class="number__btn">1</button>
+                    <button class="number__btn">2</button>
+                    <button class="number__btn">3</button>
+                </div>
+                <div class="row">
+                    <button class="number__btn">4</button>
+                    <button class="number__btn">5</button>
+                    <button class="number__btn">6</button>
+                    <button class="number__btn">7</button>
+                </div>
+                <div class="row">
+                    <button class="number__btn">8</button>
+                    <button class="number__btn">9</button>
+                    <button class="number__btn">0</button>
+                    <button class="number__btn">.</button>
+                </div>
                 <hr>
-
             </section>
-            <section class="methods">
+            <h1 class="result">Мілітарна рахувалка</h1>
+            <button class="btn__count">=</button><br><br>
+            <label><input type="text" class="display" disabled></label>
+            <br><button class="delete__btn">DEL</button>
 
-                <button class="operation__btn">Градуси в тисячні</button>
-                <button class="operation__btn">Градуси в MOA</button>
-                <button class="operation__btn">Градуси в Mil</button>
-                <br>
-                <button class="operation__btn">Тисячні в градуси</button>
-                <button class="operation__btn">Тисячні в MOA</button>
-                <button class="operation__btn">Тисячні в Mil</button>
-                <br>
-                <button class="operation__btn">ДУВ: Відстань</button>
-                <button class="operation__btn">ДУВ: Габарит</button>
-                <button class="operation__btn">ДУВ: Кут</button>
+            <section class="methods">
+                <div class="row methods">
+                    <button class="operation__btn">Градуси в тисячні</button>
+                    <button class="operation__btn">Градуси в MOA</button>
+                    <button class="operation__btn">Градуси в Mil</button>
+                </div>
+                <div class="row methods">
+                    <button class="operation__btn">Тисячні в градуси</button>
+                    <button class="operation__btn">Тисячні в MOA</button>
+                    <button class="operation__btn">Тисячні в Mil</button></div>
+                <div class="row methods">
+                    <button class="operation__btn">ДУВ: Відстань</button>
+                    <button class="operation__btn">ДУВ: Габарит</button>
+                    <button class="operation__btn">ДУВ: Кут</button>
+                </div>
+
             </section>
 
 
@@ -122,19 +131,7 @@
         <!--------------------------------MAIL US--------------------------------------->
     </main>
 
-    <!--MINI MENU-->
-    <footer class="mini">
-        <img class="mini__btn" src="img/compass.png" alt="mini button image" width="100%">
-        <nav class="mini__menu">
-            <ul class="mini__menu__list">
-                <li><a class="mini__menu__list-link" href="../handbook.html#handbook">НАЗАД</a></li>
-                <li><a class="mini__menu__list-link" href="#1">Загальна інформація, ТТХ, боєприпаси</a></li>
-                <li><a class="mini__menu__list-link" href="#mail">ВЕТЕРАНИ ГОВОРЯТЬ</a></li>
-            </ul>
-        </nav>
 
-    </footer>
-    <!--MINI MENU-->
 
     <!-- MESSAGE BOX-->
     <div class="messageBox invisible">
