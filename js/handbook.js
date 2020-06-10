@@ -8,6 +8,9 @@ const linksList = {
   'АК-74': 'vogneva/ak74.html',
   'РПК-74': 'vogneva/rpk74.html',
   'ПК (ПКМ)': 'vogneva/pk.html',
+  'РПГ-7В': 'vogneva/rpg.html',
+  'Ручні уламкові гранати': 'vogneva/grenades.html',
+  'ГП-25': 'vogneva/gp25.html',
 };
 
 //ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
