@@ -36,3 +36,14 @@ function miniMenuBtnClick() {
 }
 
 /* MINI MENU BTN CLICK*/
+
+//ФІКСАЦІЯ ГОЛОВНОГО МЕНЮ ПРИ СКРОЛІ
+const toolbar = document.querySelector('.header__menu-local');
+
+window.addEventListener('scroll', function () {
+  const windowScroll = window.scrollY;
+
+  if (windowScroll > 400) {
+    toolbar.classList.add('fixed');
+  } else toolbar.classList.remove('fixed');
+});

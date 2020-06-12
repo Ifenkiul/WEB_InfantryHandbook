@@ -110,9 +110,9 @@ function countResult() {
 function degreeTo(firstOperand, operator) {
   firstOperand = parseFloat(firstOperand);
   let resultText = '';
-  if (firstOperand > 360) {
+  if (firstOperand > 360 || firstOperand < 0) {
     resultText =
-      'Оце паварот... А де це Ви бачили кут в градусах більше 360... Гайда перепишіть';
+      'Оце паварот... А де це бачили такі кут в градусах?!? Кут в градусах може бути від 0 до 360.. Гайда перепишіть';
   } else {
     switch (operator) {
       case 'Градуси в тисячні':
@@ -140,8 +140,8 @@ function thousandsTo(firstOperand, operator) {
   firstOperand = parseFloat(firstOperand);
   let resultText = '';
 
-  if (firstOperand > 6000) {
-    resultText = 'Доповідаю в голос: повне коло складає 6000 тисячних';
+  if (firstOperand > 6000 || firstOperand < 0) {
+    resultText = 'Доповідаю в голос: кут в тисячних може бути від 0 до 6000';
   } else {
     switch (operator) {
       case 'Тисячні в градуси':

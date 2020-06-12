@@ -75,6 +75,13 @@ header h3 {
   display: flex;
   justify-content: center;
 }
+.header__menu-local.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1.5px dashed white;
+  background-color: rgba(163, 163, 128, 0.8);
+}
 .header__menu-local-list {
   width: 100%;
   list-style-type: none;

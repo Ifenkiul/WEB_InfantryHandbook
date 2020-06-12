@@ -60,6 +60,44 @@ main {
   display: block;
   width: 50%;
 }
+.handbook__library {
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+.handbook__library__item {
+  width: 100%;
+  background-color: var(--color--bej);
+  padding: 15px;
+  border-bottom: 1.5px dashed white;
+  border-left: 1.5px dashed white;
+  border-right: 1.5px dashed white;
+}
+.handbook__library__item.first {
+  border-top: 1.5px dashed white;
+}
+.handbook__library__item-title {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.handbook__library__item-title:hover {
+  color: black;
+  text-shadow: 0 0 15px black;
+}
+.handbook__library__item-title:active {
+  color: red;
+}
+.handbook__library__item-content {
+  margin-top: 20px;
+  text-align: justify;
+  display: none;
+}
+.handbook__library__item-content.visible {
+  display: block;
+}
+/*----------------------------------------- LIBRARY ------------------------------------*/
+
 .mini {
   display: none;
 }

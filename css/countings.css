@@ -8,13 +8,14 @@
 }
 .row {
   width: 100%;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
 .number__btn {
   padding: 5px;
   margin: 5px 10px;
-  max-width: 100px;
+  max-width: 50px;
   cursor: pointer;
 }
 

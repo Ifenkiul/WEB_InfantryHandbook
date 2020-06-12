@@ -1,3 +1,4 @@
+'use strict';
 let previousOpen = 0;
 const linksList = {
   'Явище пострілу': '',
@@ -11,6 +12,10 @@ const linksList = {
   'РПГ-7В': 'vogneva/rpg.html',
   'Ручні уламкові гранати': 'vogneva/grenades.html',
   'ГП-25': 'vogneva/gp25.html',
+  ДШКМ: 'vogneva/dashka.html',
+  'НСВ Утес': 'vogneva/utes.html',
+  'АГС-17 Пламя': 'vogneva/ags17.html',
+  'СПГ-9 Копье': 'vogneva/spg9.html',
 };
 
 //ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
@@ -77,8 +82,30 @@ function menuItemClick(num) {
 document
   .querySelectorAll('.content__menu-link')
   .forEach(link => link.addEventListener('click', pushInfo));
+
 function pushInfo(linkPressed) {
   const linkText = linkPressed.target.innerText;
   alert(linkText);
   let info = sessionStorage.setItem('page', linksList[linkText]);
+}
+
+//--------------------------------LIBRARY
+document
+  .querySelectorAll('.handbook__library__item-title')
+  .forEach(element => element.addEventListener('click', libraryClick));
+
+function libraryClick(event) {
+  const linkText = event.currentTarget.innerText;
+  switch (linkText) {
+    case 'ВОГНЕВА ПІДГОТОВКА':
+      document
+        .querySelector('.handbook__library__item-content.vogneva')
+        .classList.toggle('visible');
+      break;
+    case 'ТОПОГРАФІЯ':
+      document
+        .querySelector('.handbook__library__item-content.topography')
+        .classList.toggle('visible');
+      break;
+  }
 }
