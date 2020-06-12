@@ -96,6 +96,10 @@ main {
 .handbook__library__item-content.visible {
   display: block;
 }
+.handbook__links-topic {
+  text-align: center;
+  color: black;
+}
 /*----------------------------------------- LIBRARY ------------------------------------*/
 
 .mini {

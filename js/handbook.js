@@ -22,7 +22,6 @@ const linksList = {
 $('.handbook__menu-content.vogneva').hide();
 $('.handbook__menu-content.individual').hide();
 $('.handbook__menu-content.topography').hide();
-$('.handbook__menu-content.links').hide();
 
 //функція приховує попередньо відкритий блок підменюшек
 function hideMenuItem(num) {
@@ -38,9 +37,6 @@ function hideMenuItem(num) {
 
     case 3: //TOPOGRAPHY
       $('.handbook__menu-content.topography').hide();
-      break;
-    case 4: //USEFUL LINKS
-      $('.handbook__menu-content.links').hide();
       break;
   }
 }
@@ -58,9 +54,6 @@ function showMenuItem(number) {
 
     case 3: //TOPOGRAPHY
       $('.handbook__menu-content.topography').show();
-      break;
-    case 4: //LINKS
-      $('.handbook__menu-content.links').show();
       break;
   }
 }
