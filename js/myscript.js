@@ -38,9 +38,9 @@
   //ФІКСАЦІЯ ГОЛОВНОГО МЕНЮ ПРИ СКРОЛІ
   const toolbar = document.querySelector('.header__menu-local');
   const toolbarCoord = toolbar.getBoundingClientRect().top + window.scrollY;
-
   window.addEventListener('scroll', function () {
-    if (window.scrollY - toolbarCoord >= 0) {
+    console.log(window.scrollY - toolbarCoord);
+    if (window.scrollY - toolbarCoord >= 50) {
       toolbar.classList.add('fixed');
     } else toolbar.classList.remove('fixed');
   });
