@@ -18,56 +18,31 @@ const linksList = {
   'СПГ-9 Копье': 'vogneva/spg9.html',
 };
 
-//ХОВАЄМО ВСІ БЛОКИ З ПІДМЕНЮ
-$('.handbook__menu-content.vogneva').hide();
-$('.handbook__menu-content.individual').hide();
-$('.handbook__menu-content.topography').hide();
+//---------------------HANDBOOK
+document
+  .querySelectorAll('.handbook__menu-topic')
+  .forEach(element => element.addEventListener('click', handbookClick));
 
-//функція приховує попередньо відкритий блок підменюшек
-function hideMenuItem(num) {
-  switch (num) {
-    case 1: //VOGNEVA
-      $('.handbook__menu-content.vogneva').hide();
-      $('.handbook__menu-content.vogneva').toggleClass('active');
+function handbookClick(event) {
+  const linkText = event.currentTarget.innerText;
+  switch (linkText) {
+    case 'ВОГНЕВА ПІДГОТОВКА':
+      document
+        .querySelector('.handbook__menu-content.vogneva')
+        .classList.toggle('visible');
       break;
 
-    case 2: //INDIVIDUAL
-      $('.handbook__menu-content.individual').hide();
+    case 'ІНДИВІДУАЛЬНА ПІДГОТОВКА':
+      document
+        .querySelector('.handbook__menu-content.individual')
+        .classList.toggle('visible');
       break;
 
-    case 3: //TOPOGRAPHY
-      $('.handbook__menu-content.topography').hide();
+    case 'ВІЙСЬКОВА ТОПОГРАФІЯ':
+      document
+        .querySelector('.handbook__menu-content.topography')
+        .classList.toggle('visible');
       break;
-  }
-}
-//функція відображає відповідний блок підменю
-function showMenuItem(number) {
-  switch (number) {
-    case 1: //VOGNEVA
-      $('.handbook__menu-content.vogneva').show();
-      break;
-
-    case 2: //INDIVIDUAL
-      $('.handbook__menu-content.individual').show();
-
-      break;
-
-    case 3: //TOPOGRAPHY
-      $('.handbook__menu-content.topography').show();
-      break;
-  }
-}
-function menuItemClick(num) {
-  if (previousOpen == 0) {
-    previousOpen = num;
-    showMenuItem(num);
-  } else if (previousOpen != num) {
-    hideMenuItem(previousOpen);
-    previousOpen = num;
-    showMenuItem(num);
-  } else {
-    hideMenuItem(num);
-    previousOpen = 0;
   }
 }
 
@@ -78,8 +53,7 @@ document
 
 function pushInfo(linkPressed) {
   const linkText = linkPressed.target.innerText;
-  alert(linkText);
-  let info = sessionStorage.setItem('page', linksList[linkText]);
+  sessionStorage.setItem('page', linksList[linkText]);
 }
 
 //--------------------------------LIBRARY

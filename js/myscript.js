@@ -1,49 +1,47 @@
 'use strict';
+(function () {
+  /*  BURGER CLICK */
+  document
+    .querySelector('.header__mobile-burger')
+    .addEventListener('click', function () {
+      document
+        .querySelector('.header__menu-main')
+        .classList.toggle('header__menu-main-active');
+      document
+        .querySelector('.header__mobile-burger')
+        .classList.toggle('rotate');
+    });
 
-/*  BURGER CLICK */
-$('.header__mobile-burger').click(function (event) {
-  $('.header__menu-main').toggleClass('header__menu-main-active');
-  $('.header__mobile-burger').toggleClass('rotate');
-});
-/* BURGER CLICK */
+  /* BURGER CLICK */
 
-let nav = $('.menu__hor');
+  /* MINI MENU BTN CLICK*/
+  miniMenuBtnClick();
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 400) {
-    nav.addClass('f-nav');
-  } else {
-    nav.removeClass('f-nav');
+  function miniMenuBtnClick() {
+    let miniLogoClicked = true;
+    const miniBtn = document.querySelector('.mini__btn');
+
+    miniBtn.addEventListener('click', function () {
+      document.querySelector('.mini__menu').classList.toggle('active');
+      if (miniLogoClicked == false) {
+        miniBtn.src = 'img/compass.png';
+        miniLogoClicked = true;
+      } else {
+        miniBtn.src = 'img/compass_closed.png';
+        miniLogoClicked = false;
+      }
+    });
   }
-});
 
-miniMenuBtnClick();
-/* MINI MENU BTN CLICK*/
-function miniMenuBtnClick() {
-  let miniLogoClicked = true;
-  const miniBtn = document.querySelector('.mini__btn');
+  /* MINI MENU BTN CLICK*/
 
-  miniBtn.addEventListener('click', function () {
-    document.querySelector('.mini__menu').classList.toggle('active');
-    if (miniLogoClicked == false) {
-      miniBtn.src = 'img/compass.png';
-      miniLogoClicked = true;
-    } else {
-      miniBtn.src = 'img/compass_closed.png';
-      miniLogoClicked = false;
-    }
+  //ФІКСАЦІЯ ГОЛОВНОГО МЕНЮ ПРИ СКРОЛІ
+  const toolbar = document.querySelector('.header__menu-local');
+  const toolbarCoord = toolbar.getBoundingClientRect().top + window.scrollY;
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY - toolbarCoord >= 0) {
+      toolbar.classList.add('fixed');
+    } else toolbar.classList.remove('fixed');
   });
-}
-
-/* MINI MENU BTN CLICK*/
-
-//ФІКСАЦІЯ ГОЛОВНОГО МЕНЮ ПРИ СКРОЛІ
-const toolbar = document.querySelector('.header__menu-local');
-
-window.addEventListener('scroll', function () {
-  const windowScroll = window.scrollY;
-
-  if (windowScroll > 400) {
-    toolbar.classList.add('fixed');
-  } else toolbar.classList.remove('fixed');
-});
+})();

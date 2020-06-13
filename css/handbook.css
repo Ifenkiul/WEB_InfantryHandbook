@@ -51,6 +51,9 @@ main {
 .handbook__menu-content {
   padding-top: 50px;
   width: 100%;
+  display: none;
+}
+.handbook__menu-content.visible {
   display: flex;
 }
 .handbook__menu__content-list {
