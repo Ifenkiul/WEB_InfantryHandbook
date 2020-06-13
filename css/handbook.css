@@ -15,9 +15,18 @@ main {
   margin: 50px auto;
   text-align: center;
 }
-.handbook__menu h2 {
-  padding: 20px;
+h2 {
+  margin-bottom: 20px;
   font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: green;
 }
 .handbook__menu-item {
   background-color: var(--color--bej);
@@ -83,7 +92,9 @@ main {
   color: white;
   text-align: center;
   cursor: pointer;
+  user-select: none;
 }
+
 .handbook__library__item-title:hover {
   color: black;
   text-shadow: 0 0 15px black;
