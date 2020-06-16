@@ -41,53 +41,24 @@
 
         <div class="content">
             <!--CONTENT-->
-
-
-            <section class="numbers">
-                <hr>
-                <div class="row">
-                    <button class="number__btn">-</button>
-                    <button class="number__btn">1</button>
-                    <button class="number__btn">2</button>
-                    <button class="number__btn">3</button>
-                </div>
-                <div class="row">
-                    <button class="number__btn">4</button>
-                    <button class="number__btn">5</button>
-                    <button class="number__btn">6</button>
-                    <button class="number__btn">7</button>
-                </div>
-                <div class="row">
-                    <button class="number__btn">8</button>
-                    <button class="number__btn">9</button>
-                    <button class="number__btn">0</button>
-                    <button class="number__btn">.</button>
-                </div>
-                <hr>
-            </section>
             <h1 class="result">Мілітарна рахувалка</h1>
-            <button class="btn__count">=</button><br><br>
-            <label><input type="text" class="display" disabled></label>
-            <br><button class="delete__btn">DEL</button>
+            <select name="methods">
+                <option>Оберіть операцію</option>
+                <option value="0">Градуси в тисячні</option>
+                <option value="1">Градуси в MOA</option>
+                <option value="2">Градуси в Mil</option>
+                <option value="3">Тисячні в градуси</option>
+                <option value="4">Тисячні в MOA</option>
+                <option value="5">Тисячні в Mil</option>
+                <option value="6">ДУВ: Відстань</option>
+                <option value="7">ДУВ: Габарит</option>
+                <option value="8">ДУВ: Кут</option>
+            </select>
 
-            <section class="methods">
-                <div class="row methods">
-                    <button class="operation__btn">Градуси в тисячні</button>
-                    <button class="operation__btn">Градуси в MOA</button>
-                    <button class="operation__btn">Градуси в Mil</button>
-                </div>
-                <div class="row methods">
-                    <button class="operation__btn">Тисячні в градуси</button>
-                    <button class="operation__btn">Тисячні в MOA</button>
-                    <button class="operation__btn">Тисячні в Mil</button></div>
-                <div class="row methods">
-                    <button class="operation__btn">ДУВ: Відстань</button>
-                    <button class="operation__btn">ДУВ: Габарит</button>
-                    <button class="operation__btn">ДУВ: Кут</button>
-                </div>
-
-            </section>
-
+            <button class="btn__count">ОБЧИСЛИТИ</button><br><br>
+            <label class="display__label first">Перше число<input type="number" class="display first"></label>
+            <label class="display__label second">Друге число<input type="number" class="display second"></label>
+            <br><button class="delete__btn">Очистити</button>
 
             <!--CONTENT-->
         </div>

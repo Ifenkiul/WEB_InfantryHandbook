@@ -39,8 +39,7 @@
   const toolbar = document.querySelector('.header__menu-local');
   const toolbarCoord = toolbar.getBoundingClientRect().top + window.scrollY;
   window.addEventListener('scroll', function () {
-    console.log(window.scrollY - toolbarCoord);
-    if (window.scrollY - toolbarCoord >= 50) {
+    if (window.scrollY - toolbarCoord > 100) {
       toolbar.classList.add('fixed');
     } else toolbar.classList.remove('fixed');
   });

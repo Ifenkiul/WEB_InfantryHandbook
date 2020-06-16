@@ -70,3 +70,11 @@
     width: 100%;
   }
 }
+
+.display__label {
+  display: none;
+}
+
+.display__label.visible {
+  display: block;
+}
