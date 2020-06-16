@@ -121,9 +121,9 @@
       case 5:
         resultScreen.textContent = thousandsTo(displayFirst.value, operator);
         break;
-      case 5:
       case 6:
       case 7:
+      case 8:
         resultScreen.textContent = duiThousand(
           displayFirst.value,
           displaySecond.value,
@@ -234,6 +234,7 @@
 
         break;
       case 8:
+        console.log(firstOperand + ', ' + secondOperand);
         if (
           firstOperand > 0 &&
           secondOperand > 0 &&
