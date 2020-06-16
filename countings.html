@@ -41,9 +41,9 @@
 
         <div class="content">
             <!--CONTENT-->
-            <h1 class="result">Мілітарна рахувалка</h1>
-            <select name="methods">
-                <option>Оберіть операцію</option>
+            <h2 class="result">Мілітарна рахувалка</h2>
+            <select class="select__operands" name="methods">
+                <option value="-1">Оберіть операцію</option>
                 <option value="0">Градуси в тисячні</option>
                 <option value="1">Градуси в MOA</option>
                 <option value="2">Градуси в Mil</option>
@@ -53,12 +53,12 @@
                 <option value="6">ДУВ: Відстань</option>
                 <option value="7">ДУВ: Габарит</option>
                 <option value="8">ДУВ: Кут</option>
-            </select>
+            </select><br>
 
-            <button class="btn__count">ОБЧИСЛИТИ</button><br><br>
-            <label class="display__label first">Перше число<input type="number" class="display first"></label>
-            <label class="display__label second">Друге число<input type="number" class="display second"></label>
-            <br><button class="delete__btn">Очистити</button>
+
+            <input type="number" class="display first"><br>
+            <input type="number" class="display second"><br>
+            <button class="btn btn__count">ОБЧИСЛИТИ</button> <button class="btn delete__btn">ОЧИСТИТИ</button>
 
             <!--CONTENT-->
         </div>
