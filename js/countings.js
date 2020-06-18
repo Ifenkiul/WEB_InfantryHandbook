@@ -2,6 +2,7 @@
 
 (function () {
   let operator = -1;
+
   const chosenOperationInfo = [
     {
       //0
@@ -66,8 +67,18 @@
       displayFirstText: 'Габарит цілі',
       displaySecondText: 'Кут спостереження',
     },
+    {
+      //9
+      displays: 3,
+      text: 'Приведення до нормального бою АК-47',
+      displayFirstText: 'Зміщення по горизонталі',
+      displaySecondText: 'Зміщення по вертикалі',
+      horizonalMoveMilimetr: 26,
+      oborotVertical: 20,
+    },
   ];
 
+  //-------------------------------------------CHOSING OPERATION
   document
     .querySelector('select[name=methods]')
     .addEventListener('change', function (event) {
@@ -90,6 +101,23 @@
       } else {
         displaySecond.classList.remove('visible');
       }
+
+      if (chosenOperationInfo[operationIndex].displays === 3) {
+        displaySecond.classList.add('visible');
+        displaySecond.placeholder =
+          chosenOperationInfo[operationIndex].displaySecondText;
+        document.querySelector('.bullet__vector-vert').classList.add('visible');
+        document.querySelector('.bullet__vector-hor').classList.add('visible');
+      } else {
+        displaySecond.classList.remove('visible');
+        document
+          .querySelector('.bullet__vector-vert')
+          .classList.remove('visible');
+        document
+          .querySelector('.bullet__vector-hor')
+          .classList.remove('visible');
+      }
+
       displayFirst.classList.add('visible');
       displayFirst.placeholder =
         chosenOperationInfo[operationIndex].displayFirstText;
@@ -109,18 +137,20 @@
     switch (operator) {
       case -1:
         resultScreen.textContent = 'Ви не обрали жодної операції...';
-
         break;
+
       case 0:
       case 1:
       case 2:
         resultScreen.textContent = degreeTo(displayFirst.value, operator);
         break;
+
       case 3:
       case 4:
       case 5:
         resultScreen.textContent = thousandsTo(displayFirst.value, operator);
         break;
+
       case 6:
       case 7:
       case 8:
@@ -128,6 +158,14 @@
           displayFirst.value,
           displaySecond.value,
           operator,
+        );
+        break;
+
+      case 9:
+        resultScreen.textContent = normBoi(
+          operator,
+          displayFirst.value,
+          displaySecond.value,
         );
         break;
     }
@@ -166,7 +204,7 @@
 
   //--------------------------- SOLVING THOUSANDS TO
   function thousandsTo(firstOperand, operator) {
-    firstOperand = parseFloat(firstOperand, operator);
+    firstOperand = parseFloat(firstOperand);
     let resultText = '';
 
     if (firstOperand > 6000 || firstOperand < 0 || Number.isNaN(firstOperand)) {
@@ -258,4 +296,34 @@
     document.querySelector('.display.first').value = '';
     document.querySelector('.display.second').value = '';
   });
+
+  //------------------------------NORM BOI
+  function normBoi(operator, firstOperand, secondOperand) {
+    firstOperand = parseFloat(firstOperand);
+    secondOperand = parseFloat(secondOperand);
+
+    const elementaryHor =
+      Math.round(
+        (1 / chosenOperationInfo[operator].horizonalMoveMilimetr) * 100000,
+      ) / 100000;
+    console.log(
+      'Зміщенню на 1 см від КТ відповідає зміщення мушки на ' + elementaryHor,
+    );
+
+    const elementaryVertical =
+      Math.round((1 / chosenOperationInfo[operator].oborotVertical) * 100000) /
+      100000;
+    console.log(elementaryVertical);
+
+    const resultText = `Треба змістити мушку на ${
+      Math.round(firstOperand * elementaryHor * 100) / 100
+    } міліметрів ${
+      document.querySelector('input[name="vectorHorizontal"]:checked').value
+    }. Також треба змістити мушку на ${
+      secondOperand * elementaryVertical
+    } повних обертів ${
+      document.querySelector('input[name="vectorVertical"]:checked').value
+    }`;
+    return resultText;
+  }
 })();

@@ -62,6 +62,19 @@
   background-color: cadetblue;
 }
 
+.bullet__vector-hor {
+  display: none;
+}
+.bullet__vector-hor.visible {
+  display: block;
+}
+.bullet__vector-vert {
+  display: none;
+}
+.bullet__vector-vert.visible {
+  display: block;
+}
+
 /*------------------------------------------------------- MOBILE 750*/
 @media (max-width: 750px) {
   .numbers {

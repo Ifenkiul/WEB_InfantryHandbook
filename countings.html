@@ -53,10 +53,25 @@
                 <option value="6">ДУВ: Відстань</option>
                 <option value="7">ДУВ: Габарит</option>
                 <option value="8">ДУВ: Кут</option>
+                <option value="9">ПНБ АК-47</option>
             </select><br>
+            <div class="bullet__vector-hor">
+                <input type="radio" id="bulletVectorLeft" name="vectorHorizontal" value="вліво">
+                <label for="bulletVectorLeft">СТВ пішло вліво від КТ</label><br>
+                <input type="radio" id="bullrtVectorRight" name="vectorHorizontal" value="вправо" checked>
+                <label for="bulletVectorRight">СТВ зміщено вправо від КТ</label>
+            </div>
 
 
             <input type="number" class="display first"><br>
+
+            <div class="bullet__vector-vert">
+                <input type="radio" id="bulletVectorTop" name="vectorVertical" value="вгору" checked>
+                <label for="bulletVectorTop">СТВ зміщено вгору КТ</label><br>
+                <input type="radio" id="bulletVectorBot" name="vectorVertical" value="вниз">
+                <label for="bulletVectorBot">СТВ зміщено вниз від КТ</label>
+            </div>
+
             <input type="number" class="display second"><br>
             <button class="btn btn__count">ОБЧИСЛИТИ</button> <button class="btn delete__btn">ОЧИСТИТИ</button>
 
