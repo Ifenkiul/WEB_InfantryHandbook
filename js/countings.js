@@ -65,7 +65,7 @@
       displays: 2,
       text: 'ДУВ: Кут',
       displayFirstText: 'Габарит цілі',
-      displaySecondText: 'Кут спостереження',
+      displaySecondText: 'Дистанція до цілі',
     },
     {
       //9
@@ -93,29 +93,37 @@
     if (operator !== -1) {
       resultDiv.textContent = chosenOperationInfo[operationIndex].text;
 
-      if (chosenOperationInfo[operationIndex].displays === 2) {
-        displaySecond.classList.add('visible');
+      switch (chosenOperationInfo[operationIndex].displays) {
+        case 3:
+          displaySecond.classList.add('visible');
+          displaySecond.placeholder =
+            chosenOperationInfo[operationIndex].displaySecondText;
+          document
+            .querySelector('.bullet__vector-vert')
+            .classList.add('visible');
+          document
+            .querySelector('.bullet__vector-hor')
+            .classList.add('visible');
+          break;
 
-        displaySecond.placeholder =
-          chosenOperationInfo[operationIndex].displaySecondText;
-      } else {
-        displaySecond.classList.remove('visible');
-      }
+        case 2:
+          displaySecond.classList.add('visible');
 
-      if (chosenOperationInfo[operationIndex].displays === 3) {
-        displaySecond.classList.add('visible');
-        displaySecond.placeholder =
-          chosenOperationInfo[operationIndex].displaySecondText;
-        document.querySelector('.bullet__vector-vert').classList.add('visible');
-        document.querySelector('.bullet__vector-hor').classList.add('visible');
-      } else {
-        displaySecond.classList.remove('visible');
-        document
-          .querySelector('.bullet__vector-vert')
-          .classList.remove('visible');
-        document
-          .querySelector('.bullet__vector-hor')
-          .classList.remove('visible');
+          displaySecond.placeholder =
+            chosenOperationInfo[operationIndex].displaySecondText;
+          break;
+
+        default:
+          displaySecond.classList.remove('visible');
+          document
+            .querySelector('.bullet__vector-vert')
+            .classList.remove('visible');
+          document
+            .querySelector('.bullet__vector-hor')
+            .classList.remove('visible');
+          document
+            .querySelector('.bullet__vector-hor')
+            .classList.remove('visible');
       }
 
       displayFirst.classList.add('visible');
@@ -320,7 +328,7 @@
     } міліметрів ${
       document.querySelector('input[name="vectorHorizontal"]:checked').value
     }. Також треба змістити мушку на ${
-      secondOperand * elementaryVertical
+      Math.round(secondOperand * elementaryVertical * 100) / 100
     } повних обертів ${
       document.querySelector('input[name="vectorVertical"]:checked').value
     }`;
