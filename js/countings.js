@@ -117,18 +117,13 @@
           document
             .querySelector('.bullet__vector-hor')
             .classList.remove('visible');
-          document
-            .querySelector('.bullet__vector-hor')
-            .classList.remove('visible');
+
           break;
 
         case 1:
           displaySecond.classList.remove('visible');
           document
             .querySelector('.bullet__vector-vert')
-            .classList.remove('visible');
-          document
-            .querySelector('.bullet__vector-hor')
             .classList.remove('visible');
           document
             .querySelector('.bullet__vector-hor')
@@ -142,6 +137,10 @@
       resultDiv.textContent = 'Піхотна рахувалка';
       displaySecond.classList.remove('visible');
       displayFirst.classList.remove('visible');
+      document
+        .querySelector('.bullet__vector-vert')
+        .classList.remove('visible');
+      document.querySelector('.bullet__vector-hor').classList.remove('visible');
     }
   }
 
