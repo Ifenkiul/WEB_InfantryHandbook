@@ -111,9 +111,18 @@
 
           displaySecond.placeholder =
             chosenOperationInfo[operationIndex].displaySecondText;
+          document
+            .querySelector('.bullet__vector-vert')
+            .classList.remove('visible');
+          document
+            .querySelector('.bullet__vector-hor')
+            .classList.remove('visible');
+          document
+            .querySelector('.bullet__vector-hor')
+            .classList.remove('visible');
           break;
 
-        default:
+        case 1:
           displaySecond.classList.remove('visible');
           document
             .querySelector('.bullet__vector-vert')
