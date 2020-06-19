@@ -107,27 +107,16 @@
           break;
 
         case 2:
+          hideWorkspaces();
           displaySecond.classList.add('visible');
 
           displaySecond.placeholder =
             chosenOperationInfo[operationIndex].displaySecondText;
-          document
-            .querySelector('.bullet__vector-vert')
-            .classList.remove('visible');
-          document
-            .querySelector('.bullet__vector-hor')
-            .classList.remove('visible');
 
           break;
 
         case 1:
-          displaySecond.classList.remove('visible');
-          document
-            .querySelector('.bullet__vector-vert')
-            .classList.remove('visible');
-          document
-            .querySelector('.bullet__vector-hor')
-            .classList.remove('visible');
+          hideWorkspaces();
       }
 
       displayFirst.classList.add('visible');
@@ -135,13 +124,15 @@
         chosenOperationInfo[operationIndex].displayFirstText;
     } else {
       resultDiv.textContent = 'Піхотна рахувалка';
-      displaySecond.classList.remove('visible');
-      displayFirst.classList.remove('visible');
-      document
-        .querySelector('.bullet__vector-vert')
-        .classList.remove('visible');
-      document.querySelector('.bullet__vector-hor').classList.remove('visible');
+      hideWorkspaces();
     }
+  }
+
+  function hideWorkspaces() {
+    document.querySelector('.display.first').classList.remove('visible');
+    document.querySelector('.display.second').classList.remove('visible');
+    document.querySelector('.bullet__vector-vert').classList.remove('visible');
+    document.querySelector('.bullet__vector-hor').classList.remove('visible');
   }
 
   //----------------------------------- SOLVING THE RESULT BY =
