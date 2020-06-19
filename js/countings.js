@@ -85,6 +85,15 @@
       horizonalMoveMilimetr: 26,
       oborotVertical: 20,
     },
+    {
+      //11 РПК-74
+      displays: 3,
+      text: 'Приведення до нормального бою РПК-74',
+      displayFirstText: 'Зміщення по горизонталі',
+      displaySecondText: 'Зміщення по вертикалі',
+      horizonalMoveMilimetr: 18,
+      oborotVertical: 14,
+    },
   ];
 
   //-------------------------------------------CHOSING OPERATION
@@ -142,6 +151,8 @@
     document.querySelector('.display.second').classList.remove('visible');
     document.querySelector('.bullet__vector-vert').classList.remove('visible');
     document.querySelector('.bullet__vector-hor').classList.remove('visible');
+    document.querySelector('.display.first').value = '';
+    document.querySelector('.display.second').value = '';
   }
 
   //----------------------------------- SOLVING THE RESULT BY =
@@ -179,6 +190,7 @@
 
       case 9:
       case 10:
+      case 11:
         resultScreen.textContent = normBoi(
           operator,
           displayFirst.value,
@@ -348,7 +360,7 @@
     return resultText;
   }
 
-  //---------------------------- CLEAR DISPLAYS
+  //---------------------------- CLEAR DISPLAYS on DEL BUTTON
   document.querySelector('.delete__btn').addEventListener('click', function () {
     document.querySelector('.display.first').value = '';
     document.querySelector('.display.second').value = '';
