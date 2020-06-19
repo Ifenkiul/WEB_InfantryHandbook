@@ -68,9 +68,18 @@
       displaySecondText: 'Дистанція до цілі',
     },
     {
-      //9
+      //9 AK-47M
       displays: 3,
       text: 'Приведення до нормального бою АК-47',
+      displayFirstText: 'Зміщення по горизонталі',
+      displaySecondText: 'Зміщення по вертикалі',
+      horizonalMoveMilimetr: 26,
+      oborotVertical: 20,
+    },
+    {
+      //10 AK-74
+      displays: 3,
+      text: 'Приведення до нормального бою АК-74',
       displayFirstText: 'Зміщення по горизонталі',
       displaySecondText: 'Зміщення по вертикалі',
       horizonalMoveMilimetr: 26,
@@ -169,6 +178,7 @@
         break;
 
       case 9:
+      case 10:
         resultScreen.textContent = normBoi(
           operator,
           displayFirst.value,
@@ -298,39 +308,49 @@
     }
     return resultText;
   }
-  //---------------------------- CLEAR DISPLAYS
-  document.querySelector('.delete__btn').addEventListener('click', function () {
-    document.querySelector('.display.first').value = '';
-    document.querySelector('.display.second').value = '';
-  });
 
   //------------------------------NORM BOI
   function normBoi(operator, firstOperand, secondOperand) {
     firstOperand = parseFloat(firstOperand);
     secondOperand = parseFloat(secondOperand);
+    let resultText = '';
+    console.log(firstOperand);
 
-    const elementaryHor =
-      Math.round(
-        (1 / chosenOperationInfo[operator].horizonalMoveMilimetr) * 100000,
-      ) / 100000;
-    console.log(
-      'Зміщенню на 1 см від КТ відповідає зміщення мушки на ' + elementaryHor,
-    );
+    if (!Number.isNaN(firstOperand) && !Number.isNaN(secondOperand)) {
+      const elementaryHor =
+        Math.round(
+          (1 / chosenOperationInfo[operator].horizonalMoveMilimetr) * 100000,
+        ) / 100000;
+      // console.log(
+      //   'Зміщенню на 1 см від КТ відповідає зміщення мушки на ' + elementaryHor,
+      // );
 
-    const elementaryVertical =
-      Math.round((1 / chosenOperationInfo[operator].oborotVertical) * 100000) /
-      100000;
-    console.log(elementaryVertical);
+      const elementaryVertical =
+        Math.round(
+          (1 / chosenOperationInfo[operator].oborotVertical) * 100000,
+        ) / 100000;
+      console.log(elementaryVertical);
 
-    const resultText = `Треба змістити мушку на ${
-      Math.round(firstOperand * elementaryHor * 100) / 100
-    } міліметрів ${
-      document.querySelector('input[name="vectorHorizontal"]:checked').value
-    }. Також треба змістити мушку на ${
-      Math.round(secondOperand * elementaryVertical * 100) / 100
-    } повних обертів ${
-      document.querySelector('input[name="vectorVertical"]:checked').value
-    }`;
+      resultText = `Треба змістити мушку на ${
+        Math.round(firstOperand * elementaryHor * 100) / 100
+      } міліметрів ${
+        document.querySelector('input[name="vectorHorizontal"]:checked').value
+      }. Також треба змістити мушку на ${
+        Math.round(secondOperand * elementaryVertical * 100) / 100
+      } повних обертів ${
+        document.querySelector('input[name="vectorVertical"]:checked').value
+      }`;
+    } else {
+      resultText =
+        'Ви щось вводите не то...У верхньому полі введіть відхилення СТВ від КТ по горизонталі в сантиметрах та оберіть напрям відхилення. В нижньому полі введіть відхилення СТВ від КТ по вертикалі в сантиметрах та оберіть напрям відхилення';
+    }
+
     return resultText;
   }
+
+  //---------------------------- CLEAR DISPLAYS
+  document.querySelector('.delete__btn').addEventListener('click', function () {
+    document.querySelector('.display.first').value = '';
+    document.querySelector('.display.second').value = '';
+  });
 })();
