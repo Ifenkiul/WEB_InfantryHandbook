@@ -7,92 +7,60 @@
     {
       //0
       displays: 1,
-      text: 'Переведення градусів в тисячні',
+      text: 'Переведення Градусів в ... оберіть розмірність',
       displayFirstText: 'Введіть кут в градусах',
       displaySecondText: '',
     },
+
     {
       //1
       displays: 1,
-      text: 'Переведення градусів в MOA',
-      displayFirstText: 'Введіть кут в градусах',
+      text: 'Переведення Тисячних в ... оберіть розмірність',
+      displayFirstText: 'Введіть кут в тисячних',
       displaySecondText: '',
     },
+
     {
       //2
-      displays: 1,
-      text: 'Переведення градусів в Mil',
-      displayFirstText: 'Введіть кут в градусах',
-      displaySecondText: '',
-    },
-    {
-      //3
-      displays: 1,
-      text: 'Переведення Тисячні в градуси',
-      displayFirstText: 'Введіть кут в тисячних',
-      displaySecondText: '',
-    },
-    {
-      //4
-      displays: 1,
-      text: 'Переведення Тисячних в MOA',
-      displayFirstText: 'Введіть кут в тисячних',
-      displaySecondText: '',
-    },
-    {
-      //5
-      displays: 1,
-      text: 'Переведення Тисячні в Mil',
-      displayFirstText: 'Введіть кут в тисячних',
-      displaySecondText: '',
-    },
-    {
-      //6
       displays: 2,
       text: 'ДУВ: Відстань',
       displayFirstText: 'Габарит цілі',
       displaySecondText: 'Кут спостереження',
     },
     {
-      //7
+      //3
       displays: 2,
       text: 'ДУВ: Габарит',
       displayFirstText: 'Дистанція до цілі',
       displaySecondText: 'Кут спостереження',
     },
     {
-      //8
+      //4
       displays: 2,
       text: 'ДУВ: Кут',
       displayFirstText: 'Габарит цілі',
       displaySecondText: 'Дистанція до цілі',
     },
     {
-      //9 AK-47M
+      //5 AK-47M
       displays: 3,
-      text: 'Приведення до нормального бою АК-47',
+      text: 'Приведення до нормального бою ...',
       displayFirstText: 'Зміщення по горизонталі',
       displaySecondText: 'Зміщення по вертикалі',
-      horizonalMoveMilimetr: 26,
-      oborotVertical: 20,
-    },
-    {
-      //10 AK-74
-      displays: 3,
-      text: 'Приведення до нормального бою АК-74',
-      displayFirstText: 'Зміщення по горизонталі',
-      displaySecondText: 'Зміщення по вертикалі',
-      horizonalMoveMilimetr: 26,
-      oborotVertical: 20,
-    },
-    {
-      //11 РПК-74
-      displays: 3,
-      text: 'Приведення до нормального бою РПК-74',
-      displayFirstText: 'Зміщення по горизонталі',
-      displaySecondText: 'Зміщення по вертикалі',
-      horizonalMoveMilimetr: 18,
-      oborotVertical: 14,
+      horizonalMoveMilimetr: [
+        26, //AK-47
+        26, //AK-74
+        18, //RPK-74
+        15, //PK
+        37, //AKSU
+      ],
+      oborotVertical: [
+        20, //AK-47
+        20, //AK-74
+        14, //RPK-74
+        12, //PK
+        28, //AKSU
+      ],
     },
   ];
 
@@ -113,6 +81,7 @@
 
       switch (chosenOperationInfo[operationIndex].displays) {
         case 3:
+          hideWorkspaces();
           displaySecond.classList.add('visible');
           displaySecond.placeholder =
             chosenOperationInfo[operationIndex].displaySecondText;
@@ -122,6 +91,7 @@
           document
             .querySelector('.bullet__vector-hor')
             .classList.add('visible');
+          document.querySelector('.select__normBoi').classList.add('visible');
           break;
 
         case 2:
@@ -135,6 +105,13 @@
 
         case 1:
           hideWorkspaces();
+          if (operationIndex === 0) {
+            document.querySelector('.degreesTo').classList.add('visible');
+          } else {
+            if (operationIndex === 1) {
+              document.querySelector('.thousandsTo').classList.add('visible');
+            }
+          }
       }
 
       displayFirst.classList.add('visible');
@@ -153,6 +130,9 @@
     document.querySelector('.bullet__vector-hor').classList.remove('visible');
     document.querySelector('.display.first').value = '';
     document.querySelector('.display.second').value = '';
+    document.querySelector('.degreesTo').classList.remove('visible');
+    document.querySelector('.thousandsTo').classList.remove('visible');
+    document.querySelector('.select__normBoi').classList.remove('visible');
   }
 
   //----------------------------------- SOLVING THE RESULT BY =
@@ -167,20 +147,16 @@
         break;
 
       case 0:
-      case 1:
-      case 2:
-        resultScreen.textContent = degreeTo(displayFirst.value, operator);
+        resultScreen.textContent = degreeTo(displayFirst.value);
         break;
 
+      case 1:
+        resultScreen.textContent = thousandsTo(displayFirst.value);
+        break;
+
+      case 2:
       case 3:
       case 4:
-      case 5:
-        resultScreen.textContent = thousandsTo(displayFirst.value, operator);
-        break;
-
-      case 6:
-      case 7:
-      case 8:
         resultScreen.textContent = duiThousand(
           displayFirst.value,
           displaySecond.value,
@@ -188,9 +164,7 @@
         );
         break;
 
-      case 9:
-      case 10:
-      case 11:
+      case 5:
         resultScreen.textContent = normBoi(
           operator,
           displayFirst.value,
@@ -201,27 +175,27 @@
   });
 
   //--------------------------- SOLVING DEGREES TO
-  function degreeTo(firstOperand, operator) {
+  function degreeTo(firstOperand) {
     firstOperand = parseFloat(firstOperand);
     let resultText = '';
     if (firstOperand > 360 || firstOperand < 0 || Number.isNaN(firstOperand)) {
       resultText =
         'Оце паварот... А де це бачили такі кути в градусах?!? Кут в градусах може бути від 0 до 360.. Гайда перепишіть';
     } else {
-      switch (operator) {
-        case 0:
+      switch (document.querySelector('input[name="degreesTo"]:checked').value) {
+        case '1':
           resultText = `${(firstOperand * 16.66666666666667).toFixed(
             1,
           )} тисячних`;
           break;
 
-        case 1:
+        case '2':
           resultText = `${(firstOperand * 60).toFixed(
             1,
           )} MOA  (кутових хвилин)`;
           break;
 
-        case 2:
+        case '3':
           resultText = `${(firstOperand * 17.77777777778).toFixed(
             1,
           )} MIL (мілірадіан)`;
@@ -232,23 +206,25 @@
   }
 
   //--------------------------- SOLVING THOUSANDS TO
-  function thousandsTo(firstOperand, operator) {
+  function thousandsTo(firstOperand) {
     firstOperand = parseFloat(firstOperand);
     let resultText = '';
 
     if (firstOperand > 6000 || firstOperand < 0 || Number.isNaN(firstOperand)) {
       resultText = 'Доповідаю в голос: кут в тисячних може бути від 0 до 6000';
     } else {
-      switch (operator) {
-        case 3:
+      switch (
+        document.querySelector('input[name="thousandsTo"]:checked').value
+      ) {
+        case '1': //to degrees
           resultText = `${(firstOperand * 0.06).toFixed(1)} градусів`;
           break;
-        case 4:
+        case '2': //to MOA
           resultText = `${(firstOperand * 3.6).toFixed(
             1,
           )} MOA  (кутових хвилин)`;
           break;
-        case 5:
+        case '3': //to Mil
           resultText = `${(firstOperand * 1.06666666666).toFixed(
             1,
           )} MIL (мілірадіан)`;
@@ -264,7 +240,7 @@
     secondOperand = parseFloat(secondOperand);
     let resultText = '';
     switch (operator) {
-      case 6:
+      case 2:
         if (
           firstOperand > 0 &&
           secondOperand > 0 &&
@@ -282,7 +258,7 @@
         }
 
         break;
-      case 7:
+      case 3:
         if (
           firstOperand > 0 &&
           secondOperand > 0 &&
@@ -300,7 +276,7 @@
         }
 
         break;
-      case 8:
+      case 4:
         console.log(firstOperand + ', ' + secondOperand);
         if (
           firstOperand > 0 &&
@@ -326,35 +302,46 @@
     firstOperand = parseFloat(firstOperand);
     secondOperand = parseFloat(secondOperand);
     let resultText = '';
-    console.log(firstOperand);
+    const chosenWeapon = parseInt(
+      document.querySelector('.select__normBoi').value,
+    );
+    console.log('weapon chosen: ' + chosenWeapon);
+    if (chosenWeapon !== -1) {
+      if (!Number.isNaN(firstOperand) && !Number.isNaN(secondOperand)) {
+        const elementaryHor =
+          Math.round(
+            (1 /
+              chosenOperationInfo[operator].horizonalMoveMilimetr[
+                chosenWeapon
+              ]) *
+              100000,
+          ) / 100000;
+        // console.log(
+        //   'Зміщенню на 1 см від КТ відповідає зміщення мушки на ' + elementaryHor,
+        // );
 
-    if (!Number.isNaN(firstOperand) && !Number.isNaN(secondOperand)) {
-      const elementaryHor =
-        Math.round(
-          (1 / chosenOperationInfo[operator].horizonalMoveMilimetr) * 100000,
-        ) / 100000;
-      // console.log(
-      //   'Зміщенню на 1 см від КТ відповідає зміщення мушки на ' + elementaryHor,
-      // );
+        const elementaryVertical =
+          Math.round(
+            (1 / chosenOperationInfo[operator].oborotVertical[chosenWeapon]) *
+              100000,
+          ) / 100000;
+        console.log(elementaryVertical);
 
-      const elementaryVertical =
-        Math.round(
-          (1 / chosenOperationInfo[operator].oborotVertical) * 100000,
-        ) / 100000;
-      console.log(elementaryVertical);
-
-      resultText = `Треба змістити мушку на ${
-        Math.round(firstOperand * elementaryHor * 100) / 100
-      } міліметрів ${
-        document.querySelector('input[name="vectorHorizontal"]:checked').value
-      }. Також треба змістити мушку на ${
-        Math.round(secondOperand * elementaryVertical * 100) / 100
-      } повних обертів ${
-        document.querySelector('input[name="vectorVertical"]:checked').value
-      }`;
+        resultText = `Треба змістити мушку на ${
+          Math.round(firstOperand * elementaryHor * 100) / 100
+        } міліметрів ${
+          document.querySelector('input[name="vectorHorizontal"]:checked').value
+        }. Також треба змістити мушку на ${
+          Math.round(secondOperand * elementaryVertical * 100) / 100
+        } повних обертів ${
+          document.querySelector('input[name="vectorVertical"]:checked').value
+        }`;
+      } else {
+        resultText =
+          'Ви щось вводите не то...У верхньому полі введіть відхилення СТВ від КТ по горизонталі в сантиметрах та оберіть напрям відхилення. В нижньому полі введіть відхилення СТВ від КТ по вертикалі в сантиметрах та оберіть напрям відхилення';
+      }
     } else {
-      resultText =
-        'Ви щось вводите не то...У верхньому полі введіть відхилення СТВ від КТ по горизонталі в сантиметрах та оберіть напрям відхилення. В нижньому полі введіть відхилення СТВ від КТ по вертикалі в сантиметрах та оберіть напрям відхилення';
+      resultText = 'Ви не обрали зброю';
     }
 
     return resultText;

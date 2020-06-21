@@ -62,6 +62,35 @@
   background-color: cadetblue;
 }
 
+/*---------------------------------- different varients of countings*/
+
+.degreesTo {
+  display: none;
+}
+.degreesTo.visible {
+  display: block;
+}
+.thousandsTo {
+  display: none;
+}
+.thousandsTo.visible {
+  display: block;
+}
+.select__normBoi {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  background-color: var(--color--bej);
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.select__normBoi.visible {
+  display: block;
+}
 .bullet__vector-hor {
   display: none;
 }

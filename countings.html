@@ -44,19 +44,46 @@
             <h2 class="result">Мілітарна рахувалка</h2>
             <select class="select__operands" name="methods">
                 <option value="-1">Оберіть операцію</option>
-                <option value="0">Градуси в тисячні</option>
-                <option value="1">Градуси в MOA</option>
-                <option value="2">Градуси в Mil</option>
-                <option value="3">Тисячні в градуси</option>
-                <option value="4">Тисячні в MOA</option>
-                <option value="5">Тисячні в Mil</option>
-                <option value="6">ДУВ: Відстань</option>
-                <option value="7">ДУВ: Габарит</option>
-                <option value="8">ДУВ: Кут</option>
-                <option value="9">ПНБ АК-47M</option>
-                <option value="10">ПНБ АК-74</option>
-                <option value="11">ПНБ РПК-74</option>
+                <option value="0">Градуси в ...</option>
+                <!-- <option value="1">Градуси в MOA</option>
+                <option value="2">Градуси в Mil</option> -->
+                <option value="1">Тисячні в ...</option>
+                <!-- <option value="4">Тисячні в MOA</option>
+                <option value="5">Тисячні в Mil</option> -->
+                <option value="2">ДУВ: Відстань</option>
+                <option value="3">ДУВ: Габарит</option>
+                <option value="4">ДУВ: Кут</option>
+                <option value="5">Приведення до нормального бою</option>
             </select><br>
+
+            <div class="degreesTo">
+                <input type="radio" id="degreesToThousands" name="degreesTo" value="1" checked>
+                <label for="degreesToThousands">Градуси в тисячні</label><br>
+                <input type="radio" id="degreesToMoa" name="degreesTo" value="2">
+                <label for="degreesToMoa">Градуси в МОА</label><br>
+                <input type="radio" id="degreesToMil" name="degreesTo" value="3">
+                <label for="degreesToMil">Градуси в Mil</label>
+            </div>
+
+            <div class="thousandsTo">
+                <input type="radio" id="thousandsToThousands" name="thousandsTo" value="1" checked>
+                <label for="thousandsToDegrees">Тисячні в градуси</label><br>
+                <input type="radio" id="thousandsToMoa" name="thousandsTo" value="2">
+                <label for="thousandsToMoa">Тисячні в МОА</label><br>
+                <input type="radio" id="thousandsToMil" name="thousandsTo" value="3">
+                <label for="thousandsToMil">Тисячні в Mil</label>
+            </div>
+
+            <select class="select__normBoi" name="normBoi-options">
+                <option value="-1">Оберіть зброю</option>
+                <option value="0">АК-47М</option>
+                <option value="1">АК-74</option>
+                <option value="2">РПК-74</option>
+                <option value="3">ПК(ПКМ)</option>
+                <option value="4">АКСУ</option>
+
+            </select>
+
             <div class="bullet__vector-hor">
                 <input type="radio" id="bulletVectorLeft" name="vectorHorizontal" value="вліво">
                 <label for="bulletVectorLeft">СТВ пішло вліво від КТ</label><br>
