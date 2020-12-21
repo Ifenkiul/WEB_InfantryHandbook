@@ -7,7 +7,7 @@
   --color--main: #d6ce93;
 }
 body {
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Comfortaa', monospace;
   background-color: #d6ce93;
   padding: 0;
@@ -80,6 +80,7 @@ header h3 {
   justify-content: center;
 }
 .header__menu-local.fixed {
+  left: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -132,13 +133,14 @@ h3 {
   border: 1px solid #fff;
 }
 .paragraph {
+  font-size: 18px;
   line-height: 36px;
   color: white;
   background-color: var(--color--bej);
   overflow: hidden;
-  border: 2px dashed white;
+  /* border: 2px dashed white; */
   border-radius: 10px;
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 5px 5px black;
   padding: 15px;
 }
 .paragraph ol {
@@ -231,6 +233,7 @@ h4 {
   box-shadow: 0 0 15px 10px black;
 }
 .mini__menu {
+  font-size: 18px;
   position: fixed;
   right: -200%;
   bottom: 85px;
