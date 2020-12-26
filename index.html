@@ -11,11 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/global.css">
 	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="content_navigation_point">
 	<header>
 		<nav class="header__menu-main">
 
@@ -58,7 +59,7 @@
 			<h3>освітній ресурс</h3>
 		</section>
 
-		<div id="brother" class="main__intro">
+		<div id="brother" class="main__intro content_navigation_point" >
 			<div class="main__intro-content">
 				<ul class="list__notHero">
 					<li>Якщо ти був на війні, це ще не означає, що ти герой...</li>
@@ -79,7 +80,7 @@
 			</div>
 		</div>
 
-		<div class="main__speech">
+		<div class="main__speech content_navigation_point">
 			<section class="main__speech-text first">
 				<div class="main__speech-text-container ">
 					<h3>БРАТИ</h3>
@@ -109,7 +110,7 @@
 				</div>
 
 			</section>
-			<section class="main__speech-text third">
+			<section class="main__speech-text third ">
 				<div class="main__speech-text-container">
 					<h3>ЗАХИСНИКИ</h3>
 					<p>
@@ -172,7 +173,7 @@
 		</div>
 
 		<!-------------------------------- ABOUT --------------------------------------->
-		<article id="about" class="about">
+		<article id="about" class="about content_navigation_point">
 			<p>Подяка моїм побратимам. За ідеї, критику, підтримку!
 				<hr>
 
@@ -268,25 +269,9 @@
 		<!--CONTENT-->
 	</main>
 
-	<!--MINI MENU-->
-	<footer class="mini">
-		<img class="mini__btn" src="img/compass.png" alt="mini button image" width="100%">
-		<nav class="mini__menu">
-			<ul class="mini__menu__list">
-				<li class="mini__menu__list-link"><a href="#brother" class="header__menu-local-link">БРАТЕ</a>
-				</li>
-				<li class="mini__menu__list-link"><a href="#about" class="header__menu-local-link">ПРО РЕСУРС</a>
-				</li>
-				<li class="mini__menu__list-link"><a href="#mail" class="header__menu-local-link">ЗВОРОТНІЙ
-						ЗВ'ЯЗОК</a>
-			</ul>
-		</nav>
-
-	</footer>
-	<!--MINI MENU-->
-
+	
 	<!-- FOOTER LOGO -->
-	<footer class="footer__logo">
+	<footer class="footer__logo content_navigation_point">
 		<a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
 			class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
 				alt="youtube logo"> Наш YouTube канал</a>
@@ -311,6 +296,7 @@
 	<script src="js/myscript.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/message_box.js"></script>
+	<script type="module" src="js/global.js"></script>
 
 
 </body>

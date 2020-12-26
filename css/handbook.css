@@ -123,9 +123,6 @@ a:active {
 }
 /*----------------------------------------- LIBRARY ------------------------------------*/
 
-.mini {
-  display: none;
-}
 
 @media (max-width: 767px) {
   .handbook__menu-content {
@@ -133,8 +130,5 @@ a:active {
   }
   .handbook__menu__content-list {
     width: 100%;
-  }
-  .mini {
-    display: block;
   }
 }

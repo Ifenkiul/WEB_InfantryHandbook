@@ -14,26 +14,26 @@
 
   /* BURGER CLICK */
 
-  /* MINI MENU BTN CLICK*/
-  miniMenuBtnClick();
+  // /* MINI MENU BTN CLICK*/
+  // miniMenuBtnClick();
 
-  function miniMenuBtnClick() {
-    let miniLogoClicked = true;
-    const miniBtn = document.querySelector('.mini__btn');
+  // function miniMenuBtnClick() {
+  //   let miniLogoClicked = true;
+  //   const miniBtn = document.querySelector('.mini__btn');
 
-    miniBtn.addEventListener('click', function () {
-      document.querySelector('.mini__menu').classList.toggle('active');
-      if (miniLogoClicked == false) {
-        miniBtn.src = 'img/compass.png';
-        miniLogoClicked = true;
-      } else {
-        miniBtn.src = 'img/compass_closed.png';
-        miniLogoClicked = false;
-      }
-    });
-  }
+  //   miniBtn.addEventListener('click', function () {
+  //     document.querySelector('.mini__menu').classList.toggle('active');
+  //     if (miniLogoClicked == false) {
+  //       miniBtn.src = 'img/compass.png';
+  //       miniLogoClicked = true;
+  //     } else {
+  //       miniBtn.src = 'img/compass_closed.png';
+  //       miniLogoClicked = false;
+  //     }
+  //   });
+  // }
 
-  /* MINI MENU BTN CLICK*/
+  // /* MINI MENU BTN CLICK*/
 
   //HEADER CHANGE BG COLOR ON SCROLL and fixing HEADER on scroll
   const toolbar = document.querySelector('.header__menu-local');

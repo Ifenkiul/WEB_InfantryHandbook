@@ -11,10 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/handbook.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="content_navigation_point">
     <header>
         <nav class="header__menu-main">
 
@@ -201,7 +202,7 @@
 
         </nav>
         <!-- БІБЛІОТЕКА -->
-        <nav class="handbook__library">
+        <nav class="handbook__library content_navigation_point">
             <h2 id="library">БІБЛІОТЕКА</h2>
             <div class="handbook__library__item first">
                 <div class="handbook__library__item-title">
@@ -491,25 +492,8 @@
     </main>
 
 
-    <!--MINI MENU-->
-    <footer class="mini">
-        <img class="mini__btn" src="img/compass.png" alt="mini button image" width="100%">
-        <nav class="mini__menu">
-            <ul class="mini__menu__list">
-                <li class="mini__menu__list-link"><a href="#handbook" class="header__menu-local-link">ДОВІДНИК</a>
-                </li>
-                <li class="mini__menu__list-link"><a href="#library" class="header__menu-local-link">БІБЛІОТЕКА</a>
-                </li>
-                <li class="mini__menu__list-link"><a href="#links" class="header__menu-local-link">ПОСИЛАННЯ</a>
-                </li>
-            </ul>
-        </nav>
-
-    </footer>
-    <!--MINI MENU-->
-
     <!-- FOOTER LOGO -->
-    <footer class="footer__logo">
+    <footer class="footer__logo content_navigation_point">
         <a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
             class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
                 alt="youtube logo"> Наш YouTube канал</a>
@@ -531,11 +515,12 @@
     </div>
     <!-- MESSAGE BOX-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script src="js/myscript.js"></script>
     <script src="js/index.js"></script>
     <script src="js/message_box.js"></script>
     <script src="js/handbook.js"></script>
+	<script type="module" src="js/global.js"></script> 
 </body>
 
 </html>
