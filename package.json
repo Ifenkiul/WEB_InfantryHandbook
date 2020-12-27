@@ -1,0 +1,20 @@
+{
+  "name": "web_infantryhandbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watcH:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ifenkiul/WEB_InfantryHandbook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifenkiul/WEB_InfantryHandbook/issues"
+  },
+  "homepage": "https://github.com/Ifenkiul/WEB_InfantryHandbook#readme"
+}

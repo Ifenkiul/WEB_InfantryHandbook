@@ -1,0 +1,116 @@
+@keyframes header_title {
+  0% {
+    @include link-white-black;
+
+  }
+
+  50% {
+    color: goldenrod;
+  }
+
+  100% {
+    @include link-white-black;
+  }
+}
+.header_menu {
+  &-main {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    background-color: rgba(163, 163, 128, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid grey;
+
+    @include media-breakpoint-up(md) {
+      position: static;
+      height: auto;
+      background-color: unset;
+      border: none;
+    }
+  }
+
+  &-burger {
+    display: block;
+    height: 80%;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px hidden gray;
+    transition: all 1s;
+
+    &--rotated {
+      transform: rotateZ(90deg);
+    }
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  &-list {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(163, 163, 128, 0.8);
+    transition: all 1.5s;
+    transform: translateX(100%);
+
+    &--shown {
+      transform: translateX(0%);
+    }
+
+    @include media-breakpoint-up(md) {
+      position: static;
+      transform: translateX(0%);
+      background-color: unset;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &-item {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+    @include media-breakpoint-up(md) {
+      width: fit-content;
+    }
+  }
+
+  &-link {
+    @include link-white-black;
+    font-size: $font-size-main;
+    &:hover {
+      @include link-black-white
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      font-weight: bold;
+      
+    }
+  }
+}
+
+.header_badge {
+  width: 100%;
+  margin-top: 90px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: header_title 5s infinite;
+
+  &-logo {
+    max-width: 150px;
+    margin-bottom: 30px;
+  }
+}

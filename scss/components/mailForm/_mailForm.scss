@@ -1,0 +1,55 @@
+/*----------------------------MAIL FORM-------------------------------------*/
+.main__recruit {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #a3a380;
+    border: 2px dashed white;
+    box-shadow: 0 0 20px black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    @include media-breakpoint-up(md){
+        width: 70%;
+    }
+  }
+  .main__recruit h3,
+  h4 {
+    text-align: center;
+  }
+  .recruit__form-image {
+    padding: 30px;
+  }
+  .main__recruit__input {
+      max-width: 100%;
+    border-radius: 5px;
+    background-color: #d6ce93;
+    padding: 20px;
+    border: 1px dashed white;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0 0 15px black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    caret-color: red;
+  }
+  .main__recruit__input.btn:hover {
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 15px lightgray;
+  }
+  .main__recruit__input.btn.submit:active {
+    color: green;
+    box-shadow: 0 0 15px green;
+  }
+  .main__recruit__input.btn.reset:active {
+    color: red;
+    box-shadow: 0 0 15px red;
+  }
+  /*----------------------------MAIL FORM-------------------------------------*/
+  /*--------------------FORM MOBILE-----------------------*/
+  .main__recruit__input {
+    
+  }

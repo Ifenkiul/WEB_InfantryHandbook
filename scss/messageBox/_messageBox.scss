@@ -1,0 +1,71 @@
+/* ------------------------- MESSAGE BOX -----------------------------*/
+
+@keyframes msbox-back-color {
+  0%{
+    background-color: darkred;
+    color: white;
+  }
+
+  50% {
+    background-color: black;color: darkred;
+    color: $color-bej;
+  }
+
+  100% {
+    background-color: darkred;
+    color: white;
+  }
+}
+.messageBox {
+    width: 90%;
+    font-size: 20px;
+    font-family: $font-pangolin;
+    box-shadow: 5px 5px 10px #a1a188; /*MILITARY LIGHT*/
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    color: white;
+    background-color: rgba(129, 97, 60, 0.9);
+    text-align: center;
+    border: 2px dashed white;
+    border-radius: 5px;
+    padding: 10px 10px 10px;
+    transform: translateX(-50%);
+    z-index: 15;
+    animation: msbox-back-color 10s infinite;
+
+    @include media-breakpoint-up(md){
+        width: auto;
+        font-size: 30px;
+    }
+  }
+  
+  .messageBox.invisible {
+    display: none;
+  }
+  
+  .messageBox__btn {
+    font-size: 30px;
+    margin-top: 10px;
+    border: 2px solid #a1a188; /*MILITARY LIGHT*/
+    outline: none;
+    border-radius: 10px 20px 30px 40px;
+    background-color: #5b6750; /*MILITARY 2*/
+    color: white;
+    cursor: pointer;
+  }
+  .messageBox__btn:hover {
+    background-color: #a1a188; /*MILITARY LIGHT*/
+    box-shadow: 0 0 10px white;
+  }
+  .messageBox__btn:active {
+    color: #cc9a45; /* LETTERS*/
+    box-shadow: 0 0 10px red;
+  }
+  /* ------------------------- MESSAGE BOX -----------------------------*/
+
+
+/*-------------------- MESSAGE BOX MOBILE-------------------------*/
+.messageBox {
+    
+  }
