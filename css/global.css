@@ -1,3 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap");
+@keyframes header_title {
+  0% {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+  }
+  50% {
+    color: goldenrod;
+  }
+  100% {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+  }
+}
+.header_menu-main {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  background-color: rgba(163, 163, 128, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 2px solid grey;
+}
+@media (min-width: 768px) {
+  .header_menu-main {
+    position: static;
+    height: auto;
+    background-color: unset;
+    border: none;
+  }
+}
+.header_menu-burger {
+  display: block;
+  height: 80%;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: 1px hidden gray;
+  transition: all 1s;
+}
+.header_menu-burger--rotated {
+  transform: rotateZ(90deg);
+}
+@media (min-width: 768px) {
+  .header_menu-burger {
+    display: none;
+  }
+}
+.header_menu-list {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(163, 163, 128, 0.8);
+  transition: all 1.5s;
+  transform: translateX(100%);
+}
+.header_menu-list--shown {
+  transform: translateX(0%);
+}
+@media (min-width: 768px) {
+  .header_menu-list {
+    position: static;
+    transform: translateX(0%);
+    background-color: unset;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.header_menu-item {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .header_menu-item {
+    width: fit-content;
+  }
+}
+.header_menu-link {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-size: 24px;
+}
+.header_menu-link:hover {
+  color: black;
+  text-shadow: 1px 1px 5px white;
+}
+@media (min-width: 768px) {
+  .header_menu-link {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.header_badge {
+  width: 100%;
+  margin-top: 90px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: header_title 5s infinite;
+}
+.header_badge-logo {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------ FOOTER -----------------------------*/
+footer {
+  background-color: var(--color--bej);
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1.5px dashed white;
+  margin-top: 50px;
+}
+
+.footer__content {
+  padding: 15px;
+  width: 80%;
+}
+
+.footer__icon {
+  width: 30%;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__link:hover {
+  color: white;
+}
+
+.footer__link:active {
+  color: red;
+}
+
+/* FOOTER LOGO */
+.footer__logo {
+  min-height: 40px;
+  padding: 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.footer__logo-bottom {
+  background-color: var(--color--bej);
+  margin-top: 20px;
+  border-top: 1px solid #a1a188;
+  /*MILITARY LIGHT*/
+}
+
+.footer__logo-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 5px 5px;
+}
+
+.footer__logo-link:hover {
+  color: black;
+  text-shadow: 5px 5px 10px black;
+}
+
+.footer__logo-link:active {
+  color: red;
+}
+
+.footer__logo-link img {
+  vertical-align: middle;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.footer__logo-link img:hover {
+  background-color: black;
+  box-shadow: 0 0 15px 10px black;
+}
+
+.footer__logo-link img:active {
+  box-shadow: 0 0 10px red;
+}
+
+/* ------------------------------ FOOTER -----------------------------*/
+/*----------------------------MAIL FORM-------------------------------------*/
+.main__recruit {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #a3a380;
+  border: 2px dashed white;
+  box-shadow: 0 0 20px black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main__recruit {
+    width: 70%;
+  }
+}
+
+.main__recruit h3,
+h4 {
+  text-align: center;
+}
+
+.recruit__form-image {
+  padding: 30px;
+}
+
+.main__recruit__input {
+  max-width: 100%;
+  border-radius: 5px;
+  background-color: #d6ce93;
+  padding: 20px;
+  border: 1px dashed white;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 0 0 15px black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  caret-color: red;
+}
+
+.main__recruit__input.btn:hover {
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 15px lightgray;
+}
+
+.main__recruit__input.btn.submit:active {
+  color: green;
+  box-shadow: 0 0 15px green;
+}
+
+.main__recruit__input.btn.reset:active {
+  color: red;
+  box-shadow: 0 0 15px red;
+}
+
+/*----------------------------MAIL FORM-------------------------------------*/
+/*--------------------FORM MOBILE-----------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6ce93;
+  font-family: "Cormorant Infant", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+a:active {
+  color: red;
+}
+
+.page_content_menu-list {
+  list-style-type: initial;
+  line-height: 2;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .page_content_menu-list {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+.page_content_menu-link {
+  text-decoration: none;
+  color: black;
+}
+.page_content_menu-link:hover {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
 .mini_navigator {
   position: fixed;
   bottom: 10px;
@@ -50,5 +347,79 @@
   display: block;
   height: fit-content;
 }
+
+/* ------------------------- MESSAGE BOX -----------------------------*/
+@keyframes msbox-back-color {
+  0% {
+    background-color: darkred;
+    color: white;
+  }
+  50% {
+    background-color: black;
+    color: darkred;
+    color: #a3a380;
+  }
+  100% {
+    background-color: darkred;
+    color: white;
+  }
+}
+.messageBox {
+  width: 90%;
+  font-size: 20px;
+  font-family: Pangolin, Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 10px #a1a188;
+  /*MILITARY LIGHT*/
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  color: white;
+  background-color: rgba(129, 97, 60, 0.9);
+  text-align: center;
+  border: 2px dashed white;
+  border-radius: 5px;
+  padding: 10px 10px 10px;
+  transform: translateX(-50%);
+  z-index: 15;
+  animation: msbox-back-color 10s infinite;
+}
+@media (min-width: 768px) {
+  .messageBox {
+    width: auto;
+    font-size: 30px;
+  }
+}
+
+.messageBox.invisible {
+  display: none;
+}
+
+.messageBox__btn {
+  font-size: 30px;
+  margin-top: 10px;
+  border: 2px solid #a1a188;
+  /*MILITARY LIGHT*/
+  outline: none;
+  border-radius: 10px 20px 30px 40px;
+  background-color: #5b6750;
+  /*MILITARY 2*/
+  color: white;
+  cursor: pointer;
+}
+
+.messageBox__btn:hover {
+  background-color: #a1a188;
+  /*MILITARY LIGHT*/
+  box-shadow: 0 0 10px white;
+}
+
+.messageBox__btn:active {
+  color: #cc9a45;
+  /* LETTERS*/
+  box-shadow: 0 0 10px red;
+}
+
+/* ------------------------- MESSAGE BOX -----------------------------*/
+/*-------------------- MESSAGE BOX MOBILE-------------------------*/
 
 /*# sourceMappingURL=global.css.map */
