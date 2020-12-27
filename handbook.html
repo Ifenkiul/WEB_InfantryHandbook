@@ -9,62 +9,47 @@
     <title>Infantry Handbook</title>
     <link rel="icon" href="img/google.png">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/handbook.css">
     <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/handbook.css">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 </head>
 
 <body class="content_navigation_point">
     <header>
-        <nav class="header__menu-main">
-
-            <ul class="header__menu-main-list">
-                <li class="header__menu-main-list-item"> <a href="index.html"
-                        class="header__menu-main-list-link">ГОЛОВНА</a>
+        <nav class="header_menu-main">
+            <img class="header_menu-burger" src="img/burger_icon.png" alt="Burger image">
+            <ul class="header_menu-list">
+                <li class="header_menu-item"> <a href="index.html"
+                        class="header_menu-link">ГОЛОВНА</a>
                 </li>
-                <li class="header__menu-main-list-item"> <a href="handbook.html"
-                        class="header__menu-main-list-link">ДОВІДНИК</a>
+                <li class="header_menu-item"> <a href="handbook.html"
+                        class="header_menu-link">ДОВІДНИК</a>
                 </li>
-                <li class="header__menu-main-list-item"><a href="countings.html"
-                        class="header__menu-main-list-link">РОЗРАХУНКИ</a>
-                </li>
-            </ul>
-        </nav>
-
-        <img class="header__mobile-burger" src="img/burger_icon.png" alt="Burger image">
-        <img class="header__logo" src="img/google2.png" alt="Logo image">
-        <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
-        <h3>освітній ресурс</h3>
-        <nav class="header__menu-local">
-            <ul class="header__menu-local-list">
-                <li class="header__menu-local-item"><a href="#handbook" class="header__menu-local-link">ДОВІДНИК</a>
-                </li>
-                <li class="header__menu-local-item"><a href="#library" class="header__menu-local-link">БІБЛІОТЕКА</a>
-                </li>
-                <li class="header__menu-local-item"><a href="#links" class="header__menu-local-link">ПОСИЛАННЯ</a>
+                <li class="header_menu-item"><a href="countings.html"
+                        class="header_menu-link">РОЗРАХУНКИ</a>
                 </li>
             </ul>
         </nav>
+
+        <div class="header_badge">
+            <img class="header_badge-logo" src="img/google2.png" alt="Logo image">
+            <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
+            <h3>освітній ресурс</h3>
+        </div>
     </header>
 
     <main>
-        <section class="header__mobile">
-            <img class="header__logo" src="img/google2.png" alt="Logo image">
-            <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
-            <h3>освітній ресурс</h3>
-        </section>
         <!-- NAV -->
         <nav id="handbook" class="handbook__menu">
-            <h2>ДОВІДНИК</h2>
+            <h2 class="content_navigation_point topic_name">ДОВІДНИК</h2>
             <div class="handbook__menu-item first">
 
-                <div class="handbook__menu-topic vogneva">
+                <div class="handbook__menu-topic vogneva topic_title">
                     <a href="#vogneva" class="main__menu-item-link">ВОГНЕВА ПІДГОТОВКА</a>
                 </div>
 
                 <!-- VOGNEVA MENU CONTENT-->
-                <div class="handbook__menu-content vogneva">
+                <div class="handbook__menu-content vogneva" hidden>
 
                     <ul class="handbook__menu__content-list">
                         <li class="content__menu-item"><a class="content__menu-link" href="#">Явище
@@ -91,12 +76,8 @@
                         <li class="content__menu-item"><a class="content__menu-link" href="handboook_viewer.html"
                                 data-url="vogneva/pk.html">ПК
                                 (ПКМ)</a></li>
-                    </ul>
-
-
-                    <ul class="handbook__menu__content-list">
                         <li class="content__menu-item"><a class="content__menu-link" href="#">Правила
-                                стрільби: гранатомети</a></li>
+                            стрільби: гранатомети</a></li>
                         <li class="content__menu-item"><a class="content__menu-link" href="handboook_viewer.html"
                                 data-url="vogneva/rpg.html">РПГ-7В</a>
                         </li>
@@ -127,38 +108,34 @@
 
             <div class="handbook__menu-item">
 
-                <div class="handbook__menu-topic individual">
+                <div class="handbook__menu-topic individual topic_title">
                     <a href="#individual" class="main__menu-item-link">ІНДИВІДУАЛЬНА ПІДГОТОВКА</a>
                 </div>
                 <!-- INDIVIDUAL MENU CONTENT-->
-                <div class="handbook__menu-content individual">
+                <div class="handbook__menu-content individual" hidden>
 
                     <ul class="handbook__menu__content-list">
                         <li class="content__menu-item"><a class="content__menu-link"
                                 href="individual/basic.html">БАЗА</a>
                         </li>
-
-                    </ul>
-                    <ul class="handbook__menu__content-list">
-
                         <li class="content__menu-item"><a class="content__menu-link" href="individual/berkut.html">Ігор
-                                Беркут. Посібник з індивідуальної
-                                підготовки.</a>
-                        </li>
-                    </ul>
+                            Беркут. Посібник з індивідуальної
+                            підготовки.</a>
+                    </li>
 
+                    </ul>
                 </div>
                 <!-- INDIVIDUAL MENU CONTENT-->
             </div>
 
             <div class="handbook__menu-item">
 
-                <div class="handbook__menu-topic topography">
+                <div class="handbook__menu-topic topography topic_title">
                     <a href="#topography" class="main__menu-item-link">ВІЙСЬКОВА ТОПОГРАФІЯ</a>
                 </div>
                 <!-- TOPOGRAPHY MENU CONTENT-->
 
-                <div class="handbook__menu-content topography">
+                <div class="handbook__menu-content topography" hidden>
 
                     <ul class="handbook__menu__content-list">
                         <li class="content__menu-item"><a class="content__menu-link"
@@ -179,13 +156,10 @@
                                 class="content__menu-link">Вирішення
                                 задач</a>
                         </li>
-                    </ul>
-
-                    <ul class="handbook__menu__content-list">
                         <li class="content__menu-item"><a class="content__menu-link"
-                                href="topography/04angles_distances.html">Визначення
-                                кутів та відстаней на
-                                місцевості </a></li>
+                            href="topography/04angles_distances.html">Визначення
+                            кутів та відстаней на
+                            місцевості </a></li>
                         <li class="content__menu-item"><a class="content__menu-link"
                                 href="topography/coordinates.html">Координати цілі за
                                 даними з СП</a></li>
@@ -203,12 +177,12 @@
         </nav>
         <!-- БІБЛІОТЕКА -->
         <nav class="handbook__library content_navigation_point">
-            <h2 id="library">БІБЛІОТЕКА</h2>
+            <h2 id="library" class="topic_name">БІБЛІОТЕКА</h2>
             <div class="handbook__library__item first">
-                <div class="handbook__library__item-title">
+                <div class="handbook__library__item-title topic_title">
                     <span>ВОГНЕВА ПІДГОТОВКА</span>
                 </div>
-                <div class="handbook__library__item-content vogneva">
+                <div class="handbook__library__item-content vogneva " hidden>
                     <h3>Книги. Збірники.</h3>
                     <div class="paragraph">
                         <ol>
@@ -380,10 +354,10 @@
             </div>
 
             <div class="handbook__library__item">
-                <div class="handbook__library__item-title">
+                <div class="handbook__library__item-title topic_title">
                     <span>ТОПОГРАФІЯ</span>
                 </div>
-                <div class="handbook__library__item-content topography">
+                <div class="handbook__library__item-content topography" hidden>
                     <div class="paragraph">
                         <ol>
                             <li><a href="https://drive.google.com/open?id=16UT1rNa4oRd7jhhAujC4pjjjgKtNd7gd"
@@ -421,14 +395,14 @@
         <!-- LINKS -->
         <div id="links" class="handbook__links">
             <div class="handbook__links-topic">
-                <h2>КОРИСНІ ПОСИЛАННЯ</h2>
+                <h2 class="content_navigation_point topic_name">КОРИСНІ ПОСИЛАННЯ</h2>
             </div>
             <!-- LINKS MENU CONTENT-->
 
             <div class="handbook__links__content">
                 <div>
-                    <h3>ЮРИДИЧНА ДОПОМОГА</h3>
-                    <div class="paragraph">
+                    <h3 class="topic_title">ЮРИДИЧНА ДОПОМОГА</h3>
+                    <div hidden>
                         <ul>
                             <li>Юридична сотня - дуже корисний ресурс, думю знають майже всі військові. Надають
                                 юридичну
@@ -450,8 +424,8 @@
                         </ul>
 
                     </div>
-                    <h3>ВОЛОНТЕРСЬКІ ОРГАНІЗАЦІЇ</h3>
-                    <div class="paragraph">
+                    <h3 class="topic_title">ВОЛОНТЕРСЬКІ ОРГАНІЗАЦІЇ</h3>
+                    <div hidden>
                         <ul>
                             <li>Повернись живим
                                 <ul class="linko">
@@ -473,8 +447,8 @@
                             </li>
                         </ul>
                     </div>
-                    <h3>ІНФОРМАЦІЙНІ РЕСУРСИ</h3>
-                    <div class="paragraph">
+                    <h3 class="topic_title">ІНФОРМАЦІЙНІ РЕСУРСИ</h3>
+                    <div hidden>
                         <ul>
                             <li>Український мілітарний портал
                                 <ul class="linko">

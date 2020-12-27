@@ -9,59 +9,42 @@
 	<title>Infantry Handbook</title>
 	<link rel="icon" href="img/google.png">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="content_navigation_point">
 	<header>
-		<nav class="header__menu-main">
+        <nav class="header_menu-main">
+            <img class="header_menu-burger" src="img/burger_icon.png" alt="Burger image">
+            <ul class="header_menu-list">
+                <li class="header_menu-item"> <a href="index.html"
+                        class="header_menu-link">ГОЛОВНА</a>
+                </li>
+                <li class="header_menu-item"> <a href="handbook.html"
+                        class="header_menu-link">ДОВІДНИК</a>
+                </li>
+                <li class="header_menu-item"><a href="countings.html"
+                        class="header_menu-link">РОЗРАХУНКИ</a>
+                </li>
+            </ul>
+        </nav>
 
-			<ul class="header__menu-main-list">
-				<li class="header__menu-main-list-item"> <a href="#" class="header__menu-main-list-link">ГОЛОВНА</a>
-				</li>
-				<li class="header__menu-main-list-item"> <a href="handbook.html"
-						class="header__menu-main-list-link">ДОВІДНИК</a>
-				</li>
-				<li class="header__menu-main-list-item"><a href="countings.html"
-						class="header__menu-main-list-link">РОЗРАХУНКИ</a>
-				</li>
-			</ul>
-		</nav>
-
-		<img class="header__mobile-burger" src="img/burger_icon.png" alt="Burger image">
-		<img class="header__logo" src="img/google2.png" alt="Logo image">
-		<h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
-		<h3>освітній ресурс</h3>
-
-		<nav class="header__menu-local">
-			<ul class="header__menu-local-list">
-				<li class="header__menu-local-item"><a href="#brother" class="header__menu-local-link">БРАТЕ</a>
-				</li>
-				<li class="header__menu-local-item"><a href="#about" class="header__menu-local-link">ПРО РЕСУРС</a>
-				</li>
-				<li class="header__menu-local-item"><a href="#mail" class="header__menu-local-link">ЗВОРОТНІЙ
-						ЗВ'ЯЗОК</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+        <div class="header_badge">
+            <img class="header_badge-logo" src="img/google2.png" alt="Logo image">
+            <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
+            <h3>освітній ресурс</h3>
+        </div>
+    </header>
 
 	<main>
 		<!--CONTENT-->
 
-		<section class="header__mobile">
-			<img class="header__logo" src="img/google2.png" alt="Logo image">
-			<h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
-			<h3>освітній ресурс</h3>
-		</section>
-
 		<div id="brother" class="main__intro content_navigation_point" >
 			<div class="main__intro-content">
-				<ul class="list__notHero">
+				<ul class="list_notHero">
 					<li>Якщо ти був на війні, це ще не означає, що ти герой...</li>
 					<li>Якщо ти кричиш голосніше за інших на всіх перестанках "Слава Україні", це ще не означає, що ти
 						герой
@@ -76,13 +59,13 @@
 						щось корисне, що ти герой</li>
 
 				</ul>
-				<img src="img/intro_logo.png" alt="">
+				<img class="list_notHero-image" src="img/intro_logo.png" alt="">
 			</div>
 		</div>
 
 		<div class="main__speech content_navigation_point">
 			<section class="main__speech-text first">
-				<div class="main__speech-text-container ">
+				<div class="main__speech-text_container ">
 					<h3>БРАТИ</h3>
 					<p>Не бухайте, не вживайте наркоту, якщо не хочете
 						підставити інших, щоб із-за
@@ -100,7 +83,7 @@
 				<img src="img/main_angry.jpg" alt="Soldier Alcoholic syndrom">
 			</div>
 			<section class="main__speech-text second">
-				<div class="main__speech-text-container">
+				<div class="main__speech-text_container">
 					<h3>МРАЗОТА</h3>
 					<p> Якщо ти згвалтував,
 						навіть сєпаршу - ти достоїн розстрілу на місці, ти заплямував честь нашу.
@@ -110,8 +93,8 @@
 				</div>
 
 			</section>
-			<section class="main__speech-text third ">
-				<div class="main__speech-text-container">
+			<section class="main__speech-text third">
+				<div class="main__speech-text_container">
 					<h3>ЗАХИСНИКИ</h3>
 					<p>
 						Не беріть чужого (метал, антени, розбиті тачки, ворота... це все теж чуже, навіть
@@ -127,11 +110,11 @@
 				<img src="img/main_looting.jpg" alt="Military looting">
 			</div>
 
-			<div class="main__speech-image forth">
+			<div class="main__speech-image fourth">
 				<img src="img/index_main_training.jpg" alt="Military looting">
 			</div>
-			<section class="main__speech-text forth">
-				<div class="main__speech-text-container">
+			<section class="main__speech-text fourth">
+				<div class="main__speech-text_container">
 					<h3>КОМАНДИРИ</h3>
 					<p>
 						Не забивайте на особовий склад. Ваша задача не принижувати їх гідність, а "дрючити" по бойовій,
@@ -146,7 +129,7 @@
 			</section>
 
 			<section class="main__speech-text fifth">
-				<div class="main__speech-text-container">
+				<div class="main__speech-text_container">
 					<h3>ПАЦАНИ!</h3>
 					<p>Ви на службі, тобто ви СЛУЖИТЕ народу. Навіть якщо він потім скаже, "що він вас
 						нікуди
@@ -161,15 +144,17 @@
 				<img src="img/index_main_zsu.jpg" alt="Military looting">
 			</div>
 
-			<div class="main__speech__footer">
-				<p>Це принципи, яких ми намагались дотримуватись в мотопіхотній роті імені <br>
-					<a class="main__speech__footer-link" target="_blank"
-						href="https://memorybook.org.ua/16/maysteruk.htm">Майстерюка
-						Романа Андрійовича <br>
-						<img src="img/shevronMINI.png" alt="shevron roty">
-					</a>
-				</p>
-			</div>
+			
+		</div>
+
+		<div class="main__speech-footer">
+			<p>Це принципи, яких ми намагались дотримуватись в мотопіхотній роті імені <br>
+				<a class="main__speech__footer-link" target="_blank"
+					href="https://memorybook.org.ua/16/maysteruk.htm">Майстерюка
+					Романа Андрійовича <br>
+					<img src="img/shevronMINI.png" alt="shevron roty">
+				</a>
+			</p>
 		</div>
 
 		<!-------------------------------- ABOUT --------------------------------------->

@@ -9,31 +9,32 @@
     <title>Infantry Handbook</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="header__menu-main">
-
-            <ul class="header__menu-main-list">
-                <li class="header__menu-main-list-item"> <a href="index.html"
-                        class="header__menu-main-list-link">ГОЛОВНА</a>
+        <nav class="header_menu-main">
+            <img class="header_menu-burger" src="img/burger_icon.png" alt="Burger image">
+            <ul class="header_menu-list">
+                <li class="header_menu-item"> <a href="index.html"
+                        class="header_menu-link">ГОЛОВНА</a>
                 </li>
-                <li class="header__menu-main-list-item"> <a href="handbook.html"
-                        class="header__menu-main-list-link">ДОВІДНИК</a>
+                <li class="header_menu-item"> <a href="handbook.html"
+                        class="header_menu-link">ДОВІДНИК</a>
                 </li>
-                <li class="header__menu-main-list-item"><a href="countings.html"
-                        class="header__menu-main-list-link">РОЗРАХУНКИ</a>
+                <li class="header_menu-item"><a href="countings.html"
+                        class="header_menu-link">РОЗРАХУНКИ</a>
                 </li>
             </ul>
         </nav>
 
-        <img class="header__mobile-burger" src="../img/burger_icon.png" alt="Burger image">
-        <img class="header__logo" src="img/google2.png" alt="Logo image">
-        <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
-        <h3>освітній ресурс</h3>
-
+        <div class="header_badge">
+            <img class="header_badge-logo" src="img/google2.png" alt="Logo image">
+            <h1> "ДОВІДНИК ПІХОТИНЦЯ" </h1>
+            <h3>освітній ресурс</h3>
+        </div>
     </header>
 
     <!--MAIN-->
@@ -55,7 +56,7 @@
     <!-- MESSAGE BOX-->
 
     <!-- FOOTER LOGO -->
-    <footer class="footer__logo">
+    <footer class="footer__logo content_navigation_point">
         <a href="https://www.youtube.com/channel/UCPt-5LSaCXZ6RyuHXXCCMhA" target="_blank"
             class="footer__logo-link"><img src="img/youtube_logo.png" title="visit our youtube channel"
                 alt="youtube logo"> Наш YouTube канал</a>
@@ -72,6 +73,7 @@
     <script src="js/handbook_viewer.js"></script>
     <script src="js/message_box.js"></script>
     <script src="js/myscript.js"></script>
+    <script type="module" src="js/global.js"></script>
 
 </body>
 
