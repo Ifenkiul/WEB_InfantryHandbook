@@ -1,0 +1,30 @@
+.handbook_card {
+    margin: 10px;
+    background-color: $color-bej;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px black;
+    transition: all 0.8s;
+
+    @include media-breakpoint-up(md) {
+    }
+
+    &-image {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+    }
+    &-title {
+        font-weight: bold;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px white;
+    }
+}
+
+.content__menu-link {
+    display: block;
+}

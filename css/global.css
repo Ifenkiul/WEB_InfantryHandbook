@@ -2,17 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap");
 @keyframes header_title {
   0% {
-    color: white;
     text-shadow: 1px 1px 5px black;
+    color: white;
   }
   50% {
     color: goldenrod;
   }
   100% {
-    color: white;
     text-shadow: 1px 1px 5px black;
+    color: white;
   }
 }
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+h1 .header_title {
+  font-size: 24px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
 .header_menu-main {
   width: 100%;
   position: fixed;
@@ -83,13 +95,16 @@
   }
 }
 .header_menu-link {
-  color: white;
   text-shadow: 1px 1px 5px black;
+  color: white;
   font-size: 24px;
 }
 .header_menu-link:hover {
   color: black;
-  text-shadow: 1px 1px 5px white;
+  text-shadow: 1px 2px 5px white;
+}
+.header_menu-link:active {
+  color: darkred;
 }
 @media (min-width: 768px) {
   .header_menu-link {
@@ -161,6 +176,7 @@ footer {
 }
 
 .footer__logo-link {
+  width: fit-content;
   text-decoration: none;
   color: white;
   display: block;
@@ -268,31 +284,11 @@ a {
   color: black;
 }
 a:hover {
-  color: white;
   text-shadow: 1px 1px 5px black;
+  color: white;
 }
 a:active {
   color: red;
-}
-
-.page_content_menu-list {
-  list-style-type: initial;
-  line-height: 2;
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  .page_content_menu-list {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-}
-.page_content_menu-link {
-  text-decoration: none;
-  color: black;
-}
-.page_content_menu-link:hover {
-  color: white;
-  text-shadow: 1px 1px 5px black;
 }
 
 .mini_navigator {
@@ -376,7 +372,7 @@ a:active {
   color: white;
   background-color: rgba(129, 97, 60, 0.9);
   text-align: center;
-  border: 2px dashed white;
+  border: 2px solid white;
   border-radius: 5px;
   padding: 10px 10px 10px;
   transform: translateX(-50%);

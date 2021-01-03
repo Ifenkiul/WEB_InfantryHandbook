@@ -25,27 +25,4 @@ a {
         color: red;
     }
 }
-//================================= HANDBOOK VIEWER MENY - STARt
-.page_content_menu {
-    &-list {
-        list-style-type: initial;
-        line-height: 2;
-        font-size: 14px;
 
-        @include media-breakpoint-up(md) {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-    }
-
-    &-link {
-        text-decoration: none;
-        color:black;
-
-        &:hover {
-            @include link-white-black;
-        }
-    }
-
-}
-//================================= HANDBOOK VIEWER MENY - END

@@ -1,7 +1,6 @@
 'use strict';
 
-(function () {
-  let messageBoxList = [
+const messageBoxList = [
     'Завше поводься зі зброєю як із зарядженою!!!',
     'Не став пальця на спусковий гачок, якщо не збираєшся стріляти!',
     'Контролюй що знаходиться до цілі і за ціллю!',
@@ -21,20 +20,24 @@
     'Щоб почати стріляти, ти як мінімум маєш знати відстань до цілі, щоб виставити відповідний приціл... Вивчай схему орієнтирів!',
     'Служба означає служіння. На благо іншим, іноді всупереч власним інтересам...',
   ];
-  let openOrNot = Math.floor(Math.random() * 4);
 
-  if (openOrNot === 0) {
-    let number = Math.floor(Math.random() * messageBoxList.length);
+function showMessageBox() {
+    const openOrNot = Math.floor(Math.random() * 4);
+    if (openOrNot === 0) {
+        let number = Math.floor(Math.random() * messageBoxList.length);
+        document.querySelector('.messageBox').classList.toggle('invisible');
+        document.querySelector('.messageBox__text').textContent = `${messageBoxList[number]}`;
+      }
 
-    document.querySelector('.messageBox').classList.toggle('invisible');
-    document.querySelector(
-      '.messageBox__text',
-    ).textContent = `${messageBoxList[number]}`;
-  }
+      document
+        .querySelector('.messageBox__btn')
+        .addEventListener('click', function () {
+          document.querySelector('.messageBox').classList.toggle('invisible');
+        });
+}
 
-  document
-    .querySelector('.messageBox__btn')
-    .addEventListener('click', function () {
-      document.querySelector('.messageBox').classList.toggle('invisible');
-    });
-})();
+const messageBox = {
+    showMessageBox: showMessageBox
+}
+
+export default messageBox;

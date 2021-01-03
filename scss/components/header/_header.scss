@@ -12,6 +12,19 @@
     @include link-white-black;
   }
 }
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+
+  .header_title {
+    font-size: $font-size-main;
+  }
+}
+
+header {
+  margin-bottom: 50px;
+}
+
 .header_menu {
   &-main {
     width: 100%;
@@ -87,14 +100,18 @@
   &-link {
     @include link-white-black;
     font-size: $font-size-main;
+
     &:hover {
       @include link-black-white
+    }
+
+    &:active {
+      color: darkred;
     }
 
     @include media-breakpoint-up(md) {
       font-size: 24px;
       font-weight: bold;
-      
     }
   }
 }
