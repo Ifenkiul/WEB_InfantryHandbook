@@ -1,0 +1,28 @@
+@import './header/header';
+@import './footer/footer';
+@import './mailForm/mailForm';
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: $color-main;
+    font-family: $font-cormorant-infant;
+    font-size: $font-size-main;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        @include link-white-black;
+    }
+
+    &:active {
+        color: red;
+    }
+}
+

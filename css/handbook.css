@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap");
+.handbook_card {
+  margin: 10px;
+  background-color: #a3a380;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px black;
+  transition: all 0.8s;
+}
+.handbook_card-image {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+.handbook_card-title {
+  font-weight: bold;
+}
+.handbook_card:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.content__menu-link {
+  display: block;
+}
+
 @media (min-width: 768px) {
   main {
     max-width: 1400px;
@@ -30,15 +56,25 @@ li {
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
+  color: black;
+  text-shadow: 1px 2px 5px white;
 }
 .topic_title:hover {
-  color: white;
   text-shadow: 1px 1px 5px black;
+  color: white;
   background-color: #a3a380;
 }
 
-.handbook__menu-content {
-  border-left: 1px solid grey;
+.handbook__menu-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .handbook__menu-container {
+    grid-template-columns: 30% 30% 30%;
+  }
 }
 
 .handbook__menu__content-list {
@@ -58,6 +94,97 @@ li {
 .handbook__library__item-content {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.btn_close_all {
+  display: block;
+  width: 50px;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1300px;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 30px;
+}
+
+hr {
+  background-color: white;
+  height: 2px;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  max-width: 100%;
+}
+
+.nav_title {
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.downloads-title {
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+  color: white;
+}
+
+.page_content_menu-list {
+  list-style-type: initial;
+  line-height: 2;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .page_content_menu-list {
+    line-height: 1.5;
+  }
+}
+.page_content_menu-link {
+  text-decoration: none;
+  color: black;
+}
+.page_content_menu-link:hover {
+  text-shadow: 1px 1px 5px black;
+  color: white;
+}
+
+.paragraph {
+  text-align: justify;
+  margin: 0 15px 20px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 24px;
+  }
+}
+.paragraph p {
+  text-indent: 40px;
+}
+
+table {
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  table {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=handbook.css.map */

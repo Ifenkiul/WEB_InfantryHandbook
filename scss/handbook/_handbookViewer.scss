@@ -1,0 +1,85 @@
+main {
+    max-width: 1300px;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 30px;
+}
+
+hr {
+    background-color: white;
+    height: 2px;
+}
+
+img {
+    max-width: 100%;
+}
+table {
+    max-width: 100%;
+}
+
+.nav_title {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+//---------------------------------------DOWNLOADS-START
+.downloads {
+    &-title {
+        font-weight: bold;
+        @include link-white-black;
+    }
+}
+//---------------------------------------DOWNLOADS-END
+
+//================================= HANDBOOK VIEWER MENU - STARt
+.page_content_menu {
+
+    &-list {
+        list-style-type: initial;
+        line-height: 2;
+        font-size: $font-size-main;
+
+        @include media-breakpoint-up(md) {
+            line-height: 1.5;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color:black;
+
+        &:hover {
+            @include link-white-black;
+        }
+    }
+
+}
+//================================= HANDBOOK VIEWER MENY - END
+
+.paragraph {
+    text-align: justify;
+    margin: 0 15px 20px;
+    font-size: $font-size-main-mobile;
+
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-main;
+    }
+
+    p {
+        text-indent: 40px;
+    }
+}
+
+table {
+    font-size: 14px;
+    font-weight: 600;
+    
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-main;
+    }
+}
