@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap");
 .handbook_card {
   margin: 10px;
-  background-color: #a3a380;
   text-align: center;
-  border: 1px solid lightgray;
   border-radius: 5px;
   box-shadow: 0 1px 10px black;
   transition: all 0.8s;
+  color: black;
+  text-shadow: 1px 2px 5px white;
 }
 .handbook_card-image {
   display: block;
   width: 100%;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid white;
   padding: 10px;
 }
 .handbook_card-title {
@@ -20,6 +20,7 @@
 }
 .handbook_card:hover {
   box-shadow: 0 0 10px white;
+  background-color: #333;
 }
 
 .content__menu-link {
@@ -52,7 +53,6 @@ li {
   font-weight: bold;
   display: block;
   width: 100%;
-  border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
@@ -62,9 +62,20 @@ li {
 .topic_title:hover {
   text-shadow: 1px 1px 5px black;
   color: white;
-  background-color: #a3a380;
 }
 
+.handbook__menu {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.handbook__menu-item {
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 10px;
+  border-radius: 10px;
+}
+.handbook__menu-item:hover {
+  box-shadow: 3px 3px 10px #333;
+}
 .handbook__menu-container {
   width: 100%;
   display: grid;
@@ -96,6 +107,10 @@ li {
   padding-right: 15px;
 }
 
+.handbook__links__content ul {
+  list-style-type: disc !important;
+}
+
 .btn_close_all {
   display: block;
   width: 50px;
@@ -106,6 +121,10 @@ li {
   border: 1px solid white;
   border-radius: 50%;
   cursor: pointer;
+}
+.btn_close_all:hover {
+  background-color: darkred;
+  box-shadow: 0 0 10px wheat;
 }
 
 main {
