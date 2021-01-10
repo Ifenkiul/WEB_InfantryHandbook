@@ -205,6 +205,7 @@ document.querySelectorAll('.content__menu-link').forEach(link =>
   }),
 );
 
+//* Closes all open tabs
 (function(){
   document.querySelector('.btn_close_all').addEventListener('click', ()=> {
     document.querySelectorAll('.handbook__menu-content').forEach(element => {
