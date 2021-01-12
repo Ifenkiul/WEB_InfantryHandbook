@@ -21,10 +21,6 @@ h1 .header_title {
   font-size: 24px;
 }
 
-header {
-  margin-bottom: 50px;
-}
-
 .header_menu-main {
   width: 100%;
   position: fixed;
@@ -38,10 +34,13 @@ header {
 }
 @media (min-width: 768px) {
   .header_menu-main {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: auto;
     background-color: unset;
     border: none;
+    box-shadow: 3px 3px 10px #333;
   }
 }
 .header_menu-burger {
@@ -122,6 +121,7 @@ header {
   justify-content: center;
   align-items: center;
   animation: header_title 5s infinite;
+  margin-bottom: 50px;
 }
 .header_badge-logo {
   max-width: 150px;
@@ -130,11 +130,19 @@ header {
 
 /* ------------------------------ FOOTER -----------------------------*/
 footer {
+  width: 100%;
   background-color: var(--color--bej);
   display: flex;
   justify-content: flex-start;
   border-top: 1.5px dashed white;
   margin-top: 50px;
+}
+@media (min-width: 768px) {
+  footer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer__content {
@@ -291,6 +299,26 @@ a:active {
   color: red;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .mini_navigator {
   position: fixed;
   bottom: 10px;
@@ -303,7 +331,7 @@ a:active {
   right: 60px;
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  width: 200px;
   margin-right: 20px;
   transition: all 0.5s;
   z-index: 50;
@@ -337,6 +365,14 @@ a:active {
   box-shadow: 0px 0px 10px white;
   background-color: white;
   color: black;
+}
+.mini_navigator-btn.menu {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .mini_navigator-btn.menu {
+    display: none;
+  }
 }
 .mini_navigator-arrow {
   font-size: 33px;

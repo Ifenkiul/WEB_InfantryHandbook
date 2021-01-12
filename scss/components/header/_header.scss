@@ -21,9 +21,6 @@ h1 {
   }
 }
 
-header {
-  margin-bottom: 50px;
-}
 
 .header_menu {
   &-main {
@@ -38,10 +35,13 @@ header {
     border-bottom: 2px solid grey;
 
     @include media-breakpoint-up(md) {
-      position: static;
+      position: fixed;
+      top: 0;
+      left: 0;
       height: auto;
       background-color: unset;
       border: none;
+      box-shadow: 3px 3px 10px #333;
     }
   }
 
@@ -125,6 +125,7 @@ header {
   justify-content: center;
   align-items: center;
   animation: header_title 5s infinite;
+  margin-bottom: 50px;
 
   &-logo {
     max-width: 150px;

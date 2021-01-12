@@ -1,12 +1,11 @@
-'use strict';
-(function () {
+
+
+
+window.addEventListener("load", function () {
   const link = localStorage.getItem('page');
 
-  fetchHtml();
+  fetchHtml(link);
 
-  async function fetchHtml() {
-    const response = await fetch(link);
-    const html = await response.text();
-    document.querySelector('.main').innerHTML = html;
-  }
-})();
+  
+});
+console.log(localStorage.getItem('page'));
