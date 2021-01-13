@@ -357,7 +357,7 @@ a:active {
   content: .mini_navigator-btn::after #8648;
 }
 .mini_navigator-btn:hover {
-  background-color: black;
+  background-color: #333;
   color: white;
   box-shadow: 0 0 50px white;
 }
@@ -383,42 +383,38 @@ a:active {
 /* ------------------------- MESSAGE BOX -----------------------------*/
 @keyframes msbox-back-color {
   0% {
-    background-color: darkred;
-    color: white;
+    box-shadow: 0px 0px 10px #a3a380;
   }
   50% {
-    background-color: black;
-    color: darkred;
-    color: #a3a380;
+    box-shadow: 0px 0px 10px #333;
   }
   100% {
-    background-color: darkred;
-    color: white;
+    box-shadow: 0px 0px 10px #a3a380;
   }
 }
 .messageBox {
   width: 90%;
   font-size: 20px;
-  font-family: Pangolin, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   box-shadow: 5px 5px 10px #a1a188;
   /*MILITARY LIGHT*/
   position: fixed;
-  top: 30%;
+  top: 25%;
   left: 50%;
+  text-shadow: 1px 1px 5px black;
   color: white;
-  background-color: rgba(129, 97, 60, 0.9);
+  background-color: #333;
   text-align: center;
-  border: 2px solid white;
   border-radius: 5px;
-  padding: 10px 10px 10px;
+  padding: 10px 25px 10px;
   transform: translateX(-50%);
   z-index: 15;
-  animation: msbox-back-color 10s infinite;
+  animation: msbox-back-color 1s infinite;
 }
 @media (min-width: 768px) {
   .messageBox {
     width: auto;
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -427,22 +423,24 @@ a:active {
 }
 
 .messageBox__btn {
+  width: 50px;
+  height: 50px;
   font-size: 30px;
   margin-top: 10px;
-  border: 2px solid #a1a188;
+  border: 2px solid black;
   /*MILITARY LIGHT*/
   outline: none;
-  border-radius: 10px 20px 30px 40px;
+  border-radius: 50%;
   background-color: #5b6750;
   /*MILITARY 2*/
-  color: white;
   cursor: pointer;
 }
 
 .messageBox__btn:hover {
-  background-color: #a1a188;
+  background-color: #333;
   /*MILITARY LIGHT*/
   box-shadow: 0 0 10px white;
+  color: white;
 }
 
 .messageBox__btn:active {
@@ -452,6 +450,5 @@ a:active {
 }
 
 /* ------------------------- MESSAGE BOX -----------------------------*/
-/*-------------------- MESSAGE BOX MOBILE-------------------------*/
 
 /*# sourceMappingURL=global.css.map */

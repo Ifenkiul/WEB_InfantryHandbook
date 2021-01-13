@@ -2,41 +2,38 @@
 
 @keyframes msbox-back-color {
   0%{
-    background-color: darkred;
-    color: white;
+    box-shadow: 0px 0px 10px $color-bej;
   }
 
   50% {
-    background-color: black;color: darkred;
-    color: $color-bej;
+    box-shadow: 0px 0px 10px #333;
   }
 
   100% {
-    background-color: darkred;
-    color: white;
+    box-shadow: 0px 0px 10px $color-bej;
   }
 }
 .messageBox {
     width: 90%;
-    font-size: 20px;
-    font-family: $font-pangolin;
+    font-size: 20px;    
+    font-weight: bolder;
     box-shadow: 5px 5px 10px #a1a188; /*MILITARY LIGHT*/
     position: fixed;
-    top: 30%;
+    top: 25%;
     left: 50%;
-    color: white;
-    background-color: rgba(129, 97, 60, 0.9);
+    @include link-white-black;
+    background-color: #333;
     text-align: center;
-    border: 2px solid white;
+    // border: 2px solid white;
     border-radius: 5px;
-    padding: 10px 10px 10px;
+    padding: 10px 25px 10px;
     transform: translateX(-50%);
     z-index: 15;
-    animation: msbox-back-color 10s infinite;
+    animation: msbox-back-color 1s infinite;
 
     @include media-breakpoint-up(md){
         width: auto;
-        font-size: 30px;
+        font-size: 26px;
     }
   }
   
@@ -45,18 +42,21 @@
   }
   
   .messageBox__btn {
+    width: 50px;
+    height: 50px;
     font-size: 30px;
     margin-top: 10px;
-    border: 2px solid #a1a188; /*MILITARY LIGHT*/
+    border: 2px solid black; /*MILITARY LIGHT*/
     outline: none;
-    border-radius: 10px 20px 30px 40px;
+    border-radius: 50%;
     background-color: #5b6750; /*MILITARY 2*/
-    color: white;
+    // color: white;
     cursor: pointer;
   }
   .messageBox__btn:hover {
-    background-color: #a1a188; /*MILITARY LIGHT*/
+    background-color: #333; /*MILITARY LIGHT*/
     box-shadow: 0 0 10px white;
+    color: white;
   }
   .messageBox__btn:active {
     color: #cc9a45; /* LETTERS*/
@@ -64,8 +64,3 @@
   }
   /* ------------------------- MESSAGE BOX -----------------------------*/
 
-
-/*-------------------- MESSAGE BOX MOBILE-------------------------*/
-.messageBox {
-    
-  }
